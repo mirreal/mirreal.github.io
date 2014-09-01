@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Mirreal's Note]]></title>
+  <link href="http://mirreal.github.io/atom.xml" rel="self"/>
+  <link href="http://mirreal.github.io/"/>
+  <updated>2014-09-01T15:23:20+08:00</updated>
+  <id>http://mirreal.github.io/</id>
+  <author>
+    <name><![CDATA[Mirreal Ellison]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress + Github Pages]]></title>
+    <link href="http://mirreal.github.io/blog/2014/09/01/octopress-plus-github-pages/"/>
+    <updated>2014-09-01T15:04:01+08:00</updated>
+    <id>http://mirreal.github.io/blog/2014/09/01/octopress-plus-github-pages</id>
+    <content type="html"><![CDATA[<h1>Sep 1st, 2014, Monday</h1>
+
+<h2>Octopress + Github Pages</h2>
+
+<h5><a href="http://octopress.org/docs/setup">document</a></h5>
+
+<h5>Enviroment: Ubuntu 12.00</h5>
+
+<h3>1.Installing Ruby With RVM</h3>
+
+<h4>Install RVM</h4>
+
+<pre><code>curl -L https://get.rvm.io | bash -s stable --ruby
+</code></pre>
+
+<p>Then run:</p>
+
+<pre><code>source /home/exile/.rvm/scripts/rvm
+</code></pre>
+
+<p>to start RVM</p>
+
+<h4>Install Ruby 1.9.3</h4>
+
+<pre><code>rvm install 1.9.3
+rvm use 1.9.3
+rvm rubygems latest
+</code></pre>
+
+<h3>2.Deploying to Github Pages</h3>
+
+<h4>With Github User/Organization pages</h4>
+
+<p>Create a new Github repository and name the repository with the format <code>username.github.io</code></p>
+
+<p>Just an empty repository is okay.</p>
+
+<pre><code>rake setup_github_pages
+</code></pre>
+
+<p>Next run:</p>
+
+<pre><code>rake deploy
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>
