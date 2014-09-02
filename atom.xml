@@ -4,7 +4,7 @@
   <title><![CDATA[Mirreal's Note]]></title>
   <link href="http://mirreal.github.io/atom.xml" rel="self"/>
   <link href="http://mirreal.github.io/"/>
-  <updated>2014-09-01T23:58:51+08:00</updated>
+  <updated>2014-09-03T00:27:39+08:00</updated>
   <id>http://mirreal.github.io/</id>
   <author>
     <name><![CDATA[Mirreal Ellison]]></name>
@@ -14,17 +14,75 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Double Queue]]></title>
-    <link href="http://mirreal.github.io/blog/2014/09/01/double-queue/"/>
-    <updated>2014-09-01T15:45:05+08:00</updated>
-    <id>http://mirreal.github.io/blog/2014/09/01/double-queue</id>
-    <content type="html"><![CDATA[<h1>July 17th, 2014, Thursday</h1>
+    <title type="html"><![CDATA[Information_theroy]]></title>
+    <link href="http://mirreal.github.io/blog/2014/09/03/information-theroy/"/>
+    <updated>2014-09-03T00:27:39+08:00</updated>
+    <id>http://mirreal.github.io/blog/2014/09/03/information-theroy</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress + Github Pages]]></title>
+    <link href="http://mirreal.github.io/blog/2014/09/01/octopress-plus-github-pages/"/>
+    <updated>2014-09-01T15:04:01+08:00</updated>
+    <id>http://mirreal.github.io/blog/2014/09/01/octopress-plus-github-pages</id>
+    <content type="html"><![CDATA[<h2>Octopress + Github Pages</h2>
 
-<h2>double queue</h2>
+<h5><a href="http://octopress.org/docs/setup">document</a></h5>
+
+<h5>Enviroment: Ubuntu 12.00</h5>
+
+<h3>1.Installing Ruby With RVM</h3>
+
+<h4>Install RVM</h4>
+
+<pre><code>curl -L https://get.rvm.io | bash -s stable --ruby
+</code></pre>
+
+<p>Then run:</p>
+
+<pre><code>source /home/exile/.rvm/scripts/rvm
+</code></pre>
+
+<p>to start RVM</p>
+
+<h4>Install Ruby 1.9.3</h4>
+
+<pre><code>rvm install 1.9.3
+rvm use 1.9.3
+rvm rubygems latest
+</code></pre>
+
+<h3>2.Deploying to Github Pages</h3>
+
+<h4>With Github User/Organization pages</h4>
+
+<p>Create a new Github repository and name the repository with the format <code>username.github.io</code></p>
+
+<p>Just an empty repository is okay.</p>
+
+<pre><code>rake setup_github_pages
+</code></pre>
+
+<p>Next run:</p>
+
+<pre><code>rake deploy
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Double Queue]]></title>
+    <link href="http://mirreal.github.io/blog/2014/07/02/double-queue/"/>
+    <updated>2014-07-02T15:45:05+08:00</updated>
+    <id>http://mirreal.github.io/blog/2014/07/02/double-queue</id>
+    <content type="html"><![CDATA[<h2>double queue</h2>
 
 <h3>double linked list</h3>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><figcaption><span>double_queue.c </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -147,129 +205,129 @@
 <span class='line-number'>121</span>
 <span class='line-number'>122</span>
 <span class='line-number'>123</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'>   <span class="err">#</span><span class="nx">include</span> <span class="o">&lt;</span><span class="nx">stdio</span><span class="p">.</span><span class="nx">h</span><span class="o">&gt;</span>
-</span><span class='line'>  <span class="err">#</span><span class="nx">include</span> <span class="o">&lt;</span><span class="nx">stdlib</span><span class="p">.</span><span class="nx">h</span><span class="o">&gt;</span>
-</span><span class='line'>  
-</span><span class='line'>  <span class="nx">typedef</span> <span class="kr">int</span> <span class="nx">data</span><span class="p">;</span>
-</span><span class='line'>  <span class="nx">typedef</span> <span class="nx">struct</span> <span class="nx">node</span><span class="o">*</span> <span class="nx">node</span><span class="p">;</span>
-</span><span class='line'>  <span class="nx">typedef</span> <span class="nx">struct</span> <span class="nx">double_queue</span><span class="o">*</span> <span class="nx">dqueue</span><span class="p">;</span>
-</span><span class='line'>  <span class="nx">struct</span> <span class="nx">node</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nx">data</span> <span class="nx">item</span><span class="p">;</span>
-</span><span class='line'>    <span class="nx">node</span> <span class="nx">prev</span><span class="p">,</span> <span class="nx">next</span><span class="p">;</span>
-</span><span class='line'>  <span class="p">};</span>
-</span><span class='line'>  <span class="nx">struct</span> <span class="nx">double_queue</span> <span class="p">{</span>
-</span><span class='line'>    <span class="kr">int</span> <span class="nx">count</span><span class="p">;</span>
-</span><span class='line'>    <span class="nx">node</span> <span class="nx">head</span><span class="p">,</span> <span class="nx">tail</span><span class="p">;</span>
-</span><span class='line'>  <span class="p">};</span>
-</span><span class='line'>  
-</span><span class='line'>  <span class="k">void</span> <span class="nx">dq_init</span><span class="p">(</span><span class="nx">dqueue</span> <span class="nx">dq</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-</span><span class='line'>    <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">head</span> <span class="o">=</span> <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">tail</span> <span class="o">=</span> <span class="nx">NULL</span><span class="p">;</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="err">#</span><span class="nx">include</span> <span class="o">&lt;</span><span class="nx">stdio</span><span class="p">.</span><span class="nx">h</span><span class="o">&gt;</span>
+</span><span class='line'><span class="err">#</span><span class="nx">include</span> <span class="o">&lt;</span><span class="nx">stdlib</span><span class="p">.</span><span class="nx">h</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">typedef</span> <span class="kr">int</span> <span class="nx">data</span><span class="p">;</span>
+</span><span class='line'><span class="nx">typedef</span> <span class="nx">struct</span> <span class="nx">node</span><span class="o">*</span> <span class="nx">node</span><span class="p">;</span>
+</span><span class='line'><span class="nx">typedef</span> <span class="nx">struct</span> <span class="nx">double_queue</span><span class="o">*</span> <span class="nx">dqueue</span><span class="p">;</span>
+</span><span class='line'><span class="nx">struct</span> <span class="nx">node</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nx">data</span> <span class="nx">item</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">node</span> <span class="nx">prev</span><span class="p">,</span> <span class="nx">next</span><span class="p">;</span>
+</span><span class='line'><span class="p">};</span>
+</span><span class='line'><span class="nx">struct</span> <span class="nx">double_queue</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kr">int</span> <span class="nx">count</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">node</span> <span class="nx">head</span><span class="p">,</span> <span class="nx">tail</span><span class="p">;</span>
+</span><span class='line'><span class="p">};</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">void</span> <span class="nx">dq_init</span><span class="p">(</span><span class="nx">dqueue</span> <span class="nx">dq</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">head</span> <span class="o">=</span> <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">tail</span> <span class="o">=</span> <span class="nx">NULL</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kr">int</span> <span class="nx">dq_empty</span><span class="p">(</span><span class="nx">dqueue</span> <span class="nx">dq</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">return</span> <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">count</span> <span class="o">==</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">//add item from head</span>
+</span><span class='line'><span class="k">void</span> <span class="nx">dq_unshift</span><span class="p">(</span><span class="nx">dqueue</span> <span class="nx">dq</span><span class="p">,</span> <span class="nx">data</span> <span class="nx">item</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nx">node</span> <span class="nx">t</span> <span class="o">=</span> <span class="nx">malloc</span><span class="p">(</span><span class="nx">sizeof</span> <span class="o">*</span><span class="nx">t</span><span class="p">);</span>
+</span><span class='line'>  <span class="nx">t</span><span class="o">-&gt;</span><span class="nx">item</span> <span class="o">=</span> <span class="nx">item</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">t</span><span class="o">-&gt;</span><span class="nx">prev</span> <span class="o">=</span> <span class="nx">NULL</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">t</span><span class="o">-&gt;</span><span class="nx">next</span> <span class="o">=</span> <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">head</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">count</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">head</span><span class="o">-&gt;</span><span class="nx">prev</span> <span class="o">=</span> <span class="nx">t</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">tail</span> <span class="o">=</span> <span class="nx">t</span><span class="p">;</span>
 </span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>  
-</span><span class='line'>  <span class="kr">int</span> <span class="nx">dq_empty</span><span class="p">(</span><span class="nx">dqueue</span> <span class="nx">dq</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>    <span class="k">return</span> <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">count</span> <span class="o">==</span> <span class="mi">0</span><span class="p">;</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>  
-</span><span class='line'>  <span class="c1">//add item from head</span>
-</span><span class='line'>  <span class="k">void</span> <span class="nx">dq_unshift</span><span class="p">(</span><span class="nx">dqueue</span> <span class="nx">dq</span><span class="p">,</span> <span class="nx">data</span> <span class="nx">item</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nx">node</span> <span class="nx">t</span> <span class="o">=</span> <span class="nx">malloc</span><span class="p">(</span><span class="nx">sizeof</span> <span class="o">*</span><span class="nx">t</span><span class="p">);</span>
-</span><span class='line'>    <span class="nx">t</span><span class="o">-&gt;</span><span class="nx">item</span> <span class="o">=</span> <span class="nx">item</span><span class="p">;</span>
-</span><span class='line'>    <span class="nx">t</span><span class="o">-&gt;</span><span class="nx">prev</span> <span class="o">=</span> <span class="nx">NULL</span><span class="p">;</span>
-</span><span class='line'>    <span class="nx">t</span><span class="o">-&gt;</span><span class="nx">next</span> <span class="o">=</span> <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">head</span><span class="p">;</span>
-</span><span class='line'>    <span class="k">if</span> <span class="p">(</span><span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">count</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>      <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">head</span><span class="o">-&gt;</span><span class="nx">prev</span> <span class="o">=</span> <span class="nx">t</span><span class="p">;</span>
-</span><span class='line'>    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-</span><span class='line'>      <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">tail</span> <span class="o">=</span> <span class="nx">t</span><span class="p">;</span>
-</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>  <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">head</span> <span class="o">=</span> <span class="nx">t</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">count</span><span class="o">++</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">//add item from tail</span>
+</span><span class='line'><span class="k">void</span> <span class="nx">dq_push</span><span class="p">(</span><span class="nx">dqueue</span> <span class="nx">dq</span><span class="p">,</span> <span class="nx">data</span> <span class="nx">item</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nx">node</span> <span class="nx">t</span> <span class="o">=</span> <span class="nx">malloc</span><span class="p">(</span><span class="nx">sizeof</span> <span class="o">*</span><span class="nx">t</span><span class="p">);</span>
+</span><span class='line'>  <span class="nx">t</span><span class="o">-&gt;</span><span class="nx">item</span> <span class="o">=</span> <span class="nx">item</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">t</span><span class="o">-&gt;</span><span class="nx">prev</span> <span class="o">=</span> <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">tail</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">t</span><span class="o">-&gt;</span><span class="nx">next</span> <span class="o">=</span> <span class="nx">NULL</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">count</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">tail</span><span class="o">-&gt;</span><span class="nx">next</span> <span class="o">=</span> <span class="nx">t</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
 </span><span class='line'>    <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">head</span> <span class="o">=</span> <span class="nx">t</span><span class="p">;</span>
-</span><span class='line'>    <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">count</span><span class="o">++</span><span class="p">;</span>
 </span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>  
-</span><span class='line'>  <span class="c1">//add item from tail</span>
-</span><span class='line'>  <span class="k">void</span> <span class="nx">dq_push</span><span class="p">(</span><span class="nx">dqueue</span> <span class="nx">dq</span><span class="p">,</span> <span class="nx">data</span> <span class="nx">item</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nx">node</span> <span class="nx">t</span> <span class="o">=</span> <span class="nx">malloc</span><span class="p">(</span><span class="nx">sizeof</span> <span class="o">*</span><span class="nx">t</span><span class="p">);</span>
-</span><span class='line'>    <span class="nx">t</span><span class="o">-&gt;</span><span class="nx">item</span> <span class="o">=</span> <span class="nx">item</span><span class="p">;</span>
-</span><span class='line'>    <span class="nx">t</span><span class="o">-&gt;</span><span class="nx">prev</span> <span class="o">=</span> <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">tail</span><span class="p">;</span>
-</span><span class='line'>    <span class="nx">t</span><span class="o">-&gt;</span><span class="nx">next</span> <span class="o">=</span> <span class="nx">NULL</span><span class="p">;</span>
-</span><span class='line'>    <span class="k">if</span> <span class="p">(</span><span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">count</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>      <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">tail</span><span class="o">-&gt;</span><span class="nx">next</span> <span class="o">=</span> <span class="nx">t</span><span class="p">;</span>
-</span><span class='line'>    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-</span><span class='line'>      <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">head</span> <span class="o">=</span> <span class="nx">t</span><span class="p">;</span>
-</span><span class='line'>    <span class="p">}</span>
-</span><span class='line'>    <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">tail</span><span class="o">=</span> <span class="nx">t</span><span class="p">;</span>
-</span><span class='line'>    <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">count</span><span class="o">++</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">tail</span><span class="o">=</span> <span class="nx">t</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">count</span><span class="o">++</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">//delete first item</span>
+</span><span class='line'><span class="nx">data</span> <span class="nx">dq_shift</span><span class="p">(</span><span class="nx">dqueue</span> <span class="nx">dq</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nx">data</span> <span class="nx">item</span> <span class="o">=</span> <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">head</span><span class="o">-&gt;</span><span class="nx">item</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">head</span><span class="o">-&gt;</span><span class="nx">next</span><span class="o">-&gt;</span><span class="nx">prev</span> <span class="o">=</span> <span class="nx">NULL</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">head</span> <span class="o">=</span> <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">head</span><span class="o">-&gt;</span><span class="nx">next</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">count</span><span class="o">--</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">return</span> <span class="nx">item</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">//delete last item</span>
+</span><span class='line'><span class="nx">data</span> <span class="nx">dq_pop</span><span class="p">(</span><span class="nx">dqueue</span> <span class="nx">dq</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nx">data</span> <span class="nx">item</span> <span class="o">=</span> <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">tail</span><span class="o">-&gt;</span><span class="nx">item</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">tail</span><span class="o">-&gt;</span><span class="nx">prev</span><span class="o">-&gt;</span><span class="nx">next</span> <span class="o">=</span> <span class="nx">NULL</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">tail</span> <span class="o">=</span> <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">tail</span><span class="o">-&gt;</span><span class="nx">prev</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">count</span><span class="o">--</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">return</span> <span class="nx">item</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">void</span> <span class="nx">dq_for_each</span><span class="p">(</span><span class="nx">dqueue</span> <span class="nx">dq</span><span class="p">,</span> <span class="k">void</span> <span class="nx">f</span><span class="p">(</span><span class="nx">data</span><span class="p">))</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nx">node</span> <span class="nx">t</span> <span class="o">=</span> <span class="nx">malloc</span><span class="p">(</span><span class="nx">sizeof</span> <span class="o">*</span><span class="nx">t</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="nx">t</span> <span class="o">=</span> <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">head</span><span class="p">;</span> <span class="nx">t</span> <span class="o">!=</span> <span class="nx">NULL</span><span class="p">;</span> <span class="nx">t</span> <span class="o">=</span> <span class="nx">t</span><span class="o">-&gt;</span><span class="nx">next</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">f</span><span class="p">(</span><span class="nx">t</span><span class="o">-&gt;</span><span class="nx">item</span><span class="p">);</span>
 </span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>  
-</span><span class='line'>  <span class="c1">//delete first item</span>
-</span><span class='line'>  <span class="nx">data</span> <span class="nx">dq_shift</span><span class="p">(</span><span class="nx">dqueue</span> <span class="nx">dq</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nx">data</span> <span class="nx">item</span> <span class="o">=</span> <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">head</span><span class="o">-&gt;</span><span class="nx">item</span><span class="p">;</span>
-</span><span class='line'>    <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">head</span><span class="o">-&gt;</span><span class="nx">next</span><span class="o">-&gt;</span><span class="nx">prev</span> <span class="o">=</span> <span class="nx">NULL</span><span class="p">;</span>
-</span><span class='line'>    <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">head</span> <span class="o">=</span> <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">head</span><span class="o">-&gt;</span><span class="nx">next</span><span class="p">;</span>
-</span><span class='line'>    <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">count</span><span class="o">--</span><span class="p">;</span>
-</span><span class='line'>    <span class="k">return</span> <span class="nx">item</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kr">int</span><span class="o">*</span> <span class="nx">dq_map</span><span class="p">(</span><span class="nx">dqueue</span> <span class="nx">dq</span><span class="p">,</span> <span class="nx">data</span> <span class="nx">f</span><span class="p">(</span><span class="nx">data</span><span class="p">))</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kr">int</span> <span class="o">*</span><span class="nx">a</span> <span class="o">=</span> <span class="nx">malloc</span><span class="p">(</span><span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">count</span> <span class="o">*</span> <span class="nx">sizeof</span><span class="p">(</span><span class="kr">int</span><span class="p">)),</span> <span class="nx">i</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">node</span> <span class="nx">t</span> <span class="o">=</span> <span class="nx">malloc</span><span class="p">(</span><span class="nx">sizeof</span> <span class="o">*</span><span class="nx">t</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="nx">t</span> <span class="o">=</span> <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">head</span><span class="p">,</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">t</span> <span class="o">!=</span> <span class="nx">NULL</span><span class="p">;</span> <span class="nx">t</span> <span class="o">=</span> <span class="nx">t</span><span class="o">-&gt;</span><span class="nx">next</span><span class="p">,</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">a</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">=</span> <span class="nx">f</span><span class="p">(</span><span class="nx">t</span><span class="o">-&gt;</span><span class="nx">item</span><span class="p">);</span>
 </span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>  
-</span><span class='line'>  <span class="c1">//delete last item</span>
-</span><span class='line'>  <span class="nx">data</span> <span class="nx">dq_pop</span><span class="p">(</span><span class="nx">dqueue</span> <span class="nx">dq</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nx">data</span> <span class="nx">item</span> <span class="o">=</span> <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">tail</span><span class="o">-&gt;</span><span class="nx">item</span><span class="p">;</span>
-</span><span class='line'>    <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">tail</span><span class="o">-&gt;</span><span class="nx">prev</span><span class="o">-&gt;</span><span class="nx">next</span> <span class="o">=</span> <span class="nx">NULL</span><span class="p">;</span>
-</span><span class='line'>    <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">tail</span> <span class="o">=</span> <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">tail</span><span class="o">-&gt;</span><span class="nx">prev</span><span class="p">;</span>
-</span><span class='line'>    <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">count</span><span class="o">--</span><span class="p">;</span>
-</span><span class='line'>    <span class="k">return</span> <span class="nx">item</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">return</span> <span class="nx">a</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">void</span> <span class="nx">f</span><span class="p">(</span><span class="nx">data</span> <span class="nx">item</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nx">printf</span><span class="p">(</span><span class="s2">&quot;%d &quot;</span><span class="p">,</span> <span class="nx">item</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">data</span> <span class="nx">f2</span><span class="p">(</span><span class="nx">data</span> <span class="nx">item</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">return</span> <span class="mi">10</span><span class="o">*</span><span class="nx">item</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">void</span> <span class="nx">array_for_each</span><span class="p">(</span><span class="kr">int</span> <span class="nx">a</span><span class="p">[])</span> <span class="p">{</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kr">int</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kr">int</span> <span class="nx">i</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">dqueue</span> <span class="nx">dq</span> <span class="o">=</span> <span class="nx">malloc</span><span class="p">(</span><span class="nx">sizeof</span> <span class="o">*</span><span class="nx">dq</span><span class="p">);</span>
+</span><span class='line'>  <span class="nx">dq_init</span><span class="p">(</span><span class="nx">dq</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">dq_push</span><span class="p">(</span><span class="nx">dq</span><span class="p">,</span> <span class="mi">3</span><span class="o">*</span><span class="nx">i</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
 </span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>  
-</span><span class='line'>  <span class="k">void</span> <span class="nx">dq_for_each</span><span class="p">(</span><span class="nx">dqueue</span> <span class="nx">dq</span><span class="p">,</span> <span class="k">void</span> <span class="nx">f</span><span class="p">(</span><span class="nx">data</span><span class="p">))</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nx">node</span> <span class="nx">t</span> <span class="o">=</span> <span class="nx">malloc</span><span class="p">(</span><span class="nx">sizeof</span> <span class="o">*</span><span class="nx">t</span><span class="p">);</span>
-</span><span class='line'>    <span class="k">for</span> <span class="p">(</span><span class="nx">t</span> <span class="o">=</span> <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">head</span><span class="p">;</span> <span class="nx">t</span> <span class="o">!=</span> <span class="nx">NULL</span><span class="p">;</span> <span class="nx">t</span> <span class="o">=</span> <span class="nx">t</span><span class="o">-&gt;</span><span class="nx">next</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>      <span class="nx">f</span><span class="p">(</span><span class="nx">t</span><span class="o">-&gt;</span><span class="nx">item</span><span class="p">);</span>
-</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>  <span class="nx">printf</span><span class="p">(</span><span class="s2">&quot;count: %d\n&quot;</span><span class="p">,</span> <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">count</span><span class="p">);</span>
+</span><span class='line'>  <span class="nx">dq_for_each</span><span class="p">(</span><span class="nx">dq</span><span class="p">,</span> <span class="nx">f</span><span class="p">);</span>
+</span><span class='line'>  <span class="nx">printf</span><span class="p">(</span><span class="s2">&quot;\n&quot;</span><span class="p">);</span>
+</span><span class='line'>  <span class="kr">int</span> <span class="o">*</span><span class="nx">a</span> <span class="o">=</span> <span class="nx">dq_map</span><span class="p">(</span><span class="nx">dq</span><span class="p">,</span> <span class="nx">f2</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">count</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">printf</span><span class="p">(</span><span class="s2">&quot;%d &quot;</span><span class="p">,</span> <span class="nx">a</span><span class="p">[</span><span class="nx">i</span><span class="p">]);</span>
 </span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>  
-</span><span class='line'>  <span class="kr">int</span><span class="o">*</span> <span class="nx">dq_map</span><span class="p">(</span><span class="nx">dqueue</span> <span class="nx">dq</span><span class="p">,</span> <span class="nx">data</span> <span class="nx">f</span><span class="p">(</span><span class="nx">data</span><span class="p">))</span> <span class="p">{</span>
-</span><span class='line'>    <span class="kr">int</span> <span class="o">*</span><span class="nx">a</span> <span class="o">=</span> <span class="nx">malloc</span><span class="p">(</span><span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">count</span> <span class="o">*</span> <span class="nx">sizeof</span><span class="p">(</span><span class="kr">int</span><span class="p">)),</span> <span class="nx">i</span><span class="p">;</span>
-</span><span class='line'>    <span class="nx">node</span> <span class="nx">t</span> <span class="o">=</span> <span class="nx">malloc</span><span class="p">(</span><span class="nx">sizeof</span> <span class="o">*</span><span class="nx">t</span><span class="p">);</span>
-</span><span class='line'>    <span class="k">for</span> <span class="p">(</span><span class="nx">t</span> <span class="o">=</span> <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">head</span><span class="p">,</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">t</span> <span class="o">!=</span> <span class="nx">NULL</span><span class="p">;</span> <span class="nx">t</span> <span class="o">=</span> <span class="nx">t</span><span class="o">-&gt;</span><span class="nx">next</span><span class="p">,</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>      <span class="nx">a</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">=</span> <span class="nx">f</span><span class="p">(</span><span class="nx">t</span><span class="o">-&gt;</span><span class="nx">item</span><span class="p">);</span>
-</span><span class='line'>    <span class="p">}</span>
-</span><span class='line'>    <span class="k">return</span> <span class="nx">a</span><span class="p">;</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>  
-</span><span class='line'>  <span class="k">void</span> <span class="nx">f</span><span class="p">(</span><span class="nx">data</span> <span class="nx">item</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nx">printf</span><span class="p">(</span><span class="s2">&quot;%d &quot;</span><span class="p">,</span> <span class="nx">item</span><span class="p">);</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>  
-</span><span class='line'>  <span class="nx">data</span> <span class="nx">f2</span><span class="p">(</span><span class="nx">data</span> <span class="nx">item</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>    <span class="k">return</span> <span class="mi">10</span><span class="o">*</span><span class="nx">item</span><span class="p">;</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>  
-</span><span class='line'>  <span class="k">void</span> <span class="nx">array_for_each</span><span class="p">(</span><span class="kr">int</span> <span class="nx">a</span><span class="p">[])</span> <span class="p">{</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>  
-</span><span class='line'>  <span class="kr">int</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>    <span class="kr">int</span> <span class="nx">i</span><span class="p">;</span>
-</span><span class='line'>    <span class="nx">dqueue</span> <span class="nx">dq</span> <span class="o">=</span> <span class="nx">malloc</span><span class="p">(</span><span class="nx">sizeof</span> <span class="o">*</span><span class="nx">dq</span><span class="p">);</span>
-</span><span class='line'>    <span class="nx">dq_init</span><span class="p">(</span><span class="nx">dq</span><span class="p">);</span>
-</span><span class='line'>    <span class="k">for</span> <span class="p">(</span><span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>      <span class="nx">dq_push</span><span class="p">(</span><span class="nx">dq</span><span class="p">,</span> <span class="mi">3</span><span class="o">*</span><span class="nx">i</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
-</span><span class='line'>    <span class="p">}</span>
-</span><span class='line'>    <span class="nx">printf</span><span class="p">(</span><span class="s2">&quot;count: %d\n&quot;</span><span class="p">,</span> <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">count</span><span class="p">);</span>
-</span><span class='line'>    <span class="nx">dq_for_each</span><span class="p">(</span><span class="nx">dq</span><span class="p">,</span> <span class="nx">f</span><span class="p">);</span>
-</span><span class='line'>    <span class="nx">printf</span><span class="p">(</span><span class="s2">&quot;\n&quot;</span><span class="p">);</span>
-</span><span class='line'>    <span class="kr">int</span> <span class="o">*</span><span class="nx">a</span> <span class="o">=</span> <span class="nx">dq_map</span><span class="p">(</span><span class="nx">dq</span><span class="p">,</span> <span class="nx">f2</span><span class="p">);</span>
-</span><span class='line'>    <span class="k">for</span> <span class="p">(</span><span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">count</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>      <span class="nx">printf</span><span class="p">(</span><span class="s2">&quot;%d &quot;</span><span class="p">,</span> <span class="nx">a</span><span class="p">[</span><span class="nx">i</span><span class="p">]);</span>
-</span><span class='line'>    <span class="p">}</span>
-</span><span class='line'>    <span class="nx">printf</span><span class="p">(</span><span class="s2">&quot;\n&quot;</span><span class="p">);</span>
-</span><span class='line'>    <span class="nx">data</span> <span class="nx">tail</span> <span class="o">=</span> <span class="nx">dq_pop</span><span class="p">(</span><span class="nx">dq</span><span class="p">);</span>
-</span><span class='line'>    <span class="nx">printf</span><span class="p">(</span><span class="s2">&quot;delete tail: %d\n&quot;</span><span class="p">,</span> <span class="nx">tail</span><span class="p">);</span>
-</span><span class='line'>    <span class="nx">data</span> <span class="nx">head</span> <span class="o">=</span> <span class="nx">dq_shift</span><span class="p">(</span><span class="nx">dq</span><span class="p">);</span>
-</span><span class='line'>    <span class="nx">printf</span><span class="p">(</span><span class="s2">&quot;delete head: %d\n&quot;</span><span class="p">,</span> <span class="nx">head</span><span class="p">);</span>
-</span><span class='line'>    <span class="nx">printf</span><span class="p">(</span><span class="s2">&quot;count: %d\n&quot;</span><span class="p">,</span> <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">count</span><span class="p">);</span>
-</span><span class='line'>    <span class="nx">dq_for_each</span><span class="p">(</span><span class="nx">dq</span><span class="p">,</span> <span class="nx">f</span><span class="p">);</span>
-</span><span class='line'>    <span class="nx">printf</span><span class="p">(</span><span class="s2">&quot;\n&quot;</span><span class="p">);</span>
-</span><span class='line'>    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="nx">printf</span><span class="p">(</span><span class="s2">&quot;\n&quot;</span><span class="p">);</span>
+</span><span class='line'>  <span class="nx">data</span> <span class="nx">tail</span> <span class="o">=</span> <span class="nx">dq_pop</span><span class="p">(</span><span class="nx">dq</span><span class="p">);</span>
+</span><span class='line'>  <span class="nx">printf</span><span class="p">(</span><span class="s2">&quot;delete tail: %d\n&quot;</span><span class="p">,</span> <span class="nx">tail</span><span class="p">);</span>
+</span><span class='line'>  <span class="nx">data</span> <span class="nx">head</span> <span class="o">=</span> <span class="nx">dq_shift</span><span class="p">(</span><span class="nx">dq</span><span class="p">);</span>
+</span><span class='line'>  <span class="nx">printf</span><span class="p">(</span><span class="s2">&quot;delete head: %d\n&quot;</span><span class="p">,</span> <span class="nx">head</span><span class="p">);</span>
+</span><span class='line'>  <span class="nx">printf</span><span class="p">(</span><span class="s2">&quot;count: %d\n&quot;</span><span class="p">,</span> <span class="nx">dq</span><span class="o">-&gt;</span><span class="nx">count</span><span class="p">);</span>
+</span><span class='line'>  <span class="nx">dq_for_each</span><span class="p">(</span><span class="nx">dq</span><span class="p">,</span> <span class="nx">f</span><span class="p">);</span>
+</span><span class='line'>  <span class="nx">printf</span><span class="p">(</span><span class="s2">&quot;\n&quot;</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -277,58 +335,6 @@
 
 <!-- more -->
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Octopress + Github Pages]]></title>
-    <link href="http://mirreal.github.io/blog/2014/09/01/octopress-plus-github-pages/"/>
-    <updated>2014-09-01T15:04:01+08:00</updated>
-    <id>http://mirreal.github.io/blog/2014/09/01/octopress-plus-github-pages</id>
-    <content type="html"><![CDATA[<h1>Sep 1st, 2014, Monday</h1>
-
-<h2>Octopress + Github Pages</h2>
-
-<h5><a href="http://octopress.org/docs/setup">document</a></h5>
-
-<h5>Enviroment: Ubuntu 12.00</h5>
-
-<h3>1.Installing Ruby With RVM</h3>
-
-<h4>Install RVM</h4>
-
-<pre><code>curl -L https://get.rvm.io | bash -s stable --ruby
-</code></pre>
-
-<p>Then run:</p>
-
-<pre><code>source /home/exile/.rvm/scripts/rvm
-</code></pre>
-
-<p>to start RVM</p>
-
-<h4>Install Ruby 1.9.3</h4>
-
-<pre><code>rvm install 1.9.3
-rvm use 1.9.3
-rvm rubygems latest
-</code></pre>
-
-<h3>2.Deploying to Github Pages</h3>
-
-<h4>With Github User/Organization pages</h4>
-
-<p>Create a new Github repository and name the repository with the format <code>username.github.io</code></p>
-
-<p>Just an empty repository is okay.</p>
-
-<pre><code>rake setup_github_pages
-</code></pre>
-
-<p>Next run:</p>
-
-<pre><code>rake deploy
-</code></pre>
 ]]></content>
   </entry>
   

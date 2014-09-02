@@ -3,8 +3,8 @@
   
   
   <url>
-    <loc>http://mirreal.github.io/blog/2014/09/01/double-queue/</loc>
-    <lastmod>2014-09-01T15:45:05+08:00</lastmod>
+    <loc>http://mirreal.github.io/blog/2014/09/03/information-theroy/</loc>
+    <lastmod>2014-09-03T00:27:39+08:00</lastmod>
     <priority>0.8</priority>
   </url>
   
@@ -14,17 +14,23 @@
     <priority>0.8</priority>
   </url>
   
+  <url>
+    <loc>http://mirreal.github.io/blog/2014/07/02/double-queue/</loc>
+    <lastmod>2014-07-02T15:45:05+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
   
   <url>
     <loc>http://mirreal.github.io/</loc>
-    <lastmod>2014-09-01T23:58:51+08:00</lastmod>
+    <lastmod>2014-09-03T00:27:39+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://mirreal.github.io/blog/archives/</loc>
-    <lastmod>2014-09-01T23:58:51+08:00</lastmod>
+    <lastmod>2014-09-03T00:27:39+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
