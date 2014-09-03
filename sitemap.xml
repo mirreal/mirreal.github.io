@@ -3,12 +3,6 @@
   
   
   <url>
-    <loc>http://mirreal.github.io/blog/2014/09/03/information-theroy/</loc>
-    <lastmod>2014-09-03T00:27:39+08:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
     <loc>http://mirreal.github.io/blog/2014/09/01/octopress-plus-github-pages/</loc>
     <lastmod>2014-09-01T15:04:01+08:00</lastmod>
     <priority>0.8</priority>
@@ -20,17 +14,23 @@
     <priority>0.8</priority>
   </url>
   
+  <url>
+    <loc>http://mirreal.github.io/blog/2014/02/14/infromation-code/</loc>
+    <lastmod>2014-02-14T10:27:39+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
   
   <url>
     <loc>http://mirreal.github.io/</loc>
-    <lastmod>2014-09-03T00:27:39+08:00</lastmod>
+    <lastmod>2014-09-03T17:11:06+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://mirreal.github.io/blog/archives/</loc>
-    <lastmod>2014-09-03T00:27:39+08:00</lastmod>
+    <lastmod>2014-09-03T17:11:06+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
