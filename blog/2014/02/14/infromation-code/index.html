@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>变长编码的三种方法 - Mirreal&#8217;s Note</title>
+  <title>变长编码的三种方法 - Mirreal Note</title>
   <meta name="author" content="Mirreal Ellison">
 
   
@@ -21,7 +21,7 @@
   <link rel="canonical" href="http://mirreal.github.io/blog/2014/02/14/infromation-code">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Mirreal's Note" type="application/atom+xml">
+  <link href="/atom.xml" rel="alternate" title="Mirreal Note" type="application/atom+xml">
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="http://code.jquery.com/jquery-2.1.1.min.js"</script>
   <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
@@ -34,7 +34,7 @@
 
 <body   >
   <header role="banner"><hgroup>
-  <h1><a href="/">Mirreal&#8217;s Note</a></h1>
+  <h1><a href="/">Mirreal Note</a></h1>
   
     <h2>A simple blog</h2>
   
@@ -54,13 +54,12 @@
 </form>
   
 <ul class="main-navigation">
-  <li><a href="http://mirreal.net">Home</a></li>
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="http://mirreal.net">主页</a></li>
+  <li><a href="/">博客</a></li>
+  <li><a href="/blog/archives">博文列表</a></li>
   <li><a href="/project">Project</a></li>
-  <li><a href="/about">About</a></li>
+  <li><a href="/about">关于</a></li>
 </ul>
-
 </nav>
   <div id="main">
     <div id="content">
@@ -80,6 +79,9 @@
 
 <time class='entry-date' datetime='2014-02-14T10:27:39+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>14</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>10:27 am</span></time>
         
+           | <a href="#disqus_thread"
+             data-disqus-identifier="http://mirreal.github.io">Comments</a>
+        
       </p>
     
   </header>
@@ -96,15 +98,21 @@
 <p>方法如下：</p>
 
 <ol>
-<li><p>将M个信源按其概率递减顺序排列</p></li>
-<li><p>计算各个消息的<code>-log q(Xm)</code></p></li>
+<li>将M个信源按其概率递减顺序排列</li>
+<li>计算各个消息的计算码字长度：<code>-log q(Xm)</code>向上取整</li>
+<li>计算地 m 个消息的累加概率并转换成二进制</li>
+<li>取小数点后第 m 个消息码字长度位即为该消息码字</li>
 </ol>
 
 
 <p>香农编码法的C语言实现：</p>
 
-<figure class='code'><figcaption><span>shannon.c </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<!-- more -->
+
+
+
+
+<figure class='code'><figcaption><span>shannon.c</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -245,210 +253,404 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-
-
-<!-- more -->
-
-
 <h2>2.费诺编码法</h2>
 
-<p>这个编码方法准确说应该叫做Shannon-Fano编码法。这项技术是香农于1948年，在他介绍信息理论的文章“通信数学理论”中被提出的，归功于范诺，是由于他在不久以后以技术报告发布了它。</p>
+<p>这个编码方法准确说应该叫做Shannon-Fano编码法。这项技术是香农于1948年，在他介绍信息理论的文章“通信数学理论”中被提出的，归功于费诺，是由于他在不久以后以技术报告发布了它。</p>
+
+<p>方法如下：</p>
+
+<ol>
+<li>将M个信源按其概率递减顺序排列</li>
+<li>对消息集按概率大小分解成两个子集，使两子集概率之和尽可能相等</li>
+<li>将第一个子集编码为“0，第二个编码为”1“</li>
+<li>对子集进行递归操作，知道子集仅含一个消息</li>
+<li>将逐次分解过程中的码元排列起来即为各消息码字</li>
+</ol>
+
 
 <p>香农-费诺编码法的C语言实现：</p>
 
-<pre><code>#include &lt;stdio.h&gt;
-#include &lt;stdlib.h&gt;
-#include &lt;string.h&gt;
-#include &lt;math.h&gt;
+<figure class='code'><figcaption><span>fano.c</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+</pre></td><td class='code'><pre><code class='c'><span class='line'><span class="cp">#include &lt;stdio.h&gt;</span>
+</span><span class='line'><span class="cp">#include &lt;stdlib.h&gt;</span>
+</span><span class='line'><span class="cp">#include &lt;string.h&gt;</span>
+</span><span class='line'><span class="cp">#include &lt;math.h&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">int</span> <span class="n">n</span><span class="p">;</span>
+</span><span class='line'><span class="kt">double</span><span class="o">*</span> <span class="n">x</span><span class="p">;</span>
+</span><span class='line'><span class="kt">char</span> <span class="o">**</span><span class="n">code</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">void</span> <span class="nf">fano</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="n">b</span><span class="o">-</span><span class="n">a</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
+</span><span class='line'>  <span class="kt">double</span> <span class="n">sum</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="n">a</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">b</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">sum</span> <span class="o">+=</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="kt">double</span> <span class="n">s</span><span class="p">[</span><span class="n">n</span><span class="p">],</span> <span class="n">pa</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="n">a</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">b</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">pa</span> <span class="o">+=</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+</span><span class='line'>    <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">fabs</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pa</span> <span class="o">-</span> <span class="n">sum</span><span class="p">);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">min</span> <span class="o">=</span> <span class="n">a</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="n">a</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">b</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">if</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">s</span><span class="p">[</span><span class="n">min</span><span class="p">])</span> <span class="n">min</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="n">a</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">b</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">&lt;=</span> <span class="n">min</span><span class="p">)</span> <span class="n">strcat</span><span class="p">(</span><span class="n">code</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="s">&quot;0&quot;</span><span class="p">);</span>
+</span><span class='line'>    <span class="k">else</span> <span class="n">strcat</span><span class="p">(</span><span class="n">code</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="s">&quot;1&quot;</span><span class="p">);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="n">fano</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">min</span><span class="p">);</span>
+</span><span class='line'>  <span class="n">fano</span><span class="p">(</span><span class="n">min</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">b</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">n</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;请输入信源符号个数：&quot;</span><span class="p">);</span>
+</span><span class='line'>  <span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">n</span><span class="p">);</span>
+</span><span class='line'>  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;请输入各符号的概率：&quot;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">x</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span><span class="n">n</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">double</span><span class="p">));</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;x[%d]= &quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">);</span>
+</span><span class='line'>    <span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%lf&quot;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="kt">double</span> <span class="n">v</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">for</span> <span class="p">(</span><span class="n">j</span> <span class="o">=</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="n">j</span><span class="p">];</span> <span class="n">v</span> <span class="o">&gt;</span> <span class="n">x</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">&amp;&amp;</span> <span class="n">j</span> <span class="o">&gt;=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">j</span><span class="o">--</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>      <span class="n">x</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">];</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="n">x</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span><span class="p">;</span>
+</span><span class='line'>    <span class="c1">//printf(&quot;x[%d]= %lf&quot;, i, x[i]);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">code</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span><span class="n">n</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span><span class="p">));;</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">code</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span><span class="n">n</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">char</span><span class="p">));</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="n">fano</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+</span><span class='line'>  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;%16s %12s %4c%s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;信源&quot;</span><span class="p">,</span> <span class="s">&quot;概率p(x)&quot;</span><span class="p">,</span> <span class="sc">&#39; &#39;</span><span class="p">,</span> <span class="s">&quot;码字code&quot;</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;%12d %12lf %4c %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="sc">&#39; &#39;</span><span class="p">,</span> <span class="n">code</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
 
-int n;
-double* x;
-char **code;
-
-void fano(int a, int b) {
-  if (b-a &lt; 1) return;
-  int i;
-  double sum = 0;
-  for (i = a; i &lt;= b; i++) {
-    sum += x[i];
-  }
-  double s[n], pa = 0;
-  for (i = a; i &lt;= b; i++) {
-    pa += x[i];
-    s[i] = fabs(2*pa - sum);
-  }
-  int min = a;
-  for (i = a+1; i &lt;= b; i++) {
-    if(s[i] &lt;= s[min]) min = i;
-  }
-  for (i = a; i &lt;= b; i++) {
-    if (i &lt;= min) strcat(code[i], "0");
-    else strcat(code[i], "1");
-  }
-  fano(a, min);
-  fano(min+1, b);
-}
-
-int main() {
-  int i, j, n;
-  printf("请输入信源符号个数：");
-  scanf("%d", &amp;n);
-  printf("请输入各符号的概率：");
-
-  x = malloc(n * sizeof(double));
-  for (i = 0; i &lt; n; i++) {
-    printf("x[%d]= ", i);
-    scanf("%lf", &amp;x[i]);
-  }
-
-  for (i = 0; i &lt; n-1; i++) {
-    double v;
-    for (j = i+1, v = x[j]; v &gt; x[j-1] &amp;&amp; j &gt;= 1; j--) {
-      x[j] = x[j-1];
-    }
-    x[j] = v;
-    //printf("x[%d]= %lf", i, x[i]);
-  }
-
-  code = malloc(n * sizeof(char*));;
-  for (i = 0; i &lt; n; i++) {
-    code[i] = malloc(n * sizeof(char));
-  }
-  fano(0, n-1);
-  printf("%16s %12s %4c%s\n", "信源", "概率p(x)", ' ', "码字code");
-  for (i = 0; i &lt; n; i++) {
-    printf("%12d %12lf %4c %s\n", i+1, x[i], ' ', code[i]);
-  }
-  return 0;
-}
-</code></pre>
 
 <h2>3.霍夫曼编码法</h2>
 
 <p>香农当然知道Shannon-Fano编码法不是最优的，果然没太久，费诺的学生霍夫曼就找到一种更优的编码方法。</p>
 
+<p>有过算法课程上霍夫曼树的经验，霍夫曼编码法就比较容易理解。每次选取最小的节点构造霍夫曼树，各消息的码字即为从根节点到该消息节点的码元组合。</p>
+
 <p>霍夫曼编码法的C语言实现：</p>
 
-<pre><code>#include &lt;stdio.h&gt;
-#include &lt;stdlib.h&gt;
-#include &lt;string.h&gt;
+<figure class='code'><figcaption><span>huffman.c</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+<span class='line-number'>86</span>
+<span class='line-number'>87</span>
+<span class='line-number'>88</span>
+<span class='line-number'>89</span>
+<span class='line-number'>90</span>
+<span class='line-number'>91</span>
+<span class='line-number'>92</span>
+<span class='line-number'>93</span>
+<span class='line-number'>94</span>
+<span class='line-number'>95</span>
+<span class='line-number'>96</span>
+<span class='line-number'>97</span>
+<span class='line-number'>98</span>
+<span class='line-number'>99</span>
+<span class='line-number'>100</span>
+<span class='line-number'>101</span>
+<span class='line-number'>102</span>
+<span class='line-number'>103</span>
+<span class='line-number'>104</span>
+<span class='line-number'>105</span>
+<span class='line-number'>106</span>
+<span class='line-number'>107</span>
+<span class='line-number'>108</span>
+<span class='line-number'>109</span>
+<span class='line-number'>110</span>
+<span class='line-number'>111</span>
+<span class='line-number'>112</span>
+<span class='line-number'>113</span>
+<span class='line-number'>114</span>
+<span class='line-number'>115</span>
+<span class='line-number'>116</span>
+<span class='line-number'>117</span>
+<span class='line-number'>118</span>
+<span class='line-number'>119</span>
+</pre></td><td class='code'><pre><code class='c'><span class='line'><span class="cp">#include &lt;stdio.h&gt;</span>
+</span><span class='line'><span class="cp">#include &lt;stdlib.h&gt;</span>
+</span><span class='line'><span class="cp">#include &lt;string.h&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="cp">#define MAX_VALUE 1</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">typedef</span> <span class="kt">char</span><span class="o">**</span> <span class="n">huffman_code</span><span class="p">;</span>
+</span><span class='line'><span class="k">typedef</span> <span class="k">struct</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kt">double</span> <span class="n">weight</span><span class="p">;</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">parent</span><span class="p">,</span> <span class="n">lchild</span><span class="p">,</span> <span class="n">rchild</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span> <span class="n">HTNode</span><span class="p">,</span> <span class="o">*</span><span class="n">huffman_tree</span><span class="p">;</span>
+</span><span class='line'><span class="k">typedef</span> <span class="k">struct</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">s1</span><span class="p">;</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">s2</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span> <span class="n">min_code</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">huffman_code</span> <span class="nf">Huffman_coding</span><span class="p">(</span><span class="n">huffman_tree</span> <span class="n">HT</span><span class="p">,</span> <span class="n">huffman_code</span> <span class="n">HC</span><span class="p">,</span> <span class="kt">double</span> <span class="o">*</span><span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">n</span><span class="p">);</span>
+</span><span class='line'><span class="n">min_code</span> <span class="nf">select_min</span><span class="p">(</span><span class="n">huffman_tree</span> <span class="n">HT</span><span class="p">,</span> <span class="kt">int</span> <span class="n">n</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>  <span class="n">huffman_tree</span> <span class="n">HT</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">huffman_code</span> <span class="n">HC</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">i</span><span class="p">,</span> <span class="n">n</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;请输入信源符号个数：&quot;</span><span class="p">);</span>
+</span><span class='line'>  <span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">n</span><span class="p">);</span>
+</span><span class='line'>  <span class="kt">double</span> <span class="o">*</span><span class="n">x</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">((</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">double</span><span class="p">));</span>
+</span><span class='line'>  <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;请输入各符号的概率：&quot;</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;X[%d]= &quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">);</span>
+</span><span class='line'>    <span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%lf&quot;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">HC</span> <span class="o">=</span> <span class="n">Huffman_coding</span><span class="p">(</span><span class="n">HT</span><span class="p">,</span> <span class="n">HC</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">n</span><span class="p">);</span>
+</span><span class='line'>  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">huffman_code:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+</span><span class='line'>  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Number Weight Code</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="n">printf</span><span class="p">(</span><span class="s">&quot;%-6d %-6lf %-4s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">HC</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">huffman_code</span> <span class="nf">Huffman_coding</span><span class="p">(</span><span class="n">huffman_tree</span> <span class="n">HT</span><span class="p">,</span> <span class="n">huffman_code</span> <span class="n">HC</span><span class="p">,</span> <span class="kt">double</span> <span class="o">*</span><span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">i</span><span class="p">,</span> <span class="n">s1</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">s2</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>  <span class="kt">char</span> <span class="o">*</span><span class="n">code</span><span class="p">;</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">f</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">m</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">huffman_tree</span> <span class="n">p</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">min_code</span> <span class="n">min</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">m</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">HT</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">((</span><span class="n">m</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">HTNode</span><span class="p">));</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="n">p</span> <span class="o">=</span> <span class="n">HT</span><span class="p">,</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">,</span> <span class="n">p</span><span class="o">++</span><span class="p">,</span> <span class="n">x</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">p</span><span class="o">-&gt;</span><span class="n">weight</span> <span class="o">=</span> <span class="o">*</span><span class="n">x</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">p</span><span class="o">-&gt;</span><span class="n">parent</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">p</span><span class="o">-&gt;</span><span class="n">lchild</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">p</span><span class="o">-&gt;</span><span class="n">rchild</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">m</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">,</span> <span class="n">p</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">p</span><span class="o">-&gt;</span><span class="n">weight</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">p</span><span class="o">-&gt;</span><span class="n">parent</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">p</span><span class="o">-&gt;</span><span class="n">lchild</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">p</span><span class="o">-&gt;</span><span class="n">rchild</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">m</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">min</span> <span class="o">=</span> <span class="n">select_min</span><span class="p">(</span><span class="n">HT</span><span class="p">,</span> <span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+</span><span class='line'>    <span class="n">s1</span> <span class="o">=</span> <span class="n">min</span><span class="p">.</span><span class="n">s1</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">s2</span> <span class="o">=</span> <span class="n">min</span><span class="p">.</span><span class="n">s2</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">HT</span><span class="p">[</span><span class="n">s1</span><span class="p">].</span><span class="n">parent</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">HT</span><span class="p">[</span><span class="n">s2</span><span class="p">].</span><span class="n">parent</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">HT</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">lchild</span> <span class="o">=</span> <span class="n">s1</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">HT</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">rchild</span> <span class="o">=</span> <span class="n">s2</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">HT</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">weight</span> <span class="o">=</span> <span class="n">HT</span><span class="p">[</span><span class="n">s1</span><span class="p">].</span><span class="n">weight</span> <span class="o">+</span> <span class="n">HT</span><span class="p">[</span><span class="n">s2</span><span class="p">].</span><span class="n">weight</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;HT List:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+</span><span class='line'>  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;%8s %8s %8s %8s %8s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;Number&quot;</span><span class="p">,</span> <span class="s">&quot;weight&quot;</span><span class="p">,</span> <span class="s">&quot;parent&quot;</span><span class="p">,</span> <span class="s">&quot;lchild&quot;</span><span class="p">,</span> <span class="s">&quot;rchild&quot;</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">m</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;%8d %8lf %8d %8d %8d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span>
+</span><span class='line'>      <span class="n">i</span><span class="p">,</span> <span class="n">HT</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">weight</span><span class="p">,</span> <span class="n">HT</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">parent</span><span class="p">,</span> <span class="n">HT</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">lchild</span><span class="p">,</span> <span class="n">HT</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">rchild</span><span class="p">);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="n">HC</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">((</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="p">));</span>
+</span><span class='line'>  <span class="n">code</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span><span class="n">n</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="p">));</span>
+</span><span class='line'>  <span class="n">code</span><span class="p">[</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;\0&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">start</span> <span class="o">=</span> <span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">for</span> <span class="p">(</span><span class="n">c</span> <span class="o">=</span> <span class="n">i</span><span class="p">,</span> <span class="n">f</span> <span class="o">=</span> <span class="n">HT</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">parent</span><span class="p">;</span> <span class="n">f</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">c</span> <span class="o">=</span> <span class="n">f</span><span class="p">,</span> <span class="n">f</span> <span class="o">=</span> <span class="n">HT</span><span class="p">[</span><span class="n">f</span><span class="p">].</span><span class="n">parent</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>      <span class="k">if</span> <span class="p">(</span><span class="n">HT</span><span class="p">[</span><span class="n">f</span><span class="p">].</span><span class="n">lchild</span> <span class="o">==</span> <span class="n">c</span><span class="p">)</span> <span class="n">code</span><span class="p">[</span><span class="o">--</span><span class="n">start</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;0&#39;</span><span class="p">;</span>
+</span><span class='line'>      <span class="k">else</span> <span class="n">code</span><span class="p">[</span><span class="o">--</span><span class="n">start</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;1&#39;</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="n">HC</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">((</span><span class="n">n</span><span class="o">-</span><span class="n">start</span><span class="p">)</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="p">));</span>
+</span><span class='line'>    <span class="n">strcpy</span><span class="p">(</span><span class="n">HC</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="o">&amp;</span><span class="n">code</span><span class="p">[</span><span class="n">start</span><span class="p">]);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="n">free</span><span class="p">(</span><span class="n">code</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">return</span> <span class="n">HC</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">min_code</span> <span class="nf">select_min</span><span class="p">(</span><span class="n">huffman_tree</span> <span class="n">HT</span><span class="p">,</span> <span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="n">min_code</span> <span class="n">code</span><span class="p">;</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">s1</span><span class="p">,</span> <span class="n">s2</span><span class="p">;</span>
+</span><span class='line'>  <span class="kt">double</span> <span class="n">m1</span><span class="p">,</span> <span class="n">m2</span><span class="p">;</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">s1</span> <span class="o">=</span> <span class="n">s2</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">m1</span> <span class="o">=</span> <span class="n">m2</span> <span class="o">=</span> <span class="n">MAX_VALUE</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">if</span> <span class="p">(</span><span class="n">HT</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">parent</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>      <span class="k">if</span> <span class="p">(</span><span class="n">HT</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">weight</span> <span class="o">&lt;</span> <span class="n">m1</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>        <span class="n">m2</span> <span class="o">=</span> <span class="n">m1</span><span class="p">;</span>
+</span><span class='line'>        <span class="n">s2</span> <span class="o">=</span> <span class="n">s1</span><span class="p">;</span>
+</span><span class='line'>        <span class="n">m1</span> <span class="o">=</span> <span class="n">HT</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">weight</span><span class="p">;</span>
+</span><span class='line'>        <span class="n">s1</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+</span><span class='line'>      <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">HT</span><span class="p">[</span><span class="n">i</span><span class="p">].</span> <span class="n">weight</span> <span class="o">&lt;</span> <span class="n">m2</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>        <span class="n">m2</span> <span class="o">=</span> <span class="n">HT</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">weight</span><span class="p">;</span>
+</span><span class='line'>        <span class="n">s2</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+</span><span class='line'>      <span class="p">}</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">code</span><span class="p">.</span><span class="n">s1</span> <span class="o">=</span> <span class="n">s1</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">code</span><span class="p">.</span><span class="n">s2</span> <span class="o">=</span> <span class="n">s2</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">return</span> <span class="n">code</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
 
-#define MAX_VALUE 1
-
-typedef char** huffman_code;
-typedef struct {
-  double weight;
-  int parent, lchild, rchild;
-} HTNode, *huffman_tree;
-typedef struct {
-  int s1;
-  int s2;
-} min_code;
-
-huffman_code Huffman_coding(huffman_tree HT, huffman_code HC, double *x, int n);
-min_code select_min(huffman_tree HT, int n);
-
-int main() {
-  huffman_tree HT = NULL;
-  huffman_code HC = NULL;
-  int i, n;
-  printf("请输入信源符号个数：");
-  scanf("%d", &amp;n);
-  double *x = malloc((n+1) * sizeof(double));
-  x[0] = 0;
-  printf("请输入各符号的概率：");
-  for (i = 1; i &lt;= n; i++) {
-    printf("X[%d]= ", i);
-    scanf("%lf", &amp;x[i]);
-  }
-
-  HC = Huffman_coding(HT, HC, x, n);
-  printf("\nhuffman_code:\n");
-  printf("Number Weight Code\n");
-  for (i = 1; i &lt;= n; i++) printf("%-6d %-6lf %-4s\n", i, x[i], HC[i]);
-}
-
-huffman_code Huffman_coding(huffman_tree HT, huffman_code HC, double *x, int n) {
-  int i, s1 = 0, s2 = 0;
-  char *code;
-  int f, c, start, m;
-  huffman_tree p;
-  min_code min;
-  if (n &lt;= 1) return;
-  m = 2*n - 1;
-  HT = malloc((m+1) * sizeof(HTNode));
-
-  for (p = HT, i = 0; i &lt;= n; i++, p++, x++) {
-    p-&gt;weight = *x;
-    p-&gt;parent = 0;
-    p-&gt;lchild = 0;
-    p-&gt;rchild = 0;
-  }
-  for (; i &lt;= m; i++, p++) {
-    p-&gt;weight = 0;
-    p-&gt;parent = 0;
-    p-&gt;lchild = 0;
-    p-&gt;rchild = 0;
-  }
-  for (i = n+1; i &lt;= m; i++) {
-    min = select_min(HT, i-1);
-    s1 = min.s1;
-    s2 = min.s2;
-    HT[s1].parent = i;
-    HT[s2].parent = i;
-    HT[i].lchild = s1;
-    HT[i].rchild = s2;
-    HT[i].weight = HT[s1].weight + HT[s2].weight;
-  }
-
-  printf("HT List:\n");
-  printf("%8s %8s %8s %8s %8s\n", "Number", "weight", "parent", "lchild", "rchild");
-  for (i = 1; i &lt;= m; i++) {
-    printf("%8d %8lf %8d %8d %8d\n",
-      i, HT[i].weight, HT[i].parent, HT[i].lchild, HT[i].rchild);
-  }
-  HC = malloc((n+1) * sizeof(char *));
-  code = malloc(n * sizeof(char *));
-  code[n-1] = '\0';
-  for (i = 1; i &lt;= n; i++) {
-    start = n-1;
-    for (c = i, f = HT[i].parent; f != 0; c = f, f = HT[f].parent) {
-      if (HT[f].lchild == c) code[--start] = '0';
-      else code[--start] = '1';
-    }
-    HC[i] = malloc((n-start) * sizeof(char *));
-    strcpy(HC[i], &amp;code[start]);
-  }
-  free(code);
-  return HC;
-}
-
-min_code select_min(huffman_tree HT, int n) {
-  min_code code;
-  int s1, s2;
-  double m1, m2;
-  int i;
-  s1 = s2 = 1;
-  m1 = m2 = MAX_VALUE;
-  for (i = 1; i &lt;= n; i++) {
-    if (HT[i].parent == 0) {
-      if (HT[i].weight &lt; m1) {
-        m2 = m1;
-        s2 = s1;
-        m1 = HT[i].weight;
-        s1 = i;
-      } else if (HT[i]. weight &lt; m2) {
-        m2 = HT[i].weight;
-        s2 = i;
-      }
-    }
-  }
-
-  code.s1 = s1;
-  code.s2 = s2;
-  return code;
-}
-</code></pre>
 </div>
 
 
@@ -480,18 +682,62 @@ min_code select_min(huffman_tree HT, int n) {
     <p class="meta">
       
       
-        <a class="basic-alignment right" href="/blog/2014/07/02/double-queue/" title="Next Post: double queue">double queue &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2014/07/02/double-queue/" title="Next Post: 双端队列实现动态数组的功能">双端队列实现动态数组的功能 &raquo;</a>
       
     </p>
   </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
 <aside class="sidebar">
   
     <section>
-  <h1>Recent Posts</h1>
+  <h1>关于</h1>
+  <br>
+  <p>大学四年级学生，热爱互联网，喜欢Web技术，像许多工程师一样，相信技术可以改变世界,期待某天自己也能如此.</p>
+  <p><a href="http://weibo.com/taocid" target="_blank">新浪微博</a></p>
+  <p><a href="http://http://www.douban.com/people/zgkmranyu">豆瓣</a></p>
+  <p><a href="http://git.oschina.net/exileduyi">Git@OSC</a></p>
+</section>
+
+<section>
+  <h1>GitHub</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/mirreal">@mirreal</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'mirreal',
+            count: 1,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+<section>
+  <h1>最近的博文</h1>
   <ul id="recent_posts">
     
       <li class="post">
@@ -499,7 +745,7 @@ min_code select_min(huffman_tree HT, int n) {
       </li>
     
       <li class="post">
-        <a href="/blog/2014/07/02/double-queue/">Double Queue</a>
+        <a href="/blog/2014/07/02/double-queue/">双端队列实现动态数组的功能</a>
       </li>
     
       <li class="post">
@@ -508,7 +754,6 @@ min_code select_min(huffman_tree HT, int n) {
     
   </ul>
 </section>
-
 
 
 
@@ -526,6 +771,22 @@ min_code select_min(huffman_tree HT, int n) {
 
 </footer>
   
+
+<script type="text/javascript">
+      var disqus_shortname = 'mirreal';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://mirreal.github.io/blog/2014/02/14/infromation-code/';
+        var disqus_url = 'http://mirreal.github.io/blog/2014/02/14/infromation-code/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
 
 
 
