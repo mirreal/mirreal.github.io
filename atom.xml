@@ -4,7 +4,7 @@
   <title><![CDATA[Mirreal Note]]></title>
   <link href="http://mirreal.github.io/atom.xml" rel="self"/>
   <link href="http://mirreal.github.io/"/>
-  <updated>2014-09-07T14:50:52+08:00</updated>
+  <updated>2014-09-12T22:49:14+08:00</updated>
   <id>http://mirreal.github.io/</id>
   <author>
     <name><![CDATA[Mirreal Ellison]]></name>
@@ -68,7 +68,7 @@ rake deploy
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[双端队列实现动态数组的功能]]></title>
+    <title type="html"><![CDATA[使用双端队列实现部分动态数组的功能]]></title>
     <link href="http://mirreal.github.io/blog/2014/07/02/double-queue/"/>
     <updated>2014-07-02T15:45:05+08:00</updated>
     <id>http://mirreal.github.io/blog/2014/07/02/double-queue</id>
@@ -430,7 +430,7 @@ struct double_queue {
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[变长编码的三种方法]]></title>
+    <title type="html"><![CDATA[三种变长编码方法的C实现]]></title>
     <link href="http://mirreal.github.io/blog/2014/02/14/infromation-code/"/>
     <updated>2014-02-14T10:27:39+08:00</updated>
     <id>http://mirreal.github.io/blog/2014/02/14/infromation-code</id>
