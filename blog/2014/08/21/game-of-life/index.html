@@ -5,12 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Mirreal Note</title>
+  <title>康威生命游戏的简单实现 - Mirreal Note</title>
   <meta name="author" content="Mirreal Ellison">
 
   
-  <meta name="description" content="一、内存对齐的原因 大部分的参考资料都是如是说的： 平台原因(移植原因)：不是所有的硬件平台都能访问任意地址上的任意数据的；某些硬件平台只能在某些地址处取某些特定类型的数据，否则抛出硬件异常。
-性能原因：数据结构(尤其是栈)应该尽可能地在自然边界上对齐。原因在于，为了访问未对齐的内存， &hellip;">
+  <meta name="description" content="生命游戏，数学家John Conway发明的一个游戏，又称康威生命演化，生命棋，细胞自动机。 康威有许多好玩有趣的发明，最广为人知的一个是外观数列（Look-and-Say），这里不多说，另一个就是生命游戏（Game-of-Life）。 关于康威，摘录一段Wikipedia的叙述: 約翰·何頓· &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://mirreal.github.io">
+  <link rel="canonical" href="http://mirreal.github.io/blog/2014/08/21/game-of-life">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Mirreal Note" type="application/atom+xml">
@@ -64,112 +63,12 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2014/09/15/memory-alignment/">关于内存对齐的一点注解</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2014-09-15T14:30:23+08:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>15</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>2:30 pm</span></time>
-        
-           | <a href="/blog/2014/09/15/memory-alignment/#disqus_thread"
-             data-disqus-identifier="http://mirreal.github.io/blog/2014/09/15/memory-alignment/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>一、内存对齐的原因</h2>
-
-<p>大部分的参考资料都是如是说的：</p>
-
-<ol>
-<li><p>平台原因(移植原因)：不是所有的硬件平台都能访问任意地址上的任意数据的；某些硬件平台只能在某些地址处取某些特定类型的数据，否则抛出硬件异常。</p></li>
-<li><p>性能原因：数据结构(尤其是栈)应该尽可能地在自然边界上对齐。原因在于，为了访问未对齐的内存，处理器需要作两次内存访问；而对齐的内存访问仅需要一次访问。</p></li>
-</ol>
-
-
-<h2>二、对齐规则</h2>
-
-<h4>每个特定平台上的编译器都有自己的默认“对齐系数”(也叫对齐模数)。比如32位系统默认对齐系数是 4， 64位的则可以达到 8.</h4>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2014/09/15/memory-alignment/">阅读更多 &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/09/01/octopress-plus-github-pages/">Octopress + Github Pages</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2014-09-01T15:04:01+08:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>1</span><span class='date-suffix'>st</span>, <span class='date-year'>2014</span></span> <span class='time'>3:04 pm</span></time>
-        
-           | <a href="/blog/2014/09/01/octopress-plus-github-pages/#disqus_thread"
-             data-disqus-identifier="http://mirreal.github.io/blog/2014/09/01/octopress-plus-github-pages/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>Octopress + Github Pages</h2>
-
-<h5><a href="http://octopress.org/docs/setup">document</a></h5>
-
-<h5>Enviroment: Ubuntu 12.00</h5>
-
-<h3>1.Installing Ruby With RVM</h3>
-
-<h4>Install RVM</h4>
-
-<pre><code>curl -L https://get.rvm.io | bash -s stable --ruby
-</code></pre>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2014/09/01/octopress-plus-github-pages/">阅读更多 &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/08/21/game-of-life/">康威生命游戏的简单实现</a></h1>
+      <h1 class="entry-title">康威生命游戏的简单实现</h1>
     
     
       <p class="meta">
@@ -180,15 +79,15 @@
 
 <time class='entry-date' datetime='2014-08-21T19:26:12+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>21</span><span class='date-suffix'>st</span>, <span class='date-year'>2014</span></span> <span class='time'>7:26 pm</span></time>
         
-           | <a href="/blog/2014/08/21/game-of-life/#disqus_thread"
-             data-disqus-identifier="http://mirreal.github.io/blog/2014/08/21/game-of-life/">Comments</a>
+           | <a href="#disqus_thread"
+             data-disqus-identifier="http://mirreal.github.io">Comments</a>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>生命游戏，数学家John Conway发明的一个游戏，又称康威生命演化，生命棋，细胞自动机。</p>
+<div class="entry-content"><p>生命游戏，数学家John Conway发明的一个游戏，又称康威生命演化，生命棋，细胞自动机。</p>
 
 <p>康威有许多好玩有趣的发明，最广为人知的一个是外观数列（Look-and-Say），这里不多说，另一个就是生命游戏（Game-of-Life）。</p>
 
@@ -592,114 +491,52 @@
 
 <p>在Google搜索 <code>Conway's Game of Life</code> ,会看到Google的一个实现。</p>
 </div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/07/02/double-queue/">使用双端队列实现部分动态数组的功能</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2014-07-02T15:45:05+08:00'><span class='date'><span class='date-month'>Jul</span> <span class='date-day'>2</span><span class='date-suffix'>nd</span>, <span class='date-year'>2014</span></span> <span class='time'>3:45 pm</span></time>
-        
-           | <a href="/blog/2014/07/02/double-queue/#disqus_thread"
-             data-disqus-identifier="http://mirreal.github.io/blog/2014/07/02/double-queue/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>C语言作为一门古老的语言，在系统级，高性能的领域依然独领风骚，但有些时候，使用起来总是没那么顺手。</p>
-
-<p>比如数组。这里使用双端队列简单的实现了一些类似动态数组的功能。</p>
-
-<p>模拟stack， queue实现push， pop， shift， unshift操作，以及两个遍历方法，for_each()和map()，其中for_each接受一个函数，函数包括一个item参数，map方法与其类似，但是返回一个数组。</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2014/07/02/double-queue/">阅读更多 &rarr;</a>
-    </footer>
   
 
+<span class="byline author vcard">Posted by <span class="fn">Mirreal Ellison</span></span>
 
-    </article>
-  
-  
-    <article>
       
-  <header>
+
+
+
+
+<time class='entry-date' datetime='2014-08-21T19:26:12+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>21</span><span class='date-suffix'>st</span>, <span class='date-year'>2014</span></span> <span class='time'>7:26 pm</span></time>
+      
+
+
+    </p>
     
-      <h1 class="entry-title"><a href="/blog/2014/02/14/infromation-code/">三种变长编码方法的C实现</a></h1>
+      <div class="sharing">
+  
+  
+  
+</div>
+
     
-    
-      <p class="meta">
-        
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/07/02/double-queue/" title="Previous Post: 使用双端队列实现部分动态数组的功能">&laquo; 使用双端队列实现部分动态数组的功能</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2014/09/01/octopress-plus-github-pages/" title="Next Post: Octopress + Github Pages">Octopress + Github Pages &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
 
-
-
-
-<time class='entry-date' datetime='2014-02-14T10:27:39+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>14</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>10:27 am</span></time>
-        
-           | <a href="/blog/2014/02/14/infromation-code/#disqus_thread"
-             data-disqus-identifier="http://mirreal.github.io/blog/2014/02/14/infromation-code/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>信息编码是数据压缩的的基础理论。常用的变长编码法有三种：香农（Shannon）编码，费诺（Fano）编码，霍夫曼（Huffman）编码。</p>
-
-<p>通常情况下，霍夫曼编码法的编码效率最优。</p>
-
-<h2>1.香农编码法</h2>
-
-<p>香农编码法是一种很基础的编码方法，效率很低。</p>
-
-<p>方法如下：</p>
-
-<ol>
-<li>将M个信源按其概率递减顺序排列</li>
-<li>计算各个消息的计算码字长度：<code>-log q(Xm)</code>向上取整</li>
-<li>计算地 m 个消息的累加概率并转换成二进制</li>
-<li>取小数点后第 m 个消息码字长度位即为该消息码字</li>
-</ol>
-
-
-<p>香农编码法的C语言实现：</p>
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2014/02/14/infromation-code/">阅读更多 &rarr;</a>
-    </footer>
-  
 
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
 <aside class="sidebar">
   
     <section>
@@ -773,6 +610,7 @@
   
 </aside>
 
+
     </div>
   </div>
   <footer role="contentinfo"><p>
@@ -788,7 +626,10 @@
       var disqus_shortname = 'mirreal';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://mirreal.github.io/blog/2014/08/21/game-of-life/';
+        var disqus_url = 'http://mirreal.github.io/blog/2014/08/21/game-of-life/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
