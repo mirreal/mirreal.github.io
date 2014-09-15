@@ -3,6 +3,12 @@
   
   
   <url>
+    <loc>http://mirreal.github.io/blog/2014/09/15/memory-alignment/</loc>
+    <lastmod>2014-09-15T14:30:23+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://mirreal.github.io/blog/2014/09/01/octopress-plus-github-pages/</loc>
     <lastmod>2014-09-01T15:04:01+08:00</lastmod>
     <priority>0.8</priority>
@@ -23,28 +29,28 @@
   
   <url>
     <loc>http://mirreal.github.io/blog/archives/</loc>
-    <lastmod>2014-09-12T22:49:14+08:00</lastmod>
+    <lastmod>2014-09-15T15:31:27+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://mirreal.github.io/</loc>
-    <lastmod>2014-09-12T22:49:14+08:00</lastmod>
+    <lastmod>2014-09-15T15:31:27+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://mirreal.github.io/about/</loc>
-    <lastmod>2014-09-12T22:49:14+08:00</lastmod>
+    <lastmod>2014-09-15T15:31:27+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://mirreal.github.io/project/</loc>
-    <lastmod>2014-09-12T22:49:14+08:00</lastmod>
+    <lastmod>2014-09-15T15:31:27+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

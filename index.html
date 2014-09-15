@@ -9,7 +9,8 @@
   <meta name="author" content="Mirreal Ellison">
 
   
-  <meta name="description" content="Octopress + Github Pages document Enviroment: Ubuntu 12.00 1.Installing Ruby With RVM Install RVM curl -L https://get.rvm.io | bash -s stable --ruby ">
+  <meta name="description" content="一、内存对齐的原因 大部分的参考资料都是如是说的： 平台原因(移植原因)：不是所有的硬件平台都能访问任意地址上的任意数据的；某些硬件平台只能在某些地址处取某些特定类型的数据，否则抛出硬件异常。
+性能原因：数据结构(尤其是栈)应该尽可能地在自然边界上对齐。原因在于，为了访问未对齐的内存， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -65,6 +66,55 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/09/15/memory-alignment/">关于内存对齐的一点注解</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-09-15T14:30:23+08:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>15</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>2:30 pm</span></time>
+        
+           | <a href="/blog/2014/09/15/memory-alignment/#disqus_thread"
+             data-disqus-identifier="http://mirreal.github.io/blog/2014/09/15/memory-alignment/">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>一、内存对齐的原因</h2>
+
+<p>大部分的参考资料都是如是说的：</p>
+
+<ol>
+<li><p>平台原因(移植原因)：不是所有的硬件平台都能访问任意地址上的任意数据的；某些硬件平台只能在某些地址处取某些特定类型的数据，否则抛出硬件异常。</p></li>
+<li><p>性能原因：数据结构(尤其是栈)应该尽可能地在自然边界上对齐。原因在于，为了访问未对齐的内存，处理器需要作两次内存访问；而对齐的内存访问仅需要一次访问。</p></li>
+</ol>
+
+
+<h2>二、对齐规则</h2>
+
+<h4>每个特定平台上的编译器都有自己的默认“对齐系数”(也叫对齐模数)。比如32位系统默认对齐系数是 4， 64位的则可以达到 8.</h4>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/09/15/memory-alignment/">阅读更多 &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -221,7 +271,7 @@
     <section>
   <h1>关于</h1>
   <br>
-  <p>大学四年级学生，热爱互联网，喜欢Web技术，像许多工程师一样，相信技术可以改变世界,期待某天自己也能如此.</p>
+  <p>大学四年级学生，热爱互联网，喜欢Web技术，像许多工程师一样，相信技术可以改变世界，期待某天自己也能如此.</p>
   <p><a href="http://weibo.com/taocid" target="_blank">新浪微博</a></p>
   <p><a href="http://http://www.douban.com/people/zgkmranyu">豆瓣</a></p>
   <p><a href="http://git.oschina.net/exileduyi">Git@OSC</a></p>
@@ -259,6 +309,10 @@
 <section>
   <h1>最近的博文</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/09/15/memory-alignment/">关于内存对齐的一点注解</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2014/09/01/octopress-plus-github-pages/">Octopress + Github Pages</a>
