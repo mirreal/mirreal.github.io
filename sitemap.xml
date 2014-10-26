@@ -40,43 +40,57 @@
   
   
   <url>
+    <loc>http://mirreal.github.io/blog/archives/</loc>
+    <lastmod>2014-10-26T22:18:49+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
     <loc>http://mirreal.github.io/</loc>
-    <lastmod>2014-10-25T19:30:36+08:00</lastmod>
+    <lastmod>2014-10-26T22:18:49+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
-    <loc>http://mirreal.github.io/blog/archives/</loc>
-    <lastmod>2014-10-25T19:30:36+08:00</lastmod>
+    <loc>http://mirreal.github.io/project/</loc>
+    <lastmod>2014-10-26T22:18:49+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://mirreal.github.io/about/</loc>
-    <lastmod>2014-10-25T19:30:36+08:00</lastmod>
+    <lastmod>2014-10-26T22:18:49+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://mirreal.github.io/note/</loc>
-    <lastmod>2014-10-25T19:30:36+08:00</lastmod>
+    <lastmod>2014-10-26T22:18:49+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://mirreal.github.io/project/</loc>
-    <lastmod>2014-10-25T19:30:36+08:00</lastmod>
+    <loc>http://mirreal.github.io/note/io-list-insertion-sort.html</loc>
+    <lastmod>2014-10-26T22:18:49+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://mirreal.github.io/note/josephus-problem.html</loc>
+    <lastmod>2014-10-26T22:18:49+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://mirreal.github.io/note/segmentation-fault.html</loc>
-    <lastmod>2014-10-25T19:30:36+08:00</lastmod>
+    <lastmod>2014-10-26T22:18:49+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
