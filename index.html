@@ -9,7 +9,7 @@
   <meta name="author" content="Mirreal Ellison">
 
   
-  <meta name="description" content="Base64是一种基于64个可打印字符来表示二进制数据的表示方法 HTML5提供的通用Base64方法API 1. window.btoa(stringToEncode) 只能将ascii字符串或二进制数据转换成一个base64编码过的字符串,该方法不能直接作用于Unicode字符串. 2. &hellip;">
+  <meta name="description" content="Base64是一种基于64个可打印字符来表示二进制数据的表示方法。 1.base64算法的由来 base64最早是用作解决电子邮件的传输问题，由于历史原因，早期电子邮件只允许传输ASCII码字符，如果想传输一封带有非ASCII字符的邮件，在遇到一些老旧的网关就可能会对字符最高位进行调整， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -73,7 +73,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2014/11/06/base64-note/">Base64简要笔记</a></h1>
+      <h1 class="entry-title"><a href="/blog/2014/11/06/base64-note/">Base64简要笔记及其他</a></h1>
     
     
       <p class="meta">
@@ -92,345 +92,24 @@
   </header>
 
 
-  <div class="entry-content"><p>Base64是一种基于64个可打印字符来表示二进制数据的表示方法</p>
+  <div class="entry-content"><h3>Base64是一种基于64个可打印字符来表示二进制数据的表示方法。</h3>
 
-<p>HTML5提供的通用Base64方法API</p>
+<h4>1.base64算法的由来</h4>
 
-<h3>1. <code>window.btoa(stringToEncode)</code></h3>
+<p>base64最早是用作解决电子邮件的传输问题，由于历史原因，早期电子邮件只允许传输ASCII码字符，如果想传输一封带有非ASCII字符的邮件，在遇到一些老旧的网关就可能会对字符最高位进行调整，导致收到的邮件出现乱码。</p>
 
-<p>只能将ascii字符串或二进制数据转换成一个base64编码过的字符串,该方法不能直接作用于Unicode字符串.</p>
+<h4>2.base64不是加密算法</h4>
 
-<h3>2. <code>window.atob(encodedData)</code></h3>
+<p>base64算法的编码和解码方法可以作为加密和解密操作，但是不能叫做加密算法，因为其算法和充当密钥的索引表都是公开的。最多是让在你身后的人一时看不懂，所谓防君子不防小人。</p>
 
-<p>但是这两个Web API功能很简单，并不能直接作用于Unicode字符串，所以当调用 <code>btoa()</code> 时若传入的不是ASCII或二进制字符串，比如汉字就会出错。</p>
-
-<p>下面是别人提供的简单解决方法：</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">function</span> <span class="nx">utf8_to_b64</span><span class="p">(</span> <span class="nx">str</span> <span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>    <span class="k">return</span> <span class="nb">window</span><span class="p">.</span><span class="nx">btoa</span><span class="p">(</span><span class="nx">unescape</span><span class="p">(</span><span class="nb">encodeURIComponent</span><span class="p">(</span> <span class="nx">str</span> <span class="p">)));</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="kd">function</span> <span class="nx">b64_to_utf8</span><span class="p">(</span> <span class="nx">str</span> <span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>    <span class="k">return</span> <span class="nb">decodeURIComponent</span><span class="p">(</span><span class="nx">escape</span><span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">atob</span><span class="p">(</span> <span class="nx">str</span> <span class="p">)));</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="c1">// Usage:</span>
-</span><span class='line'><span class="nx">utf8_to_b64</span><span class="p">(</span><span class="s1">&#39;? à la mode&#39;</span><span class="p">);</span> <span class="c1">// &quot;4pyTIMOgIGxhIG1vZGU=&quot;</span>
-</span><span class='line'><span class="nx">b64_to_utf8</span><span class="p">(</span><span class="s1">&#39;4pyTIMOgIGxhIG1vZGU=&#39;</span><span class="p">);</span> <span class="c1">// &quot;? à la mode&quot;</span>
-</span><span class='line'><span class="c1">//译者注:在js引擎内部,encodeURIComponent(str)相当于escape(unicodeToUTF8(str))</span>
-</span><span class='line'><span class="c1">//所以可以推导出unicodeToUTF8(str)等同于unescape(encodeURIComponent(str))</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>Base编码方法：</h3>
-
-<p>转换的时候，将三个byte的数据，先后放入一个24bit的缓冲区中，先来的byte占高位。数据不足3byte的话，剩下的bit用0补足。然后，每次取出6个bit，按照其值选择索引表的字符作为编码后的输出。不断进行，直到全部输入数据转换完成。</p>
-
-<p>下面是base64索引表：</p>
-
-<p><tr>
-<th scope="col">数值</th>
-<th scope="col">字符</th>
-<td rowspan="18">&nbsp;</td>
-<th scope="col">数值</th>
-<th scope="col">字符</th>
-<td rowspan="18">&nbsp;</td>
-<th scope="col">数值</th>
-<th scope="col">字符</th>
-<td rowspan="18">&nbsp;</td>
-<th scope="col">数值</th>
-<th scope="col">字符</th>
-</tr>
-<tr>
-<td>0</td>
-<td>A</td>
-<td>16</td>
-<td>Q</td>
-<td>32</td>
-<td>g</td>
-<td>48</td>
-<td>w</td>
-</tr>
-<tr>
-<td>1</td>
-<td>B</td>
-<td>17</td>
-<td>R</td>
-<td>33</td>
-<td>h</td>
-<td>49</td>
-<td>x</td>
-</tr>
-<tr>
-<td>2</td>
-<td>C</td>
-<td>18</td>
-<td>S</td>
-<td>34</td>
-<td>i</td>
-<td>50</td>
-<td>y</td>
-</tr>
-<tr>
-<td>3</td>
-<td>D</td>
-<td>19</td>
-<td>T</td>
-<td>35</td>
-<td>j</td>
-<td>51</td>
-<td>z</td>
-</tr>
-<tr>
-<td>4</td>
-<td>E</td>
-<td>20</td>
-<td>U</td>
-<td>36</td>
-<td>k</td>
-<td>52</td>
-<td>0</td>
-</tr>
-<tr>
-<td>5</td>
-<td>F</td>
-<td>21</td>
-<td>V</td>
-<td>37</td>
-<td>l</td>
-<td>53</td>
-<td>1</td>
-</tr>
-<tr>
-<td>6</td>
-<td>G</td>
-<td>22</td>
-<td>W</td>
-<td>38</td>
-<td>m</td>
-<td>54</td>
-<td>2</td>
-</tr>
-<tr>
-<td>7</td>
-<td>H</td>
-<td>23</td>
-<td>X</td>
-<td>39</td>
-<td>n</td>
-<td>55</td>
-<td>3</td>
-</tr>
-<tr>
-<td>8</td>
-<td>I</td>
-<td>24</td>
-<td>Y</td>
-<td>40</td>
-<td>o</td>
-<td>56</td>
-<td>4</td>
-</tr>
-<tr>
-<td>9</td>
-<td>J</td>
-<td>25</td>
-<td>Z</td>
-<td>41</td>
-<td>p</td>
-<td>57</td>
-<td>5</td>
-</tr>
-<tr>
-<td>10</td>
-<td>K</td>
-<td>26</td>
-<td>a</td>
-<td>42</td>
-<td>q</td>
-<td>58</td>
-<td>6</td>
-</tr>
-<tr>
-<td>11</td>
-<td>L</td>
-<td>27</td>
-<td>b</td>
-<td>43</td>
-<td>r</td>
-<td>59</td>
-<td>7</td>
-</tr>
-<tr>
-<td>12</td>
-<td>M</td>
-<td>28</td>
-<td>c</td>
-<td>44</td>
-<td>s</td>
-<td>60</td>
-<td>8</td>
-</tr>
-<tr>
-<td>13</td>
-<td>N</td>
-<td>29</td>
-<td>d</td>
-<td>45</td>
-<td>t</td>
-<td>61</td>
-<td>9</td>
-</tr>
-<tr>
-<td>14</td>
-<td>O</td>
-<td>30</td>
-<td>e</td>
-<td>46</td>
-<td>u</td>
-<td>62</td>
-<td>+</td>
-</tr>
-<tr>
-<td>15</td>
-<td>P</td>
-<td>31</td>
-<td>f</td>
-<td>47</td>
-<td>v</td>
-<td>63</td>
-<td>/</td>
-</tr></p>
-
-<h4>一个不太优雅的编码方法和译码方法实现：</h4>
-
-<figure class='code'><figcaption><span>base64.js</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-<span class='line-number'>35</span>
-<span class='line-number'>36</span>
-<span class='line-number'>37</span>
-<span class='line-number'>38</span>
-<span class='line-number'>39</span>
-<span class='line-number'>40</span>
-<span class='line-number'>41</span>
-<span class='line-number'>42</span>
-<span class='line-number'>43</span>
-<span class='line-number'>44</span>
-<span class='line-number'>45</span>
-<span class='line-number'>46</span>
-<span class='line-number'>47</span>
-<span class='line-number'>48</span>
-<span class='line-number'>49</span>
-<span class='line-number'>50</span>
-<span class='line-number'>51</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">base64Encode</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>  <span class="kd">var</span> <span class="nx">map</span> <span class="o">=</span> <span class="s1">&#39;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/&#39;</span><span class="p">;</span>
-</span><span class='line'>  <span class="kd">var</span> <span class="nx">out</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">len</span> <span class="o">=</span> <span class="nx">data</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">len</span><span class="p">;</span> <span class="nx">i</span> <span class="o">+=</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>    <span class="kd">var</span> <span class="nx">binStr</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span>
-</span><span class='line'>        <span class="nx">newStr</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span>
-</span><span class='line'>        <span class="nx">threeChar</span> <span class="o">=</span> <span class="nx">data</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span> <span class="nx">i</span><span class="o">+</span><span class="mi">3</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>      <span class="kd">var</span> <span class="nx">t</span> <span class="o">=</span> <span class="nx">threeChar</span><span class="p">.</span><span class="nx">charCodeAt</span><span class="p">(</span><span class="nx">j</span><span class="p">).</span><span class="nx">toString</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
-</span><span class='line'>      <span class="k">while</span> <span class="p">(</span><span class="nx">t</span><span class="p">.</span><span class="nx">length</span> <span class="o">&lt;</span> <span class="mi">8</span><span class="p">)</span> <span class="nx">t</span> <span class="o">=</span> <span class="s1">&#39;0&#39;</span> <span class="o">+</span> <span class="nx">t</span><span class="p">;</span>
-</span><span class='line'>      <span class="nx">binStr</span> <span class="o">+=</span> <span class="nx">t</span><span class="p">;</span>
-</span><span class='line'>    <span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">k</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">k</span> <span class="o">&lt;</span> <span class="mi">24</span><span class="p">;</span> <span class="nx">k</span> <span class="o">+=</span> <span class="mi">6</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>      <span class="nx">newStr</span> <span class="o">+=</span> <span class="nx">map</span><span class="p">[</span><span class="nb">parseInt</span><span class="p">(</span><span class="nx">binStr</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="nx">k</span><span class="p">,</span> <span class="nx">k</span><span class="o">+</span><span class="mi">6</span><span class="p">),</span> <span class="mi">2</span><span class="p">)];</span>
-</span><span class='line'>    <span class="p">}</span>
-</span><span class='line'>    <span class="k">if</span> <span class="p">(</span><span class="nx">i</span><span class="o">+</span><span class="mi">3</span><span class="o">-</span><span class="nx">len</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="nx">newStr</span> <span class="o">=</span> <span class="nx">newStr</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;=&#39;</span><span class="p">;</span>
-</span><span class='line'>    <span class="k">if</span> <span class="p">(</span><span class="nx">i</span><span class="o">+</span><span class="mi">3</span><span class="o">-</span><span class="nx">len</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)</span> <span class="nx">newStr</span> <span class="o">=</span> <span class="nx">newStr</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;==&#39;</span><span class="p">;</span>
-</span><span class='line'>    <span class="nx">out</span> <span class="o">+=</span> <span class="nx">newStr</span><span class="p">;</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>  <span class="k">return</span> <span class="nx">out</span><span class="p">;</span>
-</span><span class='line'><span class="p">};</span>
-</span><span class='line'>
-</span><span class='line'>
-</span><span class='line'><span class="kd">var</span> <span class="nx">base64Decode</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">code</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>  <span class="kd">var</span> <span class="nx">map</span> <span class="o">=</span> <span class="s1">&#39;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/&#39;</span><span class="p">;</span>
-</span><span class='line'>  <span class="kd">var</span> <span class="nx">ascii</span> <span class="o">=</span> <span class="s1">&#39; !&quot;#$%&amp;\&#39;()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ&#39;</span> <span class="o">+</span>
-</span><span class='line'>          <span class="s1">&#39;[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~&#39;</span><span class="p">;</span>
-</span><span class='line'>  <span class="kd">var</span> <span class="nx">out</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">len</span> <span class="o">=</span> <span class="nx">code</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">len</span><span class="p">;</span> <span class="nx">i</span> <span class="o">+=</span> <span class="mi">4</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>    <span class="kd">var</span> <span class="nx">fourChar</span> <span class="o">=</span> <span class="nx">code</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span> <span class="nx">i</span><span class="o">+</span><span class="mi">4</span><span class="p">),</span>
-</span><span class='line'>        <span class="nx">binStr</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span>
-</span><span class='line'>        <span class="nx">newStr</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>      <span class="kd">var</span> <span class="nx">t</span> <span class="o">=</span> <span class="nx">map</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">fourChar</span><span class="p">.</span><span class="nx">charAt</span><span class="p">(</span><span class="nx">j</span><span class="p">)).</span><span class="nx">toString</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
-</span><span class='line'>      <span class="k">while</span> <span class="p">(</span><span class="nx">t</span><span class="p">.</span><span class="nx">length</span> <span class="o">&lt;</span> <span class="mi">6</span><span class="p">)</span> <span class="nx">t</span> <span class="o">=</span> <span class="s1">&#39;0&#39;</span> <span class="o">+</span> <span class="nx">t</span><span class="p">;</span>
-</span><span class='line'>      <span class="nx">binStr</span> <span class="o">+=</span> <span class="nx">t</span><span class="p">;</span>
-</span><span class='line'>    <span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">k</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">k</span> <span class="o">&lt;</span> <span class="mi">24</span><span class="p">;</span> <span class="nx">k</span> <span class="o">+=</span> <span class="mi">8</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>      <span class="kd">var</span> <span class="kr">char</span> <span class="o">=</span> <span class="nx">ascii</span><span class="p">[</span><span class="nb">parseInt</span><span class="p">(</span><span class="nx">binStr</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="nx">k</span><span class="p">,</span> <span class="nx">k</span><span class="o">+</span><span class="mi">8</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span> <span class="o">-</span> <span class="mi">32</span><span class="p">];</span>
-</span><span class='line'>      <span class="k">if</span> <span class="p">(</span><span class="kr">char</span> <span class="o">!==</span> <span class="kc">undefined</span><span class="p">)</span> <span class="nx">newStr</span> <span class="o">+=</span> <span class="kr">char</span><span class="p">;</span>
-</span><span class='line'>    <span class="p">}</span>
-</span><span class='line'>    <span class="nx">out</span> <span class="o">+=</span> <span class="nx">newStr</span><span class="p">;</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>  <span class="k">return</span> <span class="nx">out</span><span class="p">;</span>
-</span><span class='line'><span class="p">};</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h5>参考资料：</h5>
-
-<ol>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window.btoa">https://developer.mozilla.org/zh-CN/docs/Web/API/Window.btoa</a></li>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window.atob">https://developer.mozilla.org/zh-CN/docs/Web/API/Window.atob</a></li>
-</ol>
+<h4>3.Base编码方法</h4>
 
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/11/06/base64-note/">阅读更多 &rarr;</a>
+    </footer>
   
 
 
@@ -768,7 +447,7 @@
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2014/11/06/base64-note/">Base64简要笔记</a>
+        <a href="/blog/2014/11/06/base64-note/">Base64简要笔记及其他</a>
       </li>
     
       <li class="post">
