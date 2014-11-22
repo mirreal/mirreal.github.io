@@ -4,7 +4,7 @@
   <title><![CDATA[Mirreal Note]]></title>
   <link href="http://mirreal.github.io/atom.xml" rel="self"/>
   <link href="http://mirreal.github.io/"/>
-  <updated>2014-11-14T22:37:55+08:00</updated>
+  <updated>2014-11-22T23:01:11+08:00</updated>
   <id>http://mirreal.github.io/</id>
   <author>
     <name><![CDATA[Mirreal Ellison]]></name>
@@ -720,7 +720,7 @@ sizeof(long long) = 8
     <link href="http://mirreal.github.io/blog/2014/09/01/octopress-plus-github-pages/"/>
     <updated>2014-09-01T15:04:01+08:00</updated>
     <id>http://mirreal.github.io/blog/2014/09/01/octopress-plus-github-pages</id>
-    <content type="html"><![CDATA[<h2>Octopress + Github Pages</h2>
+    <content type="html"><![CDATA[<h2>Octopress + Github Pages = a new blog</h2>
 
 <h5><a href="http://octopress.org/docs/setup">document</a></h5>
 
@@ -738,7 +738,7 @@ sizeof(long long) = 8
 
 <p>Then run:</p>
 
-<pre><code>source /home/exile/.rvm/scripts/rvm
+<pre><code>source ~/.rvm/scripts/rvm
 </code></pre>
 
 <p>to start RVM</p>

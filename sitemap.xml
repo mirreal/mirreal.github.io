@@ -47,63 +47,98 @@
   
   <url>
     <loc>http://mirreal.github.io/note/function-closure-apply-bind-arguements.html</loc>
-    <lastmod>2014-11-14T22:37:55+08:00</lastmod>
+    <lastmod>2014-11-22T23:01:11+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://mirreal.github.io/blog/archives/</loc>
-    <lastmod>2014-11-14T22:37:55+08:00</lastmod>
+    <lastmod>2014-11-22T23:01:11+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://mirreal.github.io/</loc>
-    <lastmod>2014-11-14T22:37:55+08:00</lastmod>
+    <lastmod>2014-11-22T23:01:11+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
-    <loc>http://mirreal.github.io/project/</loc>
-    <lastmod>2014-11-14T22:37:55+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
     <loc>http://mirreal.github.io/note/</loc>
-    <lastmod>2014-11-14T22:37:55+08:00</lastmod>
+    <lastmod>2014-11-22T23:01:11+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://mirreal.github.io/about/</loc>
-    <lastmod>2014-11-14T22:37:55+08:00</lastmod>
+    <lastmod>2014-11-22T23:01:11+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://mirreal.github.io/project/</loc>
+    <lastmod>2014-11-22T23:01:11+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://mirreal.github.io/note/io-list-insertion-sort.html</loc>
-    <lastmod>2014-11-14T22:37:55+08:00</lastmod>
+    <lastmod>2014-11-22T23:01:11+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://mirreal.github.io/note/josephus-problem.html</loc>
-    <lastmod>2014-11-14T22:37:55+08:00</lastmod>
+    <lastmod>2014-11-22T23:01:11+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://mirreal.github.io/note/qsort-3-and-select.html</loc>
+    <lastmod>2014-11-22T23:01:11+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://mirreal.github.io/note/quicksort-plus.html</loc>
+    <lastmod>2014-11-22T23:01:11+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://mirreal.github.io/note/quicksort.html</loc>
+    <lastmod>2014-11-22T23:01:11+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://mirreal.github.io/note/segmentation-fault.html</loc>
-    <lastmod>2014-11-14T22:37:55+08:00</lastmod>
+    <lastmod>2014-11-22T23:01:11+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://mirreal.github.io/note/shaker.html</loc>
+    <lastmod>2014-11-22T23:01:11+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://mirreal.github.io/note/sorting-in-js.html</loc>
+    <lastmod>2014-11-22T23:01:11+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
