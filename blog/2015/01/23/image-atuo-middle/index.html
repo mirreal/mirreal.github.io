@@ -5,14 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Blog Archive - Mirreal Note</title>
+  <title>不定尺寸图片居中的一些记录 - Mirreal Note</title>
   <meta name="author" content="Mirreal Ellison">
 
   
-  <meta name="description" content="Blog Archive 2015 不定尺寸图片居中的一些记录
-Jan 23 2015 posted in css 2014 第一次作为实习生的一点点体验
-Nov 29 2014 Base64简要笔记及其他
-Nov 06 2014 posted in javascript 对一次求职经历的叙述 &hellip;">
+  <meta name="description" content="这是在实习工作中遇到的一个需求，实现未知尺寸的图片在一固定宽高的容器中水平和垂直居中。 比如是在一个200px的正方形容器，图片的宽高可能大于200px,也可能小于200px。对于小图片，就是简单的水平和垂直居中，而大图片则要求按比例缩放，并实现居中。 因为图片大小未知，且可能超出容器， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -21,7 +18,7 @@ Nov 06 2014 posted in javascript 对一次求职经历的叙述 &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://mirreal.github.io/blog/archives">
+  <link rel="canonical" href="http://mirreal.github.io/blog/2015/01/23/image-atuo-middle">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Mirreal Note" type="application/atom+xml">
@@ -69,123 +66,115 @@ Nov 06 2014 posted in javascript 对一次求职经历的叙述 &hellip;">
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Blog Archive</h1>
+    
+      <h1 class="entry-title">不定尺寸图片居中的一些记录</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-01-23T21:26:48+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2015</span></span> <span class='time'>9:26 pm</span></time>
+        
+           | <a href="#disqus_thread"
+             data-disqus-identifier="http://mirreal.github.io">Comments</a>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives">
 
 
+<div class="entry-content"><p>这是在实习工作中遇到的一个需求，实现未知尺寸的图片在一固定宽高的容器中水平和垂直居中。</p>
 
-  
-  <h2>2015</h2>
+<p>比如是在一个200px的正方形容器，图片的宽高可能大于200px,也可能小于200px。对于小图片，就是简单的水平和垂直居中，而大图片则要求按比例缩放，并实现居中。</p>
 
-<article>
-  
-<h1><a href="/blog/2015/01/23/image-atuo-middle/">不定尺寸图片居中的一些记录</a></h1>
-<time datetime="2015-01-23T21:26:48+08:00" pubdate><span class='month'>Jan</span> <span class='day'>23</span> <span class='year'>2015</span></time>
+<p>因为图片大小未知，且可能超出容器，很多垂直居中的方法不能用。</p>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/css/'>css</a></span>
-</footer>
+<p>解决方法最终如下：</p>
+
+<!-- more -->
 
 
-</article>
+<p>HTML大概是这样的：</p>
 
+<pre><code>&lt;div class="box"&gt;
+  &lt;img src="img/0.jpg"&gt;
+&lt;/div&gt;
+</code></pre>
 
+<p>CSS：</p>
 
-  
-  <h2>2014</h2>
+<pre><code>.box {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  text-align: center;
+}
 
-<article>
-  
-<h1><a href="/blog/2014/11/29/my-first-internship/">第一次作为实习生的一点点体验</a></h1>
-<time datetime="2014-11-29T23:21:08+08:00" pubdate><span class='month'>Nov</span> <span class='day'>29</span> <span class='year'>2014</span></time>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2014/11/06/base64-note/">Base64简要笔记及其他</a></h1>
-<time datetime="2014-11-06T21:38:01+08:00" pubdate><span class='month'>Nov</span> <span class='day'>06</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/javascript/'>javascript</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2014/10/14/about-an-interview/">对一次求职经历的叙述</a></h1>
-<time datetime="2014-10-14T09:42:08+08:00" pubdate><span class='month'>Oct</span> <span class='day'>14</span> <span class='year'>2014</span></time>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2014/09/15/memory-alignment/">关于内存对齐的一点注解</a></h1>
-<time datetime="2014-09-15T14:30:23+08:00" pubdate><span class='month'>Sep</span> <span class='day'>15</span> <span class='year'>2014</span></time>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2014/09/01/octopress-plus-github-pages/">Octopress + Github Pages</a></h1>
-<time datetime="2014-09-01T15:04:01+08:00" pubdate><span class='month'>Sep</span> <span class='day'>01</span> <span class='year'>2014</span></time>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2014/08/21/game-of-life/">康威生命游戏的简单实现</a></h1>
-<time datetime="2014-08-21T19:26:12+08:00" pubdate><span class='month'>Aug</span> <span class='day'>21</span> <span class='year'>2014</span></time>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2014/07/02/double-queue/">使用双端队列模拟动态数组的部分功能</a></h1>
-<time datetime="2014-07-02T15:45:05+08:00" pubdate><span class='month'>Jul</span> <span class='day'>02</span> <span class='year'>2014</span></time>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2014/02/14/infromation-code/">三种变长编码方法的C实现</a></h1>
-<time datetime="2014-02-14T10:27:39+08:00" pubdate><span class='month'>Feb</span> <span class='day'>14</span> <span class='year'>2014</span></time>
-
-
-</article>
-
+.box2 img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  max-width: 200px;
+  max-height: 200px;
+}
+</code></pre>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Mirreal Ellison</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2015-01-23T21:26:48+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2015</span></span> <span class='time'>9:26 pm</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/css/'>css</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/11/29/my-first-internship/" title="Previous Post: 第一次作为实习生的一点点体验">&laquo; 第一次作为实习生的一点点体验</a>
+      
+      
+    </p>
+  </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -279,7 +268,10 @@ Nov 06 2014 posted in javascript 对一次求职经历的叙述 &hellip;">
       var disqus_shortname = 'mirreal';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://mirreal.github.io/blog/2015/01/23/image-atuo-middle/';
+        var disqus_url = 'http://mirreal.github.io/blog/2015/01/23/image-atuo-middle/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Css | Mirreal Note]]></title>
+  <link href="http://mirreal.github.io/blog/categories/css/atom.xml" rel="self"/>
+  <link href="http://mirreal.github.io/"/>
+  <updated>2015-01-24T23:06:34+08:00</updated>
+  <id>http://mirreal.github.io/</id>
+  <author>
+    <name><![CDATA[Mirreal Ellison]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[不定尺寸图片居中的一些记录]]></title>
+    <link href="http://mirreal.github.io/blog/2015/01/23/image-atuo-middle/"/>
+    <updated>2015-01-23T21:26:48+08:00</updated>
+    <id>http://mirreal.github.io/blog/2015/01/23/image-atuo-middle</id>
+    <content type="html"><![CDATA[<p>这是在实习工作中遇到的一个需求，实现未知尺寸的图片在一固定宽高的容器中水平和垂直居中。</p>
+
+<p>比如是在一个200px的正方形容器，图片的宽高可能大于200px,也可能小于200px。对于小图片，就是简单的水平和垂直居中，而大图片则要求按比例缩放，并实现居中。</p>
+
+<p>因为图片大小未知，且可能超出容器，很多垂直居中的方法不能用。</p>
+
+<p>解决方法最终如下：</p>
+
+<!-- more -->
+
+
+<p>HTML大概是这样的：</p>
+
+<pre><code>&lt;div class="box"&gt;
+  &lt;img src="img/0.jpg"&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>CSS：</p>
+
+<pre><code>.box {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  text-align: center;
+}
+
+.box2 img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  max-width: 200px;
+  max-height: 200px;
+}
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>

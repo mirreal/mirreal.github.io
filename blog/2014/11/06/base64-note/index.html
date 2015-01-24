@@ -422,7 +422,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>作者在这里使用了一个小小的Hack技巧。<code>decodeURIComponent()</code>是ECMAscript中Global对象的URI方法，对URI进行编码，可以作用于所有Unicode字符。而<code>escape()</code>是已废弃的URI编码方法，功能和<code>decodeURIComponent()</code>相同，但是只能编码ASCII字符。</p>
+<p>作者在这里使用了一个小小的Hack技巧。<code>encodeURIComponent()</code>是ECMAscript中Global对象的URI方法，对URI进行编码，可以作用于所有Unicode字符。而<code>escape()</code>是已废弃的URI编码方法，功能和<code>encodeURIComponent()</code>相同，但是只能编码ASCII字符。</p>
 
 <p>即<code>encodeURIComponent(str)</code>相当于<code>escape(unicodeToASCII(str))</code>，则<code>unescape(encodeURIComponent(str))</code>等同于<code>unicodeToASCII(str)</code>,所以就将Unicode字符转换成了ASCII字符。(<code>unescape()</code>是和<code>escape()</code>对应的解码方法）</p>
 
@@ -521,6 +521,8 @@
         <a class="basic-alignment left" href="/blog/2014/10/14/about-an-interview/" title="Previous Post: 对一次求职经历的叙述">&laquo; 对一次求职经历的叙述</a>
       
       
+        <a class="basic-alignment right" href="/blog/2014/11/29/my-first-internship/" title="Next Post: 第一次作为实习生的一点点体验">第一次作为实习生的一点点体验 &raquo;</a>
+      
     </p>
   </footer>
 </article>
@@ -579,6 +581,14 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2015/01/23/image-atuo-middle/">不定尺寸图片居中的一些记录</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/11/29/my-first-internship/">第一次作为实习生的一点点体验</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/11/06/base64-note/">Base64简要笔记及其他</a>
       </li>
     
@@ -588,14 +598,6 @@
     
       <li class="post">
         <a href="/blog/2014/09/15/memory-alignment/">关于内存对齐的一点注解</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/09/01/octopress-plus-github-pages/">Octopress + Github Pages</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/08/21/game-of-life/">康威生命游戏的简单实现</a>
       </li>
     
   </ul>
@@ -611,7 +613,7 @@
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2014 - 
+  Copyright &copy; 2015 - 
   <a href="http://mirreal.net"> Mirreal Ellison</a> - 
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>

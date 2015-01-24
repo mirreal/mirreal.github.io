@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Javascript | Mirreal Note]]></title>
   <link href="http://mirreal.github.io/blog/categories/javascript/atom.xml" rel="self"/>
   <link href="http://mirreal.github.io/"/>
-  <updated>2014-11-22T23:01:11+08:00</updated>
+  <updated>2015-01-24T23:06:34+08:00</updated>
   <id>http://mirreal.github.io/</id>
   <author>
     <name><![CDATA[Mirreal Ellison]]></name>
@@ -292,7 +292,7 @@ function b64_to_utf8( str ) {
 }
 </code></pre>
 
-<p>作者在这里使用了一个小小的Hack技巧。<code>decodeURIComponent()</code>是ECMAscript中Global对象的URI方法，对URI进行编码，可以作用于所有Unicode字符。而<code>escape()</code>是已废弃的URI编码方法，功能和<code>decodeURIComponent()</code>相同，但是只能编码ASCII字符。</p>
+<p>作者在这里使用了一个小小的Hack技巧。<code>encodeURIComponent()</code>是ECMAscript中Global对象的URI方法，对URI进行编码，可以作用于所有Unicode字符。而<code>escape()</code>是已废弃的URI编码方法，功能和<code>encodeURIComponent()</code>相同，但是只能编码ASCII字符。</p>
 
 <p>即<code>encodeURIComponent(str)</code>相当于<code>escape(unicodeToASCII(str))</code>，则<code>unescape(encodeURIComponent(str))</code>等同于<code>unicodeToASCII(str)</code>,所以就将Unicode字符转换成了ASCII字符。(<code>unescape()</code>是和<code>escape()</code>对应的解码方法）</p>
 
