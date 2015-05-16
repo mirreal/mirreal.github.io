@@ -5,16 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Blog Archive - Mirreal Note</title>
+  <title>Mirreal Note</title>
   <meta name="author" content="Mirreal Ellison">
 
   
-  <meta name="description" content="Blog Archive 2015 我是怎么成了一名程序员
-May 06 2015 一个小项目之后
-Apr 19 2015 实现不定尺寸图片居中的几种方式
-Jan 23 2015 posted in css 2014 第一次实习生体验
-Nov 29 2014 Base64简要笔记及其他
-Nov &hellip;">
+  <meta name="description" content="信息编码是数据压缩的的基础理论。常用的变长编码法有三种：香农（Shannon）编码，费诺（Fano）编码，霍夫曼（Huffman）编码。 通常情况下，霍夫曼编码法的编码效率最优。 1.香农编码法 香农编码法是一种很基础的编码方法，效率很低。 方法如下： 将M个信源按其概率递减顺序排列 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -23,7 +18,7 @@ Nov &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://mirreal.github.io/blog/archives">
+  <link rel="canonical" href="http://mirreal.github.io/posts/2">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Mirreal Note" type="application/atom+xml">
@@ -70,147 +65,72 @@ Nov &hellip;">
 </nav>
   <div id="main">
     <div id="content">
-      <div>
-<article role="article">
+      <div class="blog-index">
   
+  
+  
+    <article>
+      
   <header>
-    <h1 class="entry-title">Blog Archive</h1>
+    
+      <h1 class="entry-title"><a href="/blog/2014/02/14/infromation-code/">三种变长编码方法的C实现</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-02-14T10:27:39+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>14</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>10:27 am</span></time>
+        
+           | <a href="/blog/2014/02/14/infromation-code/#disqus_thread"
+             data-disqus-identifier="http://mirreal.github.io/blog/2014/02/14/infromation-code/">Comments</a>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives">
 
 
+  <div class="entry-content"><p>信息编码是数据压缩的的基础理论。常用的变长编码法有三种：香农（Shannon）编码，费诺（Fano）编码，霍夫曼（Huffman）编码。</p>
 
-  
-  <h2>2015</h2>
+<p>通常情况下，霍夫曼编码法的编码效率最优。</p>
 
-<article>
-  
-<h1><a href="/blog/2015/05/06/how-to-be-a-programmer/">我是怎么成了一名程序员</a></h1>
-<time datetime="2015-05-06T20:55:13+08:00" pubdate><span class='month'>May</span> <span class='day'>06</span> <span class='year'>2015</span></time>
+<h2>1.香农编码法</h2>
 
+<p>香农编码法是一种很基础的编码方法，效率很低。</p>
 
-</article>
+<p>方法如下：</p>
 
-
-
-<article>
-  
-<h1><a href="/blog/2015/04/19/a-small-project/">一个小项目之后</a></h1>
-<time datetime="2015-04-19T23:11:18+08:00" pubdate><span class='month'>Apr</span> <span class='day'>19</span> <span class='year'>2015</span></time>
+<ol>
+<li>将M个信源按其概率递减顺序排列</li>
+<li>计算各个消息的计算码字长度：<code>-log q(Xm)</code>向上取整</li>
+<li>计算地 m 个消息的累加概率并转换成二进制</li>
+<li>取小数点后第 m 个消息码字长度位即为该消息码字</li>
+</ol>
 
 
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2015/01/23/image-atuo-middle/">实现不定尺寸图片居中的几种方式</a></h1>
-<time datetime="2015-01-23T21:26:48+08:00" pubdate><span class='month'>Jan</span> <span class='day'>23</span> <span class='year'>2015</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/css/'>css</a></span>
-</footer>
-
-
-</article>
-
-
-
-  
-  <h2>2014</h2>
-
-<article>
-  
-<h1><a href="/blog/2014/11/29/my-first-internship/">第一次实习生体验</a></h1>
-<time datetime="2014-11-29T23:21:08+08:00" pubdate><span class='month'>Nov</span> <span class='day'>29</span> <span class='year'>2014</span></time>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2014/11/06/base64-note/">Base64简要笔记及其他</a></h1>
-<time datetime="2014-11-06T21:38:01+08:00" pubdate><span class='month'>Nov</span> <span class='day'>06</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/javascript/'>javascript</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2014/10/14/about-an-interview/">对一次求职经历的叙述</a></h1>
-<time datetime="2014-10-14T09:42:08+08:00" pubdate><span class='month'>Oct</span> <span class='day'>14</span> <span class='year'>2014</span></time>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2014/09/15/memory-alignment/">关于内存对齐的一点注解</a></h1>
-<time datetime="2014-09-15T14:30:23+08:00" pubdate><span class='month'>Sep</span> <span class='day'>15</span> <span class='year'>2014</span></time>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2014/09/01/octopress-plus-github-pages/">Octopress + Github Pages</a></h1>
-<time datetime="2014-09-01T15:04:01+08:00" pubdate><span class='month'>Sep</span> <span class='day'>01</span> <span class='year'>2014</span></time>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2014/08/21/game-of-life/">康威生命游戏的简单实现</a></h1>
-<time datetime="2014-08-21T19:26:12+08:00" pubdate><span class='month'>Aug</span> <span class='day'>21</span> <span class='year'>2014</span></time>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2014/07/02/double-queue/">使用双端队列模拟动态数组的部分功能</a></h1>
-<time datetime="2014-07-02T15:45:05+08:00" pubdate><span class='month'>Jul</span> <span class='day'>02</span> <span class='year'>2014</span></time>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2014/02/14/infromation-code/">三种变长编码方法的C实现</a></h1>
-<time datetime="2014-02-14T10:27:39+08:00" pubdate><span class='month'>Feb</span> <span class='day'>14</span> <span class='year'>2014</span></time>
-
-
-</article>
+<p>香农编码法的C语言实现：</p>
 
 </div>
-
   
-</article>
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/02/14/infromation-code/">阅读更多 &rarr;</a>
+    </footer>
+  
 
+
+    </article>
+  
+  <div class="pagination">
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/index.html">Newer &rarr;</a>
+    
+  </div>
 </div>
-
 <aside class="sidebar">
   
     <section>
@@ -284,7 +204,6 @@ Nov &hellip;">
 
   
 </aside>
-
 
     </div>
   </div>
