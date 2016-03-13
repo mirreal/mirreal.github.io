@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://mirreal.github.io/sitemap.xml 
+Sitemap: http://blog.mirreal.net/sitemap.xml 

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Mirreal Note]]></title>
-  <link href="http://mirreal.github.io/atom.xml" rel="self"/>
-  <link href="http://mirreal.github.io/"/>
-  <updated>2016-03-13T11:35:03+08:00</updated>
-  <id>http://mirreal.github.io/</id>
+  <link href="http://blog.mirreal.net/atom.xml" rel="self"/>
+  <link href="http://blog.mirreal.net/"/>
+  <updated>2016-03-13T12:57:51+08:00</updated>
+  <id>http://blog.mirreal.net/</id>
   <author>
     <name><![CDATA[Mirreal Ellison]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[我是怎么成了一名程序员]]></title>
-    <link href="http://mirreal.github.io/blog/2015/05/06/how-to-be-a-programmer/"/>
+    <link href="http://blog.mirreal.net/blog/2015/05/06/how-to-be-a-programmer/"/>
     <updated>2015-05-06T20:55:13+08:00</updated>
-    <id>http://mirreal.github.io/blog/2015/05/06/how-to-be-a-programmer</id>
+    <id>http://blog.mirreal.net/blog/2015/05/06/how-to-be-a-programmer</id>
     <content type="html"><![CDATA[<p>程序员是这个世界给我们这种以写代码为生的一类人的一种称谓，然而，我们还不得不接受，如果可以，我们更愿意换个名字。</p>
 
 <p>读高中时接触到电脑报，开始了解计算机的一些东西，虽然初中时也上过“微机”课，但基本只是形式上的，接触一下计算机罢了，那时候机房的电脑装的是Windows 98，上课时都在玩游戏，泡泡龙，抢滩登陆。</p>
@@ -57,9 +57,9 @@
   
   <entry>
     <title type="html"><![CDATA[一个小项目之后]]></title>
-    <link href="http://mirreal.github.io/blog/2015/04/19/a-small-project/"/>
+    <link href="http://blog.mirreal.net/blog/2015/04/19/a-small-project/"/>
     <updated>2015-04-19T23:11:18+08:00</updated>
-    <id>http://mirreal.github.io/blog/2015/04/19/a-small-project</id>
+    <id>http://blog.mirreal.net/blog/2015/04/19/a-small-project</id>
     <content type="html"><![CDATA[<p>没想到这么快就有了自己负责的一个小项目。</p>
 
 <p>但是，从上周五开始，一直持续到本周五，才基本从中脱离出来。</p>
@@ -100,9 +100,9 @@
   
   <entry>
     <title type="html"><![CDATA[实现不定尺寸图片居中的几种方式]]></title>
-    <link href="http://mirreal.github.io/blog/2015/01/23/image-atuo-middle/"/>
+    <link href="http://blog.mirreal.net/blog/2015/01/23/image-atuo-middle/"/>
     <updated>2015-01-23T21:26:48+08:00</updated>
-    <id>http://mirreal.github.io/blog/2015/01/23/image-atuo-middle</id>
+    <id>http://blog.mirreal.net/blog/2015/01/23/image-atuo-middle</id>
     <content type="html"><![CDATA[<p>这是在实习工作中遇到的一个需求，实现未知尺寸的图片在一固定宽高的容器中水平和垂直居中。</p>
 
 <p>比如是在一个200px的正方形容器，图片的宽高可能大于200px，也可能小于200px。对于小图片，就是简单的水平和垂直居中，而大图片则要求按比例缩放，并实现居中。</p>
@@ -206,9 +206,9 @@ position: relative;
   
   <entry>
     <title type="html"><![CDATA[第一次实习生体验]]></title>
-    <link href="http://mirreal.github.io/blog/2014/11/29/my-first-internship/"/>
+    <link href="http://blog.mirreal.net/blog/2014/11/29/my-first-internship/"/>
     <updated>2014-11-29T23:21:08+08:00</updated>
-    <id>http://mirreal.github.io/blog/2014/11/29/my-first-internship</id>
+    <id>http://blog.mirreal.net/blog/2014/11/29/my-first-internship</id>
     <content type="html"><![CDATA[<p>实习，也是第一份工作。</p>
 
 <p>一直想对此写点什么。在这段并不是太长的时间里，学到的很多，有些东西可能无法言表，就像是某种潜移默化的影响和变化。</p>
@@ -228,9 +228,9 @@ position: relative;
   
   <entry>
     <title type="html"><![CDATA[Base64简要笔记及其他]]></title>
-    <link href="http://mirreal.github.io/blog/2014/11/06/base64-note/"/>
+    <link href="http://blog.mirreal.net/blog/2014/11/06/base64-note/"/>
     <updated>2014-11-06T21:38:01+08:00</updated>
-    <id>http://mirreal.github.io/blog/2014/11/06/base64-note</id>
+    <id>http://blog.mirreal.net/blog/2014/11/06/base64-note</id>
     <content type="html"><![CDATA[<h3>Base64是一种基于64个可打印字符来表示二进制数据的表示方法。</h3>
 
 <h4>1.base64算法的由来</h4>
@@ -629,9 +629,9 @@ position: relative;
   
   <entry>
     <title type="html"><![CDATA[对一次求职经历的叙述]]></title>
-    <link href="http://mirreal.github.io/blog/2014/10/14/about-an-interview/"/>
+    <link href="http://blog.mirreal.net/blog/2014/10/14/about-an-interview/"/>
     <updated>2014-10-14T09:42:08+08:00</updated>
-    <id>http://mirreal.github.io/blog/2014/10/14/about-an-interview</id>
+    <id>http://blog.mirreal.net/blog/2014/10/14/about-an-interview</id>
     <content type="html"><![CDATA[<p>首先，我不能说出这家公司的名字，因为这违反了保密协议，即使这个博客除了我没人阅读。我只能说，这只是一家很棒的企业，虽然没有成功，但是仍然给我留下了美好的印象。我写出来，只是记录自己的一点感悟。</p>
 
 <h2>笔试</h2>
@@ -777,9 +777,9 @@ position: relative;
   
   <entry>
     <title type="html"><![CDATA[关于内存对齐的一点注解]]></title>
-    <link href="http://mirreal.github.io/blog/2014/09/15/memory-alignment/"/>
+    <link href="http://blog.mirreal.net/blog/2014/09/15/memory-alignment/"/>
     <updated>2014-09-15T14:30:23+08:00</updated>
-    <id>http://mirreal.github.io/blog/2014/09/15/memory-alignment</id>
+    <id>http://blog.mirreal.net/blog/2014/09/15/memory-alignment</id>
     <content type="html"><![CDATA[<h2>一、内存对齐的原因</h2>
 
 <p>大部分的参考资料都是如是说的：</p>
@@ -930,9 +930,9 @@ sizeof(long long) = 8
   
   <entry>
     <title type="html"><![CDATA[Octopress + Github Pages]]></title>
-    <link href="http://mirreal.github.io/blog/2014/09/01/octopress-plus-github-pages/"/>
+    <link href="http://blog.mirreal.net/blog/2014/09/01/octopress-plus-github-pages/"/>
     <updated>2014-09-01T15:04:01+08:00</updated>
-    <id>http://mirreal.github.io/blog/2014/09/01/octopress-plus-github-pages</id>
+    <id>http://blog.mirreal.net/blog/2014/09/01/octopress-plus-github-pages</id>
     <content type="html"><![CDATA[<h2>Octopress + Github Pages = a new blog</h2>
 
 <h5><a href="http://octopress.org/docs/setup">document</a></h5>
@@ -984,9 +984,9 @@ rake deploy
   
   <entry>
     <title type="html"><![CDATA[康威生命游戏的简单实现]]></title>
-    <link href="http://mirreal.github.io/blog/2014/08/21/game-of-life/"/>
+    <link href="http://blog.mirreal.net/blog/2014/08/21/game-of-life/"/>
     <updated>2014-08-21T19:26:12+08:00</updated>
-    <id>http://mirreal.github.io/blog/2014/08/21/game-of-life</id>
+    <id>http://blog.mirreal.net/blog/2014/08/21/game-of-life</id>
     <content type="html"><![CDATA[<p>生命游戏，数学家John Conway发明的一个游戏，又称康威生命演化，生命棋，细胞自动机。</p>
 
 <p>康威有许多好玩有趣的发明，最广为人知的一个是外观数列（Look-and-Say），这里不多说，另一个就是生命游戏（Game-of-Life）。</p>
@@ -1398,9 +1398,9 @@ rake deploy
   
   <entry>
     <title type="html"><![CDATA[使用双端队列模拟动态数组的部分功能]]></title>
-    <link href="http://mirreal.github.io/blog/2014/07/02/double-queue/"/>
+    <link href="http://blog.mirreal.net/blog/2014/07/02/double-queue/"/>
     <updated>2014-07-02T15:45:05+08:00</updated>
-    <id>http://mirreal.github.io/blog/2014/07/02/double-queue</id>
+    <id>http://blog.mirreal.net/blog/2014/07/02/double-queue</id>
     <content type="html"><![CDATA[<p>C语言作为一门古老的语言，在系统级，高性能的领域依然独领风骚，但有些时候，使用起来总是没那么顺手。</p>
 
 <p>比如数组。这里使用双端队列简单的实现了一些类似动态数组的功能。</p>
@@ -1760,9 +1760,9 @@ struct double_queue {
   
   <entry>
     <title type="html"><![CDATA[三种变长编码方法的C实现]]></title>
-    <link href="http://mirreal.github.io/blog/2014/02/14/infromation-code/"/>
+    <link href="http://blog.mirreal.net/blog/2014/02/14/infromation-code/"/>
     <updated>2014-02-14T10:27:39+08:00</updated>
-    <id>http://mirreal.github.io/blog/2014/02/14/infromation-code</id>
+    <id>http://blog.mirreal.net/blog/2014/02/14/infromation-code</id>
     <content type="html"><![CDATA[<p>信息编码是数据压缩的的基础理论。常用的变长编码法有三种：香农（Shannon）编码，费诺（Fano）编码，霍夫曼（Huffman）编码。</p>
 
 <p>通常情况下，霍夫曼编码法的编码效率最优。</p>

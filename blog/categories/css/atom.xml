@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: css | Mirreal Note]]></title>
-  <link href="http://mirreal.github.io/blog/categories/css/atom.xml" rel="self"/>
-  <link href="http://mirreal.github.io/"/>
-  <updated>2016-03-13T11:35:03+08:00</updated>
-  <id>http://mirreal.github.io/</id>
+  <link href="http://blog.mirreal.net/blog/categories/css/atom.xml" rel="self"/>
+  <link href="http://blog.mirreal.net/"/>
+  <updated>2016-03-13T12:57:51+08:00</updated>
+  <id>http://blog.mirreal.net/</id>
   <author>
     <name><![CDATA[Mirreal Ellison]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[实现不定尺寸图片居中的几种方式]]></title>
-    <link href="http://mirreal.github.io/blog/2015/01/23/image-atuo-middle/"/>
+    <link href="http://blog.mirreal.net/blog/2015/01/23/image-atuo-middle/"/>
     <updated>2015-01-23T21:26:48+08:00</updated>
-    <id>http://mirreal.github.io/blog/2015/01/23/image-atuo-middle</id>
+    <id>http://blog.mirreal.net/blog/2015/01/23/image-atuo-middle</id>
     <content type="html"><![CDATA[<p>这是在实习工作中遇到的一个需求，实现未知尺寸的图片在一固定宽高的容器中水平和垂直居中。</p>
 
 <p>比如是在一个200px的正方形容器，图片的宽高可能大于200px，也可能小于200px。对于小图片，就是简单的水平和垂直居中，而大图片则要求按比例缩放，并实现居中。</p>
