@@ -29,7 +29,7 @@ categories:
 康威生命游戏是简单规则产生复杂变化的典型例子。在演变过程中，可以看到一些非常美妙的变化，和一些优美的几何图形。
 
 
-####下面是用HTML5 Canvas实现的一个简单版本。
+#### 下面是用HTML5 Canvas实现的一个简单版本。
 
 源码：[https://github.com/mirreal/moon9/tree/master/GameOfLife](https://github.com/mirreal/moon9/tree/master/GameOfLife)
 
@@ -222,9 +222,10 @@ Canvas.prototype.drawStone = function(stone) {
 
 
 new Game();
+
 ```
 
 
-#####TIPS:
+##### TIPS:
 
 在Google搜索 `Conway's Game of Life` ,会看到Google的一个实现。
