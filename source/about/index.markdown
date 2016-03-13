@@ -8,15 +8,15 @@ footer: true
 ---
 
 
-##基本信息
-冉 余
+<!--## 基本信息-->
+<!--冉 余-->
 
-exileduyi@foxmail.com
+<!--exileduyi@foxmail.com-->
 
-136-8813-7432
+<!--136-8813-7432-->
 
 <!--
-##专业技能：
+## 专业技能：
 - 熟练掌握C，Javascript语言，对Java，Python，Ruby等语言均有了解
 - 熟悉常用数据结构及相关算法
 - 熟悉Node.js，及在该平台下进行Web应用开发
@@ -26,7 +26,7 @@ exileduyi@foxmail.com
 - 了解SQL基础知识，以及某些NoSQL数据库如MongoDB
 - 英文文档阅读能力，喜欢尝试最新的技术，追求编写优雅的代码
 
-##教育经历：
+## 教育经历：
 
 成都理工大学(CDUT)， 2011-2015.
 
@@ -35,20 +35,20 @@ exileduyi@foxmail.com
 - Linux平台编程及TCP/IP网络编程
 - 单片机与嵌入式系统设计
 
-##个人项目：
-**Fling HTML5**
+## 个人项目：
+** Fling HTML5**
 
 益智游戏Fling！的HTML5复刻版。
 
 项目地址：https://github.com/mirreal/Fling-HTML5
 
-**Multi-Todolist**
+** Multi-Todolist**
 
 一个多人协作式便签应用。想法来源于管理人员使用便签这种简单原始的办法分配任务。
 
 项目地址：https://github.com/mirreal/multi-todolist
 
-**Draw Something**
+** Draw Something**
 
 你画我猜模式的简单复刻版。Server端使用Express和Socket.io实现，前端画板使用HTML5Canvas实现，通过WebSocket实时传输数据。
 
@@ -56,16 +56,35 @@ exileduyi@foxmail.com
 
 -->
 
-我也想做一个漂亮的介绍，但是，却发现，很难。
+我是谁？
 
-因为突然间不知道怎么作自我介绍。
+谁是我？
+
+> 我只是一个微不足道的存在
+
+我忘记了很多事，庆幸的是，记下来的都是值得的事。
+
+很久很久以前，我一直活在多年造就的无聊困境。
+
+有一天，突然想通了很多事，尝试去左找一些能提起半点兴趣的事来消磨时光。
+
+而且，小有所成。
+
+可是，在过去的一年多的时间里，我丢掉了很多这期间形成的好的东西。
+
+现在，我想拿回来。
 
 
-##个人主页：
+Mar 14th, 2016
 
-http://mirreal.net
 
-##简历(RESUME)：
 
-- [中文](http://mirreal.net/resume_zh.pdf)
-- [English](http://mirreal.net/resume_en.pdf)
+
+<!--## 个人主页：-->
+
+<!--http://mirreal.net-->
+
+<!--## 简历(RESUME)：-->
+
+<!--- [中文](http://mirreal.net/resume_zh.pdf)-->
+<!--- [English](http://mirreal.net/resume_en.pdf)-->
