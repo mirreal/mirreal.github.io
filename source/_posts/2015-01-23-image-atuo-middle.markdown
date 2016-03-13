@@ -20,25 +20,27 @@ categories: CSS
 
 因为图片大小尺寸未知，且可能超出容器，很多垂直居中的方法不能用。
 
-###最终的解决方法如下：
+### 最终的解决方法如下：
 
 <!-- more -->
 
 HTML大概是这样的：
 
+```html
     <div class="box">
       <img src="img/0.jpg" alt="earth shadow" title="It's me">
     </div>
+```
 
 CSS：
 
+```css
     .box {
       width: 200px;
       height: 200px;
     position: relative;
       text-align: center;
     }
-
     .box img {
       position: absolute;
       top: 0;
@@ -49,22 +51,26 @@ CSS：
       max-width: 200px;
       max-height: 200px;
     }
+```
 
 将容器的位置设为`relative`，图片的位置设为`absolute`，然后将其`top`，`right`，`bottom`，`left`都设置成0，虽然图片尺寸未知，但是对于一张具体的图片而言是有固定宽高的，所以并不能使它四个方位间距都为0，因此`margin: auto;`会让它居中。如果仅对于宽高都小于200px的图片，这样就足够了，但是对于大图片就不适用，所以再加上`max-width: 200px;max-height: 200px;`，这样图片就可以自适应缩放。
 
 
 查看演示：[demo1](http://blog.mirreal.net/demo/image-center/1.html)
 
-###方式二：使用表格布局
+### 方式二：使用表格布局
 
 还是这段HTML：
 
+```html
     <div class="box1">
       <img src="img/0.jpg"  alt="earth shadow" title="It's me">
     </div>
+```
 
 CSS这样写：
 
+```css
     .box1 {
       width:200px;
       height:200px;
@@ -77,21 +83,26 @@ CSS这样写：
       max-height:200px;
       vertical-align:middle;
     }
+```
 
-###方式三：使用背景图片
+### 方式三：使用背景图片
 
 HTML就直接写了：
 
+```html
     <div class="box2"></div>
+```
 
 CSS：
 
+```css
     .box2 {
       width: 200px;
       height: 200px;
       background: url(img/0.jpg) no-repeat;
       background-position: center;
     }
+```
 
 直接使用`background-position: center;`实现居中，如图片尺寸小于200px就OK了。但是对于大图片，会被截掉，所以还需加上`background-size: contain;`，可是对于小图片又有问题，因为加上这个属性会对图片缩放，小图也不例外。而在我们的需求里，对小图要求按照其原有大小显示。
 
