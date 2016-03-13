@@ -1,0 +1,2333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Mirreal Note]]></title>
+  <link href="http://mirreal.github.io/atom.xml" rel="self"/>
+  <link href="http://mirreal.github.io/"/>
+  <updated>2016-03-13T11:35:03+08:00</updated>
+  <id>http://mirreal.github.io/</id>
+  <author>
+    <name><![CDATA[Mirreal Ellison]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[我是怎么成了一名程序员]]></title>
+    <link href="http://mirreal.github.io/blog/2015/05/06/how-to-be-a-programmer/"/>
+    <updated>2015-05-06T20:55:13+08:00</updated>
+    <id>http://mirreal.github.io/blog/2015/05/06/how-to-be-a-programmer</id>
+    <content type="html"><![CDATA[<p>程序员是这个世界给我们这种以写代码为生的一类人的一种称谓，然而，我们还不得不接受，如果可以，我们更愿意换个名字。</p>
+
+<p>读高中时接触到电脑报，开始了解计算机的一些东西，虽然初中时也上过“微机”课，但基本只是形式上的，接触一下计算机罢了，那时候机房的电脑装的是Windows 98，上课时都在玩游戏，泡泡龙，抢滩登陆。</p>
+
+<p>高中时期，阅读报纸更像是学习之外的娱乐，生活本来就很乏味。但是，我没有自己的电脑，也没有学习过编程语言。高二的时候，有了自己的第一部手机，诺基亚5320XM，那时候iPhone还没成为街机，没进入中国，当然水货总是有的，市面上也只有屈指可数的几款Android手机。总之，此时触摸时代仍未到来。</p>
+
+<!-- more -->
+
+
+<p>有了一部手机，就可以接入互联网，一窥这个信息爆炸的世界。甚至沉迷于手机，就像现在许多的低头一族，虽然那时候手机应用其实真不多，很多用手机的人只是将其作为打电话的工具。移动互联网，貌似还没有这个东西，但我不那么看，我从一开始就不是为了打电话，现在的人应该会理解。</p>
+
+<p>然后，进入大学，好像整个世界都不同了，离开家乡，来到陌生的城市。在大一下学期时，学习C++，第一次接触到编程语言，还上过计算机网络课。但当时就是什么都不懂，即使期末考试拿到90分，但实际上仍然比一无所知好不了多少。</p>
+
+<p>后来就放任自流了，大学生活是很轻松的，什么压力都没有，如果你想，你可以大不一样，你也可以毫无长进。意识到这点并不困难，难的是在这种可能无人指点的情况下突围。大二开始讲了数据结构课，老师是大一讲离散数学的那位，那时老师说了一句不知是好久不见还是又见面了的话，让我一直觉得好像是昨天发生的事。噢，这时还上了数据库的课，觉得很新鲜，但没觉得好玩，老师其实很不错，可惜当时没能体会到。老师偶然提到曾经创过业，一笔带过，我们似乎也并不在意。后来，老师在13年又创立一家公司，已经完成B轮融资，达到数十人的规模，但仍然来学校上课，这些都是后来得知的。</p>
+
+<p>到了大二下学期，好像没什么有趣的课了。我也开始思考出路，因为突然发现时间不多。记得，在图书馆拿了一本书，HTML5 canvas基础教程。那时候，图书馆讲HTML5还没有几本。大二结束的那个暑假，我借了一堆书回家，有canvas那本，有head first HTML5，有论道HTML5，还有几本貌似，这是我第一次这么干，直接从应用入手，并依葫芦画瓢，写了人生中第一个游戏，代号moon9。这个暑假，过得很充实，虽然大部分时间都呆在家里，看书，敲代码。</p>
+
+<p>大三开始的时候，我给自己定下一个小目标，每周读一本书，无所谓类型，漫画都可以。也就是因为这个小小的决定，我找到了许多好玩的东西。黑客与画家，罗素的故事就是这时候读的，我还记得那时在英国文学那栏乱翻，也不知道为什么就拿起这本书，虽然这本书本不该归类到英国文学，我因此开始了解数理逻辑这个全新的领域，然后我去了解哥德尔，维特根斯坦，图灵，冯诺依曼。我经常在课余时间跑去图书馆，一方面发现新的好书，一方面完成每周的阅读计划，有时候同时读几本书。这个学期，绝对是一个转折点，或者说是从那个暑假开始的。我是从这时候才开始有了阅读的习惯，但一周一本的计划我只坚持了一年，大四的时候找工作的时候不经意的打破计划，但是一有空我仍然会去找书读，跟从前还是大不一样。</p>
+
+<p>转眼大三的第一个学期过去了，上过什么课程已经记不清楚了。寒假，我又带回去好几本书，这时候读了javascript高级程序设计，之前从来没有读过一本讲javascript语法的书，从这时开始才真正了解js。并写下了fling这个游戏。这时候，我对整个web开发也算了解，知道服务器，数据库，HTTP协议这些概念。</p>
+
+<p>大三下，转眼就要到了毕业的时刻，但还有时间。我依然保持着节奏，一边了解一些计算机各个方面的知识，软件工程，游戏AI，机器学习，大数据，许多C语言家族之外的语言，Ruby，Erlang，Scala，Clojure，Haskell，一方面读些看起来毫无用处的书，比如哲学，文学，艺术类，科普，我当然不觉得它们毫无用处。那个暑假，我开始为找工作作准备，虽然对于何去何从仍然毫无头绪，但得准备。我拿了算法，程序员面试攻略，effective javascript，think python，think Java，还有一些阅读计划的书。练习很多算法的例子，重写了fling，写了生命游戏的canvas版，汉诺塔的图形演示。</p>
+
+<p>新学期开学，到了找工作的时候，可惜九月份被学校带到绵阳。国庆之后，开始大规模投简历，第一个面试机会是517na，表现得很糟糕，紧张加之没经验。第二个面试机会，是美团，进入第三个环节，可惜失败了。后来，又参与了好几次面试，并逐渐找到自己的定位，前端。然后，到十一月份，去全微实习。在这里，学到了很多，在自学时学不到的东西。后来，就来到阿里。</p>
+
+<p>其实，主要的学习基本集中在假期，两个暑假，一个寒假，在学校很少有机会连续的学习，更多的随便做些新的尝试。然后，就成为一名程序员，一名前端工程师。</p>
+
+<p>之前看到一篇文章，谈学习编程的年龄，自己二十好几了，现在学习编程难吗。难吗？其实没那么困难，像我这样不是也能写点代码么？</p>
+
+<p>人总是不甘于平庸的，虽然拿到阿里的offer，但只是起点，我知道我欠缺的有很多。没人愿意一辈子无所作为，尤其是在信息技术飞速发展的互联网行业，不更新自己，简直是在自杀。</p>
+
+<p>这两天，翻起笔记本，记录我的一些经历，比如框图，功能，简历。我喜欢一个本子，一支笔，周围尽是凌乱，头脑风暴，把自己想到的通通写下来，这种方法很适合我。在这一年里，反而不怎么使用了，大四的这段时间，好像经历过很多事情。之所以给我这种错觉，我想是因为之前的生活太过于温室化，波澜不惊，我放弃了尝试，所以最后一起扑向我。</p>
+
+<p>我想起那个暑假在家为工作准备的我，肯定没想到后来发生的一切，未来的路还很漫长，谁知道会怎样呢，但是我知道，若是什么都不做的话，会比你想象的更糟糕。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[一个小项目之后]]></title>
+    <link href="http://mirreal.github.io/blog/2015/04/19/a-small-project/"/>
+    <updated>2015-04-19T23:11:18+08:00</updated>
+    <id>http://mirreal.github.io/blog/2015/04/19/a-small-project</id>
+    <content type="html"><![CDATA[<p>没想到这么快就有了自己负责的一个小项目。</p>
+
+<p>但是，从上周五开始，一直持续到本周五，才基本从中脱离出来。</p>
+
+<p>体会了一把在互联网公司加班的节奏，周六加班，周一到11点，周二到零点，周三干脆没回去，周四正式上线，又到凌晨一点，周五本想多睡会儿，但出现问题，又来到公司。</p>
+
+<p>但是，也有一点收获，接触了一些人。我是个被动的人，平常很少主动去认识别人，但因为工作共同的目标，而有了一点共同的语言，必不可少的沟通。这让我意识到，我仍然是一个普通的人，仍然渴望群体生活，仍然渴望交流沟通，即使本质上是个不擅社交的人。</p>
+
+<!-- more -->
+
+
+<p>在这次事件中，发现自己有很多问题。
+比如在技术上</p>
+
+<ol>
+<li>代码风格不统一</li>
+<li>耦合度太高</li>
+<li>不写注释</li>
+<li>没有自己的编程思路</li>
+</ol>
+
+
+<p>这只是一部分，虽然我一直明白自己现在并不是个高手，但没想到还是高估了自己，存在太多问题。</p>
+
+<p>还有，我发现自己没有解决问题的热情，比如某个兼容性问题，听之任之，也没有一套行之有效的解决问题的方法。定位，二分，这些东西当然知道，总嫌麻烦懒得去弄。</p>
+
+<p>说到这里，我发现自己还有明显的拖延症，回避问题，想让时间冲走一切。</p>
+
+<p>我还思考了一些更深层次的原因，比如对于工作。我从来都不是一个工作狂，之前在全微就是，到下班时间就走，虽然我知道大多数老板都不喜欢这样的人。而且，日复一日的工作，重复的事，总会显得枯燥。</p>
+
+<p>我喜欢新鲜的事物，甚至过头了，喜新厌旧。之所以成了一名前端工程师，而不是一个玩电子技术的，就是由于对新鲜事物的一种追求。我追求多个领域的融汇贯通，但对每个领域都不求甚解，抱着一种玩乐的心理，走马观花。</p>
+
+<p>当时为什么选择去图书馆呢，因为需要一种方式来填补因为迷茫造就的空白，而读书，是成本最低的方式。好吧，我承认，我没钱，也没兴趣去扮人偶去赚钱，这个世界很多事情都像体验，却因为钱没有去做。所以，我想告诉后来者，别因为钱放弃你的梦想，因为这真的挺傻的，我现在才发现，只要你敢去想象，钱从来都不是问题，或许只是个借口罢了。</p>
+
+<p>工作的意义在于什么呢，自我价值的体现，人生意义的实现，回到人群中，或者是为了打发这一生，为了报酬，为了生存。我，其实不太明白，我没有过梦想，倒是有些不切世纪的幻想。有时，觉得生活很虚化的，就像此刻，听着雨声，听着柴可夫斯基，思考这些无聊的话题。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[实现不定尺寸图片居中的几种方式]]></title>
+    <link href="http://mirreal.github.io/blog/2015/01/23/image-atuo-middle/"/>
+    <updated>2015-01-23T21:26:48+08:00</updated>
+    <id>http://mirreal.github.io/blog/2015/01/23/image-atuo-middle</id>
+    <content type="html"><![CDATA[<p>这是在实习工作中遇到的一个需求，实现未知尺寸的图片在一固定宽高的容器中水平和垂直居中。</p>
+
+<p>比如是在一个200px的正方形容器，图片的宽高可能大于200px，也可能小于200px。对于小图片，就是简单的水平和垂直居中，而大图片则要求按比例缩放，并实现居中。</p>
+
+<p>这个问题主要有两个方面的点：</p>
+
+<ul>
+<li>未知尺寸元素的垂直居中</li>
+<li>大图片的宽高适配</li>
+</ul>
+
+
+<p>因为图片大小尺寸未知，且可能超出容器，很多垂直居中的方法不能用。</p>
+
+<h3>最终的解决方法如下：</h3>
+
+<!-- more -->
+
+
+<p>HTML大概是这样的：</p>
+
+<pre><code>&lt;div class="box"&gt;
+  &lt;img src="img/0.jpg" alt="earth shadow" title="It's me"&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>CSS：</p>
+
+<pre><code>.box {
+  width: 200px;
+  height: 200px;
+position: relative;
+  text-align: center;
+}
+
+.box img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  max-width: 200px;
+  max-height: 200px;
+}
+</code></pre>
+
+<p>将容器的位置设为<code>relative</code>，图片的位置设为<code>absolute</code>，然后将其<code>top</code>，<code>right</code>，<code>bottom</code>，<code>left</code>都设置成0，虽然图片尺寸未知，但是对于一张具体的图片而言是有固定宽高的，所以并不能使它四个方位间距都为0，因此<code>margin: auto;</code>会让它居中。如果仅对于宽高都小于200px的图片，这样就足够了，但是对于大图片就不适用，所以再加上<code>max-width: 200px;max-height: 200px;</code>，这样图片就可以自适应缩放。</p>
+
+<p>查看演示：<a href="http://blog.mirreal.net/demo/image-center/1.html">demo1</a></p>
+
+<h3>方式二：使用表格布局</h3>
+
+<p>还是这段HTML：</p>
+
+<pre><code>&lt;div class="box1"&gt;
+  &lt;img src="img/0.jpg"  alt="earth shadow" title="It's me"&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>CSS这样写：</p>
+
+<pre><code>.box1 {
+  width:200px;
+  height:200px;
+  display: table-cell;
+  vertical-align:middle;
+  text-align:center;
+}
+.box1 img {
+  max-width:200px;
+  max-height:200px;
+  vertical-align:middle;
+}
+</code></pre>
+
+<h3>方式三：使用背景图片</h3>
+
+<p>HTML就直接写了：</p>
+
+<pre><code>&lt;div class="box2"&gt;&lt;/div&gt;
+</code></pre>
+
+<p>CSS：</p>
+
+<pre><code>.box2 {
+  width: 200px;
+  height: 200px;
+  background: url(img/0.jpg) no-repeat;
+  background-position: center;
+}
+</code></pre>
+
+<p>直接使用<code>background-position: center;</code>实现居中，如图片尺寸小于200px就OK了。但是对于大图片，会被截掉，所以还需加上<code>background-size: contain;</code>，可是对于小图片又有问题，因为加上这个属性会对图片缩放，小图也不例外。而在我们的需求里，对小图要求按照其原有大小显示。</p>
+
+<p>貌似这种方式使用纯CSS行不通。</p>
+
+<p>&hellip;</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[第一次实习生体验]]></title>
+    <link href="http://mirreal.github.io/blog/2014/11/29/my-first-internship/"/>
+    <updated>2014-11-29T23:21:08+08:00</updated>
+    <id>http://mirreal.github.io/blog/2014/11/29/my-first-internship</id>
+    <content type="html"><![CDATA[<p>实习，也是第一份工作。</p>
+
+<p>一直想对此写点什么。在这段并不是太长的时间里，学到的很多，有些东西可能无法言表，就像是某种潜移默化的影响和变化。</p>
+
+<p>就之前的工作而言，虽说没有遇到什么太复杂的任务，主要是学习和熟悉。但是，真的进入工作环境，才知道很多东西都要花时间，去了解一些具体的特别细节的东西。以前自己学习时候更多的在于逻辑实现，随随便便就算了，哪里想过太多。我也不清楚，我怎么就成了一名前端工程师了。</p>
+
+<!-- more -->
+
+
+<p>回想最初的学习过程中，花了很多时间去掌握Javascript这门语言，但并非研究其在浏览器中的各种用法。布局这种事，也相当马虎，或者说对CSS从来都没上心，和很多做后端对css的认识类似，完完全全一个新手的姿态。可是，作为一个前端工程师，如果知道的CSS知识比一个后端开发者多不了多少，那未免显得太不合格。</p>
+
+<p>在秋季招聘季之初，和很多人一样显得特别迷茫，不知道该何去何从，投递过很多不同的职位，什么运维，测试，研发，网络都有。在那时候，对前端工程师的理解特别片面和错误，在经过美团面试之后才决定走上前端开发的路。可是，校招这种事就像一阵风一样，来得快去得也快，等到我坚定自己的路线之后，仿佛什么都晚了，虽然我仍在进行各种尝试，可是效果甚微。</p>
+
+<p>那一段时间里，也让我明白一件很重要的事，以前的我太局限于自己的象牙塔，外面的洪荒世界让我不敢踏出。但是呢，早点失败，就可能早点成功，没能勇敢地走出去是大学里最大的遗憾。如果有机会早点接触这个真实的世界，现在我的处境肯定会更好。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Base64简要笔记及其他]]></title>
+    <link href="http://mirreal.github.io/blog/2014/11/06/base64-note/"/>
+    <updated>2014-11-06T21:38:01+08:00</updated>
+    <id>http://mirreal.github.io/blog/2014/11/06/base64-note</id>
+    <content type="html"><![CDATA[<h3>Base64是一种基于64个可打印字符来表示二进制数据的表示方法。</h3>
+
+<h4>1.base64算法的由来</h4>
+
+<p>base64最早是用作解决电子邮件的传输问题，由于历史原因，早期电子邮件只允许传输ASCII码字符，如果想传输一封带有非ASCII字符的邮件，在遇到一些老旧的网关就可能会对字符最高位进行调整，导致收到的邮件出现乱码。</p>
+
+<h4>2.base64不是加密算法</h4>
+
+<p>base64算法的编码和解码方法可以作为加密和解密操作，但是不能叫做加密算法，因为其算法和充当密钥的索引表都是公开的。最多是让在你身后的人一时看不懂，所谓防君子不防小人。</p>
+
+<h4>3.Base编码方法</h4>
+
+<!-- more -->
+
+
+<p>转换的时候，将三个byte的数据，先后放入一个24bit的缓冲区中，先来的byte占高位。数据不足3byte的话，剩下的bit用0补足。然后，每次取出6个bit，按照其值选择索引表的字符作为编码后的输出。不断进行，直到全部输入数据转换完成。</p>
+
+<p>这里就不举例说明，具体可以参考维基百科。</p>
+
+<h4>4.base64索引表如下</h4>
+
+<table>
+<tr>
+<th scope="col">数值</th>
+<th scope="col">字符</th>
+<th scope="col">数值</th>
+<th scope="col">字符</th>
+<th scope="col">数值</th>
+<th scope="col">字符</th>
+<th scope="col">数值</th>
+<th scope="col">字符</th>
+</tr>
+<tr>
+<td>0</td>
+<td>A</td>
+<td>16</td>
+<td>Q</td>
+<td>32</td>
+<td>g</td>
+<td>48</td>
+<td>w</td>
+</tr>
+<tr>
+<td>1</td>
+<td>B</td>
+<td>17</td>
+<td>R</td>
+<td>33</td>
+<td>h</td>
+<td>49</td>
+<td>x</td>
+</tr>
+<tr>
+<td>2</td>
+<td>C</td>
+<td>18</td>
+<td>S</td>
+<td>34</td>
+<td>i</td>
+<td>50</td>
+<td>y</td>
+</tr>
+<tr>
+<td>3</td>
+<td>D</td>
+<td>19</td>
+<td>T</td>
+<td>35</td>
+<td>j</td>
+<td>51</td>
+<td>z</td>
+</tr>
+<tr>
+<td>4</td>
+<td>E</td>
+<td>20</td>
+<td>U</td>
+<td>36</td>
+<td>k</td>
+<td>52</td>
+<td>0</td>
+</tr>
+<tr>
+<td>5</td>
+<td>F</td>
+<td>21</td>
+<td>V</td>
+<td>37</td>
+<td>l</td>
+<td>53</td>
+<td>1</td>
+</tr>
+<tr>
+<td>6</td>
+<td>G</td>
+<td>22</td>
+<td>W</td>
+<td>38</td>
+<td>m</td>
+<td>54</td>
+<td>2</td>
+</tr>
+<tr>
+<td>7</td>
+<td>H</td>
+<td>23</td>
+<td>X</td>
+<td>39</td>
+<td>n</td>
+<td>55</td>
+<td>3</td>
+</tr>
+<tr>
+<td>8</td>
+<td>I</td>
+<td>24</td>
+<td>Y</td>
+<td>40</td>
+<td>o</td>
+<td>56</td>
+<td>4</td>
+</tr>
+<tr>
+<td>9</td>
+<td>J</td>
+<td>25</td>
+<td>Z</td>
+<td>41</td>
+<td>p</td>
+<td>57</td>
+<td>5</td>
+</tr>
+<tr>
+<td>10</td>
+<td>K</td>
+<td>26</td>
+<td>a</td>
+<td>42</td>
+<td>q</td>
+<td>58</td>
+<td>6</td>
+</tr>
+<tr>
+<td>11</td>
+<td>L</td>
+<td>27</td>
+<td>b</td>
+<td>43</td>
+<td>r</td>
+<td>59</td>
+<td>7</td>
+</tr>
+<tr>
+<td>12</td>
+<td>M</td>
+<td>28</td>
+<td>c</td>
+<td>44</td>
+<td>s</td>
+<td>60</td>
+<td>8</td>
+</tr>
+<tr>
+<td>13</td>
+<td>N</td>
+<td>29</td>
+<td>d</td>
+<td>45</td>
+<td>t</td>
+<td>61</td>
+<td>9</td>
+</tr>
+<tr>
+<td>14</td>
+<td>O</td>
+<td>30</td>
+<td>e</td>
+<td>46</td>
+<td>u</td>
+<td>62</td>
+<td>+</td>
+</tr>
+<tr>
+<td>15</td>
+<td>P</td>
+<td>31</td>
+<td>f</td>
+<td>47</td>
+<td>v</td>
+<td>63</td>
+<td>/</td>
+</tr>
+</table>
+
+
+<h4>5.一个不太优雅的编码方法和译码方法实现：</h4>
+
+<figure class='code'><figcaption><span>base64.js</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">base64Encode</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">map</span> <span class="o">=</span> <span class="s1">&#39;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">out</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">len</span> <span class="o">=</span> <span class="nx">data</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">len</span><span class="p">;</span> <span class="nx">i</span> <span class="o">+=</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">binStr</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span>
+</span><span class='line'>        <span class="nx">newStr</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span>
+</span><span class='line'>        <span class="nx">threeChar</span> <span class="o">=</span> <span class="nx">data</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span> <span class="nx">i</span><span class="o">+</span><span class="mi">3</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>      <span class="kd">var</span> <span class="nx">t</span> <span class="o">=</span> <span class="nx">threeChar</span><span class="p">.</span><span class="nx">charCodeAt</span><span class="p">(</span><span class="nx">j</span><span class="p">).</span><span class="nx">toString</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</span><span class='line'>      <span class="k">while</span> <span class="p">(</span><span class="nx">t</span><span class="p">.</span><span class="nx">length</span> <span class="o">&lt;</span> <span class="mi">8</span><span class="p">)</span> <span class="nx">t</span> <span class="o">=</span> <span class="s1">&#39;0&#39;</span> <span class="o">+</span> <span class="nx">t</span><span class="p">;</span>
+</span><span class='line'>      <span class="nx">binStr</span> <span class="o">+=</span> <span class="nx">t</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">k</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">k</span> <span class="o">&lt;</span> <span class="mi">24</span><span class="p">;</span> <span class="nx">k</span> <span class="o">+=</span> <span class="mi">6</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nx">newStr</span> <span class="o">+=</span> <span class="nx">map</span><span class="p">[</span><span class="nb">parseInt</span><span class="p">(</span><span class="nx">binStr</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="nx">k</span><span class="p">,</span> <span class="nx">k</span><span class="o">+</span><span class="mi">6</span><span class="p">),</span> <span class="mi">2</span><span class="p">)];</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="k">if</span> <span class="p">(</span><span class="nx">i</span><span class="o">+</span><span class="mi">3</span><span class="o">-</span><span class="nx">len</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="nx">newStr</span> <span class="o">=</span> <span class="nx">newStr</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;=&#39;</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">if</span> <span class="p">(</span><span class="nx">i</span><span class="o">+</span><span class="mi">3</span><span class="o">-</span><span class="nx">len</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)</span> <span class="nx">newStr</span> <span class="o">=</span> <span class="nx">newStr</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;==&#39;</span><span class="p">;</span>
+</span><span class='line'>    <span class="nx">out</span> <span class="o">+=</span> <span class="nx">newStr</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">return</span> <span class="nx">out</span><span class="p">;</span>
+</span><span class='line'><span class="p">};</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">var</span> <span class="nx">base64Decode</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">code</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">map</span> <span class="o">=</span> <span class="s1">&#39;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">ascii</span> <span class="o">=</span> <span class="s1">&#39; !&quot;#$%&amp;\&#39;()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ&#39;</span> <span class="o">+</span>
+</span><span class='line'>          <span class="s1">&#39;[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">out</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">len</span> <span class="o">=</span> <span class="nx">code</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">len</span><span class="p">;</span> <span class="nx">i</span> <span class="o">+=</span> <span class="mi">4</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">fourChar</span> <span class="o">=</span> <span class="nx">code</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span> <span class="nx">i</span><span class="o">+</span><span class="mi">4</span><span class="p">),</span>
+</span><span class='line'>        <span class="nx">binStr</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span>
+</span><span class='line'>        <span class="nx">newStr</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>      <span class="kd">var</span> <span class="nx">t</span> <span class="o">=</span> <span class="nx">map</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">fourChar</span><span class="p">.</span><span class="nx">charAt</span><span class="p">(</span><span class="nx">j</span><span class="p">)).</span><span class="nx">toString</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</span><span class='line'>      <span class="k">while</span> <span class="p">(</span><span class="nx">t</span><span class="p">.</span><span class="nx">length</span> <span class="o">&lt;</span> <span class="mi">6</span><span class="p">)</span> <span class="nx">t</span> <span class="o">=</span> <span class="s1">&#39;0&#39;</span> <span class="o">+</span> <span class="nx">t</span><span class="p">;</span>
+</span><span class='line'>      <span class="nx">binStr</span> <span class="o">+=</span> <span class="nx">t</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">k</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">k</span> <span class="o">&lt;</span> <span class="mi">24</span><span class="p">;</span> <span class="nx">k</span> <span class="o">+=</span> <span class="mi">8</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>      <span class="kd">var</span> <span class="kr">char</span> <span class="o">=</span> <span class="nx">ascii</span><span class="p">[</span><span class="nb">parseInt</span><span class="p">(</span><span class="nx">binStr</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="nx">k</span><span class="p">,</span> <span class="nx">k</span><span class="o">+</span><span class="mi">8</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span> <span class="o">-</span> <span class="mi">32</span><span class="p">];</span>
+</span><span class='line'>      <span class="k">if</span> <span class="p">(</span><span class="kr">char</span> <span class="o">!==</span> <span class="kc">undefined</span><span class="p">)</span> <span class="nx">newStr</span> <span class="o">+=</span> <span class="kr">char</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="nx">out</span> <span class="o">+=</span> <span class="nx">newStr</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">return</span> <span class="nx">out</span><span class="p">;</span>
+</span><span class='line'><span class="p">};</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>HTML5提供的通用Base64方法API</h3>
+
+<h4>1.编码： <code>window.btoa(stringToEncode)</code></h4>
+
+<p>只能将ASCII字符串或二进制数据转换成一个base64编码过的字符串,该方法不能直接作用于Unicode字符串。</p>
+
+<h4>2.解码： <code>window.atob(encodedData)</code></h4>
+
+<p>将已经被base64编码过的数据进行解码。</p>
+
+<h4>3.作用于UTF-8编码的文字</h4>
+
+<p>但是这两个Web API功能很简单，并不能直接作用于Unicode字符串，所以当调用 <code>btoa()</code> 时若传入的不是ASCII或二进制字符串，比如汉字就会出错。</p>
+
+<p>下面是别人提供的简单解决方法：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">function</span> <span class="nx">utf8_to_b64</span><span class="p">(</span> <span class="nx">str</span> <span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">return</span> <span class="nb">window</span><span class="p">.</span><span class="nx">btoa</span><span class="p">(</span><span class="nx">unescape</span><span class="p">(</span><span class="nb">encodeURIComponent</span><span class="p">(</span><span class="nx">str</span><span class="p">)));</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">function</span> <span class="nx">b64_to_utf8</span><span class="p">(</span> <span class="nx">str</span> <span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">return</span> <span class="nb">decodeURIComponent</span><span class="p">(</span><span class="nx">escape</span><span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">atob</span><span class="p">(</span><span class="nx">str</span><span class="p">)));</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>作者在这里使用了一个小小的Hack技巧。<code>encodeURIComponent()</code>是ECMAscript中Global对象的URI方法，对URI进行编码，可以作用于所有Unicode字符。而<code>escape()</code>是已废弃的URI编码方法，功能和<code>encodeURIComponent()</code>相同，但是只能编码ASCII字符。</p>
+
+<p>即<code>encodeURIComponent(str)</code>相当于<code>escape(unicodeToASCII(str))</code>，则<code>unescape(encodeURIComponent(str))</code>等同于<code>unicodeToASCII(str)</code>,所以就将Unicode字符转换成了ASCII字符。(<code>unescape()</code>是和<code>escape()</code>对应的解码方法）</p>
+
+<p>关于文字集和文字编码方面的知识，比如UTF-8是基于Unicode文字集的一种广泛使用的编码方式，具体此处不再赘述。</p>
+
+<h3>Data URL与Base64</h3>
+
+<p>这里主要说说Data URL模式和Base64，比如下面这段代码：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;\n\n\n%c&quot;</span><span class="p">,</span> <span class="s1">&#39;font-size:0;margin-top:20px;line-height:36px;padding-top:50px;padding-left:158px;background:url(&quot;data:image/png;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAyAJ4DASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+iiigCtfX9vp1sZ7hwqjoO5PoK5afxu/mH7ParszwXPNc94y1sz6/Nbb/wB1a/IF/wBrqTXR+HvCls+nxXWoqZZZlDiPJAQHp+NerDD0aFFVK2rZ5U69avVdOi7JBa+NgXAurXap/ijOcV1Vtcw3kCzwOHjYcEVxnijwzBZae9/YBkEXMkecjHqM+lUvAest/ar6ezZjmQso9GH/ANalVw1KrRdahpbdDpV61KsqVbW56NRRRXlnqBRRVOTVtOhlaKW/tkkU4ZWlUEH6ZoAuUVQ/tvSv+glaf9/l/wAaP7b0r/oJWn/f5f8AGgC/RUMF1b3MXmwTxyxg43owI/On+dF/z1T/AL6FAD6Ko2utaXfSyRWmo2s8kX31jlVivbnBq2JYycCRCT2DUAPopjTRKcNIgI7FhSefD/z1j/76FAElFR+fD/z1j/76FPVlYZVgR6g0AMmmjgiaWVgqKMkmuO1fxrIkEj6YqkoM/vE+8O+DmqfxF1loJrXTVbarKZXHrzgf1qPwh4ei1iye8vdzW7MUSMHG7HXJ9K9COEgsM61XrscDxlT61GlSSdt76+p59qN1/al5LeyuUmmYu5XkE/SvY/CPiG01bRrePz4xdwxqksecHIGMgehrP174f6XdafIdMgFrdopMe1jtYjsQf5145E00krBJHh8s/PIpIK89OO5rzqVXE1akKFR8yb062PqcRh8sqYWri8PHklFXfS/6a7K3U9u8Zarbpo9xp6XCC4uF2HHOxT1OPXHQVwWivaaHex3lusktwgIDSvxzweBWVpkV1q1/DZWiPJK/djnA7lj/AFr1aw8FaTa2qx3EP2mbHzyOSMn2APFfQS9jgqfspNu58NH22Nqe0jpbb+u5X03xzaXEqxXqfZ2bgODlfx9K6tWDKGUgg8gjvXlPjbw+mgPDdWhY2kzFdpOSjdcZ9MfyrovhzrL6hpc9pKxZrVwFJ67T0rjxOFpuj9Yo7HZhsTUVb2Fbc7WvIfGeneCrHxNctq39q/bLj9+/kBSnPp+VevV4x8Q7yPT/AIlWN7NEZY4FikeMYywDZI5rzD0zjteHh3fCNAW82YPmm7xnPbGPxrVtE8AfY4RdnWWudg80xqu0t3xz0rr/APha+g/9C7P/AN8x1heLfHel+IdDaws9HktZTIr+YyoAAO3HNAHaWdlpln8Kb59HNx9juLeWZPPPzgng5x9K8tMOm2ehaddXEN9PcXRcsVm2oqq2MD3r1DS/+SKD/sHyfzauDll05vAWhWd9eS2rmea4jZITICAdv55NAEKweGAMjSPEYJ9HH/xNXvCUmjnxzYRQWGpxssuYzLPkqdp++uOn/wBaro8a6hHEMeJbsIqjBOkDGPrip/BmqaXL47+2y6pdX2pXymMAWnlr0HJ/BewoA6jXfhpYa9rNxqU2oXcckxGUTGBgAentWd/wp3S/+gpff+O/4Vk/FLRo9PuG1ganP9ovZQkdoowMBQCc59h27irWn/Cqa5063nudduoZ5I1d4wmdhIzjrQBc/wCFO6X/ANBS+/8AHf8ACuz8O6FD4c0aLTIJpJo42Zg8mMncSf61xDfCVI1LN4kulUdSY8Af+PV2nhjR00LQobCO8a8VGZhM3U5Yn1PTOKAPPvi1aSw6lYagobyniMRI6Bgcj8wT+VXPhv4stI9OOk3kgieNy0bN0IPJ/XNd9rGkWmuaZLY3ibo3HBHVT2I968h1T4c6zps5MEbXUIOUlhOG/EdQa9vD1KOJwyw9R2a2PHrwq4bEPEU48ye56jrPifT9M02a4FzG7Kp2lTkA9s/4d68HjE+pX0dpYwu7SSHy4x1Zj1J9z+lbsXg7xFqUqxta3bY6G4YhV9/mr0vwf4Kt/DUZuJmWfUJBhpMcIPRf8aqCw+Ai535p9CZzr49qmk4w3f8AWl/Is+EPCsPhrTsNiS+mAM8v/so9hXR0UV4tSpKpNzm9WevTpxpxUIrRGJ4p8Px+JNHNm85gdXEkcgGQGAI5HcYJqn4O8Jx+GLacm6+0zzkFnC4UAdABU3jKPVJNDzpUZmkSQNJEpwXTByB+ODj2rO8AW2tRWt3LqkUlvFI4MMEh5HqfbNdkef6o/f0vsccuT62vc1tudlXjnxAmay+JFjfG1knjt1ikZFX7wDZI6V7HRXAd55h/ws+w/wChXn/Jf/iawvFnjKDxFoh0+20Ga2kMiv5m0Hp24Fe2UUAcPZWlxb/B77NNDIk4sHBjK/Nzkjj8a4Sy1Oxi8H2+i6r4cvLtgXkSZPkaMlj904yOle50UAfPsmn+M5PDoR7fUjpAbiIjkL2+Xrj3xiuv8D6rpen6ha6dZeGb2Ga4bZJez/M3TOSccDjoMda9TooA8a8fX00/j+3M+n3FzY6dsxGgIEnRjzjvwPwrc/4WvL/0LN5/38/+xr0migDyPxF8QZ9c0C801fD95C1wm0SFydvPXG2ux+HFtcWngixjuYXikJdtrgg4LEg8+orq6KACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD//Z&quot;);background-repeat:no-repeat;&#39;</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>这是一个真实的小例子，可以在百度网盘看到，会在控制台打印出百度云logo。这里用到了<code>console.log()</code>的一些稍微高级一点的用法，支持类似C语言<code>printf()</code>风格的打印方式，占位符<code>%c</code>可以使用一些CSS样式语句。比如这里使用的：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="nt">font-size</span><span class="nd">:0</span><span class="o">;</span>
+</span><span class='line'><span class="nt">margin-top</span><span class="nd">:20px</span><span class="o">;</span>
+</span><span class='line'><span class="nt">line-height</span><span class="nd">:36px</span><span class="o">;</span>
+</span><span class='line'><span class="nt">padding-top</span><span class="nd">:50px</span><span class="o">;</span>
+</span><span class='line'><span class="nt">padding-left</span><span class="nd">:158px</span><span class="o">;</span>
+</span><span class='line'><span class="nt">background</span><span class="nd">:url</span><span class="o">(</span><span class="s2">&quot;data:image/png;base64...&quot;</span><span class="o">);</span>
+</span><span class='line'><span class="nt">background-repeat</span><span class="nd">:no-repeat</span><span class="o">;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>关于<code>console.log()</code>的用法以及<code>console</code>对象的其他方法、属性，具体此处不再赘述。</p>
+
+<p>回到url，可以看到一长串数据，在开头是这样的：</p>
+
+<pre><code>data:image/png;base64...
+</code></pre>
+
+<p>这就是Data URL Scheme的语法格式，后面是用Base64编码的图片数据。</p>
+
+<p>完整的图片就像下面这样，可以直接复制到地址栏查看：</p>
+
+<pre><code>data:image/png;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAyAJ4DASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+iiigCtfX9vp1sZ7hwqjoO5PoK5afxu/mH7ParszwXPNc94y1sz6/Nbb/wB1a/IF/wBrqTXR+HvCls+nxXWoqZZZlDiPJAQHp+NerDD0aFFVK2rZ5U69avVdOi7JBa+NgXAurXap/ijOcV1Vtcw3kCzwOHjYcEVxnijwzBZae9/YBkEXMkecjHqM+lUvAest/ar6ezZjmQso9GH/ANalVw1KrRdahpbdDpV61KsqVbW56NRRRXlnqBRRVOTVtOhlaKW/tkkU4ZWlUEH6ZoAuUVQ/tvSv+glaf9/l/wAaP7b0r/oJWn/f5f8AGgC/RUMF1b3MXmwTxyxg43owI/On+dF/z1T/AL6FAD6Ko2utaXfSyRWmo2s8kX31jlVivbnBq2JYycCRCT2DUAPopjTRKcNIgI7FhSefD/z1j/76FAElFR+fD/z1j/76FPVlYZVgR6g0AMmmjgiaWVgqKMkmuO1fxrIkEj6YqkoM/vE+8O+DmqfxF1loJrXTVbarKZXHrzgf1qPwh4ei1iye8vdzW7MUSMHG7HXJ9K9COEgsM61XrscDxlT61GlSSdt76+p59qN1/al5LeyuUmmYu5XkE/SvY/CPiG01bRrePz4xdwxqksecHIGMgehrP174f6XdafIdMgFrdopMe1jtYjsQf5145E00krBJHh8s/PIpIK89OO5rzqVXE1akKFR8yb062PqcRh8sqYWri8PHklFXfS/6a7K3U9u8Zarbpo9xp6XCC4uF2HHOxT1OPXHQVwWivaaHex3lusktwgIDSvxzweBWVpkV1q1/DZWiPJK/djnA7lj/AFr1aw8FaTa2qx3EP2mbHzyOSMn2APFfQS9jgqfspNu58NH22Nqe0jpbb+u5X03xzaXEqxXqfZ2bgODlfx9K6tWDKGUgg8gjvXlPjbw+mgPDdWhY2kzFdpOSjdcZ9MfyrovhzrL6hpc9pKxZrVwFJ67T0rjxOFpuj9Yo7HZhsTUVb2Fbc7WvIfGeneCrHxNctq39q/bLj9+/kBSnPp+VevV4x8Q7yPT/AIlWN7NEZY4FikeMYywDZI5rzD0zjteHh3fCNAW82YPmm7xnPbGPxrVtE8AfY4RdnWWudg80xqu0t3xz0rr/APha+g/9C7P/AN8x1heLfHel+IdDaws9HktZTIr+YyoAAO3HNAHaWdlpln8Kb59HNx9juLeWZPPPzgng5x9K8tMOm2ehaddXEN9PcXRcsVm2oqq2MD3r1DS/+SKD/sHyfzauDll05vAWhWd9eS2rmea4jZITICAdv55NAEKweGAMjSPEYJ9HH/xNXvCUmjnxzYRQWGpxssuYzLPkqdp++uOn/wBaro8a6hHEMeJbsIqjBOkDGPrip/BmqaXL47+2y6pdX2pXymMAWnlr0HJ/BewoA6jXfhpYa9rNxqU2oXcckxGUTGBgAentWd/wp3S/+gpff+O/4Vk/FLRo9PuG1ganP9ovZQkdoowMBQCc59h27irWn/Cqa5063nudduoZ5I1d4wmdhIzjrQBc/wCFO6X/ANBS+/8AHf8ACuz8O6FD4c0aLTIJpJo42Zg8mMncSf61xDfCVI1LN4kulUdSY8Af+PV2nhjR00LQobCO8a8VGZhM3U5Yn1PTOKAPPvi1aSw6lYagobyniMRI6Bgcj8wT+VXPhv4stI9OOk3kgieNy0bN0IPJ/XNd9rGkWmuaZLY3ibo3HBHVT2I968h1T4c6zps5MEbXUIOUlhOG/EdQa9vD1KOJwyw9R2a2PHrwq4bEPEU48ye56jrPifT9M02a4FzG7Kp2lTkA9s/4d68HjE+pX0dpYwu7SSHy4x1Zj1J9z+lbsXg7xFqUqxta3bY6G4YhV9/mr0vwf4Kt/DUZuJmWfUJBhpMcIPRf8aqCw+Ai535p9CZzr49qmk4w3f8AWl/Is+EPCsPhrTsNiS+mAM8v/so9hXR0UV4tSpKpNzm9WevTpxpxUIrRGJ4p8Px+JNHNm85gdXEkcgGQGAI5HcYJqn4O8Jx+GLacm6+0zzkFnC4UAdABU3jKPVJNDzpUZmkSQNJEpwXTByB+ODj2rO8AW2tRWt3LqkUlvFI4MMEh5HqfbNdkef6o/f0vsccuT62vc1tudlXjnxAmay+JFjfG1knjt1ikZFX7wDZI6V7HRXAd55h/ws+w/wChXn/Jf/iawvFnjKDxFoh0+20Ga2kMiv5m0Hp24Fe2UUAcPZWlxb/B77NNDIk4sHBjK/Nzkjj8a4Sy1Oxi8H2+i6r4cvLtgXkSZPkaMlj904yOle50UAfPsmn+M5PDoR7fUjpAbiIjkL2+Xrj3xiuv8D6rpen6ha6dZeGb2Ga4bZJez/M3TOSccDjoMda9TooA8a8fX00/j+3M+n3FzY6dsxGgIEnRjzjvwPwrc/4WvL/0LN5/38/+xr0migDyPxF8QZ9c0C801fD95C1wm0SFydvPXG2ux+HFtcWngixjuYXikJdtrgg4LEg8+orq6KACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD//Z
+</code></pre>
+
+<p>不过，Firefox似乎不支持在控制台使用Data URL，不知道是不是由于这个原因，美团外卖在控制台直接用的一张图片。</p>
+
+<h5>参考资料：</h5>
+
+<ol>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window.btoa">https://developer.mozilla.org/zh-CN/docs/Web/API/Window.btoa</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window.atob">https://developer.mozilla.org/zh-CN/docs/Web/API/Window.atob</a></li>
+<li><a href="http://tools.ietf.org/html/rfc2397" title="RFC 2397 of the Internet Engineering Task Force (IETF)">RFC 2397 of the Internet Engineering Task Force (IETF)</a></li>
+<li>Javascript高级程序设计（第3版）[人民邮电出版社]</li>
+<li>Java加密与解密的艺术[机械工业出版社]</li>
+</ol>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[对一次求职经历的叙述]]></title>
+    <link href="http://mirreal.github.io/blog/2014/10/14/about-an-interview/"/>
+    <updated>2014-10-14T09:42:08+08:00</updated>
+    <id>http://mirreal.github.io/blog/2014/10/14/about-an-interview</id>
+    <content type="html"><![CDATA[<p>首先，我不能说出这家公司的名字，因为这违反了保密协议，即使这个博客除了我没人阅读。我只能说，这只是一家很棒的企业，虽然没有成功，但是仍然给我留下了美好的印象。我写出来，只是记录自己的一点感悟。</p>
+
+<h2>笔试</h2>
+
+<p>该部分包括必做题7道，如下：</p>
+
+<!-- more -->
+
+
+<p>1、有6，9，140颗一包的糖果，比如当用户团购8颗时，则必须拆包。问：必须拆包卖的最大订单是多少？</p>
+
+<p>2、给出一棵二叉树的后序遍历，中序遍历。问：画出该二叉树，并写出前序遍历。</p>
+
+<p>3、写一个函数将二叉树左右子节点交换。</p>
+
+<p>4、给一个数组，可能有重复项，写一个程序求元素X所在的区间。</p>
+
+<p>5、给一个浮点数数组，写一个程序输出任意连续元素乘积的最大值。</p>
+
+<p>6、景区门票5元，某天售票处无零钱，来了2N个游客，其中n人有5元钱，其余人只有10元的。问：所有人都无须为找零而等待的概率是多少？</p>
+
+<p>7、给一个数组，其值表示台阶的高度，写一个程序求蓄水量。</p>
+
+<p>选作题：</p>
+
+<p>前端：设计一个对象，实现两个函数<code>getVersion()</code> 和 <code>setVersion()</code>。很简单。</p>
+
+<p>后面的没仔细看了，主要是前面的7道题都没搞定。记得有iOS、Android、运维、测试、嵌入式的。</p>
+
+<h2>面试</h2>
+
+<h3>1st Round</h3>
+
+<p>这一轮大概就是随便聊聊天，主要是针对简历提些问题，看看简历有没有水分。写两段程序，我的题目有：</p>
+
+<h4>链表求逆</h4>
+
+<h4>二叉搜索树</h4>
+
+<p>然后，还问了个数学概率问题：生日悖论</p>
+
+<p>总结一下：大概都是些以前都会见过的东西，至少我碰到的都是接触过的，知道的，不会有太难的问题。</p>
+
+<h3>2nd Round</h3>
+
+<h4>关于作用域</h4>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">function</span> <span class="nx">test</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">);</span>
+</span><span class='line'>  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">b</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="nx">a</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+</span><span class='line'>  <span class="kd">function</span> <span class="nx">b</span><span class="p">()</span> <span class="p">{};</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">test</span><span class="p">();</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>打印结果:</p>
+
+<pre><code>1
+[Function:b]
+</code></pre>
+
+<p>其实，没太明白这道题目考点何处，不过面试官的意思似乎在作用域，当我刚说出第一个会打印出 1 的时候，她说我还是太年轻。我立刻紧张了，看了一遍又一遍，还是没想出陷阱究竟在哪里。我只能想，大概是看错题目了，但我后来的面试过程中又瞄了几次，确定她写的就是上面那段代码。</p>
+
+<h4>原型链</h4>
+
+<p>结果，忘了这东西。衰！</p>
+
+<p>仍然有两个算法问题：</p>
+
+<h4>1.数组最大的N项</h4>
+
+<h4>2.数组去除重复项</h4>
+
+<p>比一轮的题目会难一点。当然，并不偏，有种似曾相识的感觉。</p>
+
+<h2>2014.10.20更新</h2>
+
+<p>上面的文章是14号上午九点多发的。本以为已经没戏了，结果，临近中午时接到工作人员三面的通知，让我又惊又喜。最后，由于他们准备回京，而我需要两个钟头才能赶过去，所以改为电话面试。</p>
+
+<p>第二天，约好3点钟，但没电话，我打过去问了，后来5点面试官打过来，由于准备另外一家公司的笔试，推迟到第二天。最后，16号下午进行的电话面试。如今，已经过去4天了，有件事已确信无疑，我被婉拒了，他们到底是没看上我。</p>
+
+<h3>回顾一下完整的历程：</h3>
+
+<p>回顾一下此次应聘经历，颇为曲折，让我印象深刻。本来第一天因为另外一场面试错过笔试，就像错过的许多企业一样，以为就这样算了吧。</p>
+
+<p>结果，第二天安排了第二场笔试，于是吃过午饭，就出发，搭两个钟头的公车去参加笔试。笔试题目挺对我的胃口，这句话的意思是比较符合我对技术公司挑选人才标准的期望，做不做得好那是另外一回事了。事实上，笔试后就感觉自己白跑了一趟。</p>
+
+<p>但是，第二天居然收到面试通知，抱着一种很轻松的心态，搭两个钟头的公车去参加面试。在这个时候，对通过面试完全没有抱任何希望，因为这才我的第二次，想的只是增加点面试经验而已，所以真的很轻松，而且没了第一次面试时候话都说不清楚的笨拙，答不上就走呗，没什么损失。</p>
+
+<p>没想到，第一轮面试竟然比较顺利，大为出乎我的意料，而且，在外面呆了好久，也没人过来跟我讲，今天的面试就到这里了。我知道，已经过了，便开始浮想连篇，觉得自己进入这家企业开始有点希望了。等了好长一段时间，终于开始了第二轮面试，但是，那个漂亮姐姐让我觉得渺小，我到底还是太差劲。</p>
+
+<p>面试结束后都快八点，直觉告诉我，不可能会通过了，于是，离开面试地点，搭两个钟头的公车回学校。路上，叫了外卖，请室友帮忙取了，回到宿舍，十点半了，狼吞虎咽消灭掉晚餐。</p>
+
+<h3>作个小小的总结：</h3>
+
+<p>想想这些经历，颇多起伏。我至今不知道，二面到底过没，以我的表现应该是不会过，但偏偏却让我参加第三轮，给了我一种还有希望的错觉，但最后仍然还是嫌弃了我。</p>
+
+<p>电话面试，因为是第一次，我又像第一次面试一样紧张过头了，语无伦次。至少有四个地方，说得稀里糊涂的：</p>
+
+<ol>
+<li>自我介绍</li>
+<li>职位的认识</li>
+<li>为什么不考研</li>
+<li>为什么还没拿到其他公司的offer</li>
+</ol>
+
+
+<p>有种说完就觉得糟了的感觉。</p>
+
+<h4>失败的原因</h4>
+
+<ol>
+<li>技术知识不扎实</li>
+<li>表达太烂</li>
+<li>大概还有礼貌的问题</li>
+</ol>
+
+
+<p>本来，还想去问问那个漂亮姐姐的，寻求一些建议，但转念一想，还是算了，她未必会记得我，问不问也不会有太大差别。</p>
+
+<p>再见了，MT。</p>
+
+<p>不过，如果足够牛逼，又怎会因此而被嫌弃。技术的大门，才刚踏进一只脚而已，不过，我会努力地走下去的。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[关于内存对齐的一点注解]]></title>
+    <link href="http://mirreal.github.io/blog/2014/09/15/memory-alignment/"/>
+    <updated>2014-09-15T14:30:23+08:00</updated>
+    <id>http://mirreal.github.io/blog/2014/09/15/memory-alignment</id>
+    <content type="html"><![CDATA[<h2>一、内存对齐的原因</h2>
+
+<p>大部分的参考资料都是如是说的：</p>
+
+<ol>
+<li><p>平台原因(移植原因)：不是所有的硬件平台都能访问任意地址上的任意数据的；某些硬件平台只能在某些地址处取某些特定类型的数据，否则抛出硬件异常。</p></li>
+<li><p>性能原因：数据结构(尤其是栈)应该尽可能地在自然边界上对齐。原因在于，为了访问未对齐的内存，处理器需要作两次内存访问；而对齐的内存访问仅需要一次访问。</p></li>
+</ol>
+
+
+<h2>二、对齐规则</h2>
+
+<h4>每个特定平台上的编译器都有自己的默认“对齐系数”(也叫对齐模数)。比如32位系统默认对齐系数是 4， 64位的则可以达到 8.</h4>
+
+<!-- more -->
+
+
+<p>程序员可以通过预编译命令</p>
+
+<pre><code>#pragma pack(n)  // n=1,2,4,8,16
+</code></pre>
+
+<p>来改变这一系数，其中的n就是指定的“对齐系数”。</p>
+
+<p>另外，可以通过GCC提供的 <code>__attribute__</code> 扩展机制取消对齐优化。</p>
+
+<h3>规则：</h3>
+
+<ol>
+<li><p>数据成员对齐规则：结构(struct)或联合(union)的数据成员，第一个数据成员放在offset为0的地方，以后每个数据成员的对齐按照<code>#pragma pack</code>指定的数值和这个数据成员自身长度中，比较小的那个进行。</p></li>
+<li><p>结构(或联合)的整体对齐规则：在数据成员完成各自对齐之后，结构(或联合)本身也要进行对齐，对齐将按照<code>#pragma pack</code>指定的数值和结构(或联合)最大数据成员长度中，比较小的那个进行。</p></li>
+</ol>
+
+
+<h2>三、试验</h2>
+
+<p>下面通过一例子的说明这个规则</p>
+
+<p>编译器：GCC4.6.3, (g++)</p>
+
+<p>操作系统：Ubuntu 12， Windows 7</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='c'><span class='line'><span class="k">struct</span> <span class="n">test</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kt">short</span> <span class="n">a</span><span class="p">;</span>
+</span><span class='line'>  <span class="kt">double</span> <span class="n">b</span><span class="p">;</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">c</span><span class="p">;</span>
+</span><span class='line'>  <span class="kt">char</span> <span class="n">d</span><span class="p">;</span>
+</span><span class='line'><span class="p">};</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>在GCC中，各类型的大小如下：</p>
+
+<pre><code>sizeof(char)) = 1
+sizeof(short) = 2
+sizeof(int) = 4
+sizeof(float) = 4
+sizeof(double) = 8
+sizeof(long long) = 8
+</code></pre>
+
+<h3>注解：在32位系统，n=4</h3>
+
+<p>相当于：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='c'><span class='line'><span class="cp">#pragma pack(4)</span>
+</span><span class='line'><span class="k">struct</span> <span class="n">test</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kt">short</span> <span class="n">a</span><span class="p">;</span> <span class="c1">// 按2字节对齐，存放区间：0-1</span>
+</span><span class='line'>  <span class="kt">double</span> <span class="n">b</span><span class="p">;</span> <span class="c1">// 按4字节对齐，存放区间：4-11</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">c</span><span class="p">;</span> <span class="c1">// 按4字节对齐，存放区间：12-15</span>
+</span><span class='line'>  <span class="kt">char</span> <span class="n">d</span><span class="p">;</span> <span class="c1">// 按1字节对齐，存放区间：16</span>
+</span><span class='line'><span class="p">};</span>
+</span><span class='line'><span class="cp">#pragma pack()</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>最后整体对齐，按4圆整，故：</p>
+
+<pre><code>sizeof(test) = 20 
+</code></pre>
+
+<h3>注解：在64位系统，默认的对齐系数为8</h3>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='c'><span class='line'><span class="k">struct</span> <span class="n">test</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kt">short</span> <span class="n">a</span><span class="p">;</span> <span class="c1">// 按2字节对齐，存放区间：0-1</span>
+</span><span class='line'>  <span class="kt">double</span> <span class="n">b</span><span class="p">;</span> <span class="c1">// 按8字节对齐，存放区间：8-15</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">c</span><span class="p">;</span> <span class="c1">// 按4字节对齐，存放区间：16-19</span>
+</span><span class='line'>  <span class="kt">char</span> <span class="n">d</span><span class="p">;</span> <span class="c1">// 按1字节对齐，存放区间：20</span>
+</span><span class='line'><span class="p">};</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>最后整体对齐，按8圆整，故：</p>
+
+<pre><code>sizeof(test) = 24 
+</code></pre>
+
+<h3>注解：C++允许在结构体中定义static变量，静态变量分配在同一的静态存储区，不包含在结构体大小中。</h3>
+
+<p>如下：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='c'><span class='line'><span class="cp">#pragma pack(4)</span>
+</span><span class='line'><span class="k">struct</span> <span class="n">test</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kt">short</span> <span class="n">a</span><span class="p">;</span>
+</span><span class='line'>  <span class="kt">double</span> <span class="n">b</span><span class="p">;</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">c</span><span class="p">;</span>
+</span><span class='line'>  <span class="kt">char</span> <span class="n">d</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">static</span> <span class="kt">int</span> <span class="n">d</span><span class="p">;</span>
+</span><span class='line'><span class="p">};</span>
+</span><span class='line'><span class="cp">#pragma pack()</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>该结构体的大小仍为 20.</p>
+
+<p>在标准C，似乎并没有这种用法。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress + Github Pages]]></title>
+    <link href="http://mirreal.github.io/blog/2014/09/01/octopress-plus-github-pages/"/>
+    <updated>2014-09-01T15:04:01+08:00</updated>
+    <id>http://mirreal.github.io/blog/2014/09/01/octopress-plus-github-pages</id>
+    <content type="html"><![CDATA[<h2>Octopress + Github Pages = a new blog</h2>
+
+<h5><a href="http://octopress.org/docs/setup">document</a></h5>
+
+<h5>Enviroment: Ubuntu 12.00</h5>
+
+<h3>1.Installing Ruby With RVM</h3>
+
+<h4>Install RVM</h4>
+
+<pre><code>curl -L https://get.rvm.io | bash -s stable --ruby
+</code></pre>
+
+<!-- more -->
+
+
+<p>Then run:</p>
+
+<pre><code>source ~/.rvm/scripts/rvm
+</code></pre>
+
+<p>to start RVM</p>
+
+<h4>Install Ruby 1.9.3</h4>
+
+<pre><code>rvm install 1.9.3
+rvm use 1.9.3
+rvm rubygems latest
+</code></pre>
+
+<h3>2.Deploying to Github Pages</h3>
+
+<h4>With Github User/Organization pages</h4>
+
+<p>Create a new Github repository and name the repository with the format <code>username.github.io</code></p>
+
+<p>Just an empty repository is okay.</p>
+
+<pre><code>rake setup_github_pages
+</code></pre>
+
+<p>Next run:</p>
+
+<pre><code>rake generate
+rake deploy
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[康威生命游戏的简单实现]]></title>
+    <link href="http://mirreal.github.io/blog/2014/08/21/game-of-life/"/>
+    <updated>2014-08-21T19:26:12+08:00</updated>
+    <id>http://mirreal.github.io/blog/2014/08/21/game-of-life</id>
+    <content type="html"><![CDATA[<p>生命游戏，数学家John Conway发明的一个游戏，又称康威生命演化，生命棋，细胞自动机。</p>
+
+<p>康威有许多好玩有趣的发明，最广为人知的一个是外观数列（Look-and-Say），这里不多说，另一个就是生命游戏（Game-of-Life）。</p>
+
+<p>关于康威，摘录一段Wikipedia的叙述:</p>
+
+<blockquote><p>約翰·何頓·康威（John Horton Conway，1937年12月26日－），生於英國利物浦，數學家，活躍於有限群的研究、趣味數學、紐結理論、數論、組合博弈論和編碼學等範疇。</p><p>康威年少時就對數學很有強烈的興趣：四歲時，其母發現他背誦二的次方；十一歲時，升讀中學的面試，被問及他成長後想幹甚麼，他回答想在劍橋當數學家。後來康威果然於劍橋大學修讀數學，現時為普林斯頓大學的教授。</p><footer><strong>約翰·何頓·康威</strong> <cite>Wikipedia</cite></footer></blockquote>
+
+
+<p>生命游戏模拟的是二维平面上生命的演化过程。</p>
+
+<!-- more -->
+
+
+<p>规则很简单：每个细胞有两种状态&ndash;存活或死亡，每个细胞与以自身为中心的周围八格细胞产生互动。</p>
+
+<ol>
+<li>如果一个活细胞周围有2至3个活细胞，在下一个阶段继续存活，否则死亡；</li>
+<li>如果一个死细胞周围有3个活细胞，在下一个阶段将变成活细胞，否则继续保持死亡</li>
+</ol>
+
+
+<p>康威生命游戏是简单规则产生复杂变化的典型例子。在演变过程中，可以看到一些非常美妙的变化，和一些优美的几何图形。</p>
+
+<h4>下面是用HTML5 Canvas实现的一个简单版本。</h4>
+
+<p>源码：<a href="https://github.com/mirreal/moon9/tree/master/GameOfLife">https://github.com/mirreal/moon9/tree/master/GameOfLife</a></p>
+
+<p>DEMO：<a href="http://mirreal.net/game-of-life/">http://mirreal.net/game-of-life/</a></p>
+
+<p>JS代码如下：</p>
+
+<figure class='code'><figcaption><span>life.js</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+<span class='line-number'>86</span>
+<span class='line-number'>87</span>
+<span class='line-number'>88</span>
+<span class='line-number'>89</span>
+<span class='line-number'>90</span>
+<span class='line-number'>91</span>
+<span class='line-number'>92</span>
+<span class='line-number'>93</span>
+<span class='line-number'>94</span>
+<span class='line-number'>95</span>
+<span class='line-number'>96</span>
+<span class='line-number'>97</span>
+<span class='line-number'>98</span>
+<span class='line-number'>99</span>
+<span class='line-number'>100</span>
+<span class='line-number'>101</span>
+<span class='line-number'>102</span>
+<span class='line-number'>103</span>
+<span class='line-number'>104</span>
+<span class='line-number'>105</span>
+<span class='line-number'>106</span>
+<span class='line-number'>107</span>
+<span class='line-number'>108</span>
+<span class='line-number'>109</span>
+<span class='line-number'>110</span>
+<span class='line-number'>111</span>
+<span class='line-number'>112</span>
+<span class='line-number'>113</span>
+<span class='line-number'>114</span>
+<span class='line-number'>115</span>
+<span class='line-number'>116</span>
+<span class='line-number'>117</span>
+<span class='line-number'>118</span>
+<span class='line-number'>119</span>
+<span class='line-number'>120</span>
+<span class='line-number'>121</span>
+<span class='line-number'>122</span>
+<span class='line-number'>123</span>
+<span class='line-number'>124</span>
+<span class='line-number'>125</span>
+<span class='line-number'>126</span>
+<span class='line-number'>127</span>
+<span class='line-number'>128</span>
+<span class='line-number'>129</span>
+<span class='line-number'>130</span>
+<span class='line-number'>131</span>
+<span class='line-number'>132</span>
+<span class='line-number'>133</span>
+<span class='line-number'>134</span>
+<span class='line-number'>135</span>
+<span class='line-number'>136</span>
+<span class='line-number'>137</span>
+<span class='line-number'>138</span>
+<span class='line-number'>139</span>
+<span class='line-number'>140</span>
+<span class='line-number'>141</span>
+<span class='line-number'>142</span>
+<span class='line-number'>143</span>
+<span class='line-number'>144</span>
+<span class='line-number'>145</span>
+<span class='line-number'>146</span>
+<span class='line-number'>147</span>
+<span class='line-number'>148</span>
+<span class='line-number'>149</span>
+<span class='line-number'>150</span>
+<span class='line-number'>151</span>
+<span class='line-number'>152</span>
+<span class='line-number'>153</span>
+<span class='line-number'>154</span>
+<span class='line-number'>155</span>
+<span class='line-number'>156</span>
+<span class='line-number'>157</span>
+<span class='line-number'>158</span>
+<span class='line-number'>159</span>
+<span class='line-number'>160</span>
+<span class='line-number'>161</span>
+<span class='line-number'>162</span>
+<span class='line-number'>163</span>
+<span class='line-number'>164</span>
+<span class='line-number'>165</span>
+<span class='line-number'>166</span>
+<span class='line-number'>167</span>
+<span class='line-number'>168</span>
+<span class='line-number'>169</span>
+<span class='line-number'>170</span>
+<span class='line-number'>171</span>
+<span class='line-number'>172</span>
+<span class='line-number'>173</span>
+<span class='line-number'>174</span>
+<span class='line-number'>175</span>
+<span class='line-number'>176</span>
+<span class='line-number'>177</span>
+<span class='line-number'>178</span>
+<span class='line-number'>179</span>
+<span class='line-number'>180</span>
+<span class='line-number'>181</span>
+<span class='line-number'>182</span>
+<span class='line-number'>183</span>
+<span class='line-number'>184</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">function</span> <span class="nx">Game</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">this</span><span class="p">.</span><span class="nx">stones</span> <span class="o">=</span> <span class="p">[];</span>
+</span><span class='line'>  <span class="k">this</span><span class="p">.</span><span class="nx">canvas</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Canvas</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">this</span><span class="p">.</span><span class="nx">init</span><span class="p">();</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">Game</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">init</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">self</span> <span class="o">=</span> <span class="k">this</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">this</span><span class="p">.</span><span class="nx">createRandomStones</span><span class="p">();</span>
+</span><span class='line'>  <span class="k">this</span><span class="p">.</span><span class="nx">draw</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">this</span><span class="p">.</span><span class="nx">getAroundStones</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">this</span><span class="p">.</span><span class="nx">eventHandler</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">this</span><span class="p">.</span><span class="nx">loop</span> <span class="o">=</span> <span class="nx">setInterval</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">self</span><span class="p">.</span><span class="nx">update</span><span class="p">();</span>
+</span><span class='line'>    <span class="nx">self</span><span class="p">.</span><span class="nx">draw</span><span class="p">();</span>
+</span><span class='line'>  <span class="p">},</span> <span class="mi">120</span><span class="p">);</span>
+</span><span class='line'><span class="p">};</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">Game</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">eventHandler</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">self</span> <span class="o">=</span> <span class="k">this</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">snapshotButton</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;snapshotButton&#39;</span><span class="p">),</span>
+</span><span class='line'>      <span class="nx">snapshotImageElement</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;snapshotImageElement&#39;</span><span class="p">),</span>
+</span><span class='line'>      <span class="nx">canvas</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;canvas&#39;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="nx">snapshotButton</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">if</span> <span class="p">(</span><span class="nx">snapshotButton</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">==</span> <span class="s1">&#39;Snapshot&#39;</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nx">clearInterval</span><span class="p">(</span><span class="nx">self</span><span class="p">.</span><span class="nx">loop</span><span class="p">);</span>
+</span><span class='line'>      <span class="kd">var</span> <span class="nx">dataUrl</span> <span class="o">=</span> <span class="nx">canvas</span><span class="p">.</span><span class="nx">toDataURL</span><span class="p">();</span>
+</span><span class='line'>      <span class="nx">snapshotImageElement</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="nx">dataUrl</span><span class="p">;</span>
+</span><span class='line'>      <span class="nx">snapshotImageElement</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;inline&#39;</span><span class="p">;</span>
+</span><span class='line'>      <span class="nx">canvas</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;none&#39;</span><span class="p">;</span>
+</span><span class='line'>      <span class="nx">snapshotButton</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="s1">&#39;Continue&#39;</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nx">self</span><span class="p">.</span><span class="nx">loop</span> <span class="o">=</span> <span class="nx">setInterval</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>        <span class="nx">self</span><span class="p">.</span><span class="nx">update</span><span class="p">();</span>
+</span><span class='line'>        <span class="nx">self</span><span class="p">.</span><span class="nx">draw</span><span class="p">();</span>
+</span><span class='line'>      <span class="p">},</span> <span class="mi">800</span><span class="p">);</span>
+</span><span class='line'>      <span class="nx">canvas</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;inline&#39;</span><span class="p">;</span>
+</span><span class='line'>      <span class="nx">snapshotImageElement</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;none&#39;</span><span class="p">;</span>
+</span><span class='line'>      <span class="nx">snapshotButton</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="s1">&#39;Snapshot&#39;</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>  <span class="p">};</span>
+</span><span class='line'><span class="p">};</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">Game</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">createRandomStones</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">32</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;</span> <span class="mi">32</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>      <span class="kd">var</span> <span class="nx">status</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mf">0.2</span> <span class="o">?</span> <span class="kc">true</span> <span class="o">:</span> <span class="kc">false</span><span class="p">;</span>
+</span><span class='line'>      <span class="k">this</span><span class="p">.</span><span class="nx">stones</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="k">new</span> <span class="nx">Stone</span><span class="p">({</span><span class="nx">x</span><span class="o">:</span> <span class="nx">i</span><span class="p">,</span> <span class="nx">y</span><span class="o">:</span> <span class="nx">j</span><span class="p">},</span> <span class="nx">status</span><span class="p">))</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">};</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">Game</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">draw</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">self</span> <span class="o">=</span> <span class="k">this</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">this</span><span class="p">.</span><span class="nx">canvas</span><span class="p">.</span><span class="nx">drawGrid</span><span class="p">(</span><span class="s2">&quot;lightgrey&quot;</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">20</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">this</span><span class="p">.</span><span class="nx">stones</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">stone</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">if</span> <span class="p">(</span><span class="nx">stone</span><span class="p">.</span><span class="nx">status</span> <span class="o">===</span> <span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nx">self</span><span class="p">.</span><span class="nx">canvas</span><span class="p">.</span><span class="nx">drawStone</span><span class="p">(</span><span class="nx">stone</span><span class="p">);</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>  <span class="p">});</span>
+</span><span class='line'><span class="p">};</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">Game</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">getAroundStones</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">self</span> <span class="o">=</span> <span class="k">this</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">this</span><span class="p">.</span><span class="nx">stones</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">stone</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">stone</span><span class="p">.</span><span class="nx">around</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">position</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nx">stone</span><span class="p">.</span><span class="nx">aroundStones</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">self</span><span class="p">.</span><span class="nx">stones</span><span class="p">[</span><span class="mi">32</span><span class="o">*</span><span class="nx">position</span><span class="p">.</span><span class="nx">x</span> <span class="o">+</span> <span class="nx">position</span><span class="p">.</span><span class="nx">y</span><span class="p">]);</span>
+</span><span class='line'>    <span class="p">});</span>
+</span><span class='line'>  <span class="p">});</span>
+</span><span class='line'><span class="p">};</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">Game</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">update</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">self</span> <span class="o">=</span> <span class="k">this</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">this</span><span class="p">.</span><span class="nx">stones</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">stone</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">stone</span><span class="p">.</span><span class="nx">aroundStones</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">s</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>      <span class="k">if</span> <span class="p">(</span><span class="nx">s</span><span class="p">.</span><span class="nx">status</span> <span class="o">===</span> <span class="kc">true</span><span class="p">)</span> <span class="nx">stone</span><span class="p">.</span><span class="nx">aliveCount</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">});</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">if</span> <span class="p">(</span><span class="nx">stone</span><span class="p">.</span><span class="nx">status</span> <span class="o">===</span> <span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>      <span class="k">if</span> <span class="p">(</span><span class="nx">stone</span><span class="p">.</span><span class="nx">aliveCount</span> <span class="o">===</span> <span class="mi">2</span> <span class="o">||</span> <span class="nx">stone</span><span class="p">.</span><span class="nx">aliveCount</span> <span class="o">===</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>        <span class="nx">stone</span><span class="p">.</span><span class="nx">nextStatus</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span><span class='line'>      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span><span class='line'>        <span class="nx">stone</span><span class="p">.</span><span class="nx">nextStatus</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+</span><span class='line'>      <span class="p">}</span>
+</span><span class='line'>    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span><span class='line'>      <span class="k">if</span> <span class="p">(</span><span class="nx">stone</span><span class="p">.</span><span class="nx">aliveCount</span> <span class="o">===</span> <span class="mi">3</span><span class="p">)</span> <span class="nx">stone</span><span class="p">.</span><span class="nx">nextStatus</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span><span class='line'>      <span class="k">else</span> <span class="nx">stone</span><span class="p">.</span><span class="nx">nextStatus</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>  <span class="p">});</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">this</span><span class="p">.</span><span class="nx">stones</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">stone</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">stone</span><span class="p">.</span><span class="nx">status</span> <span class="o">=</span> <span class="nx">stone</span><span class="p">.</span><span class="nx">nextStatus</span><span class="p">;</span>
+</span><span class='line'>    <span class="nx">stone</span><span class="p">.</span><span class="nx">aliveCount</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">});</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="kd">function</span> <span class="nx">Stone</span><span class="p">(</span><span class="nx">position</span><span class="p">,</span> <span class="nx">status</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">this</span><span class="p">.</span><span class="nx">x</span> <span class="o">=</span> <span class="nx">position</span><span class="p">.</span><span class="nx">x</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">this</span><span class="p">.</span><span class="nx">y</span> <span class="o">=</span> <span class="nx">position</span><span class="p">.</span><span class="nx">y</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">this</span><span class="p">.</span><span class="nx">status</span> <span class="o">=</span> <span class="nx">status</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">this</span><span class="p">.</span><span class="nx">nextStatus</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">this</span><span class="p">.</span><span class="nx">aroundStones</span> <span class="o">=</span> <span class="p">[];</span>
+</span><span class='line'>  <span class="k">this</span><span class="p">.</span><span class="nx">aliveCount</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">this</span><span class="p">.</span><span class="nx">around</span> <span class="o">=</span> <span class="p">[];</span>
+</span><span class='line'>  <span class="k">this</span><span class="p">.</span><span class="nx">getAround</span><span class="p">();</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">Stone</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">getAround</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">x</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;=</span> <span class="k">this</span><span class="p">.</span><span class="nx">x</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">j</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">y</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;=</span> <span class="k">this</span><span class="p">.</span><span class="nx">y</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>      <span class="k">if</span> <span class="p">(</span><span class="nx">i</span> <span class="o">==</span> <span class="k">this</span><span class="p">.</span><span class="nx">x</span> <span class="o">&amp;&amp;</span> <span class="nx">j</span> <span class="o">==</span> <span class="k">this</span><span class="p">.</span><span class="nx">y</span><span class="p">)</span> <span class="k">continue</span><span class="p">;</span>
+</span><span class='line'>      <span class="k">if</span> <span class="p">(</span><span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="o">||</span> <span class="nx">i</span> <span class="o">&gt;=</span> <span class="mi">32</span><span class="p">)</span> <span class="k">continue</span><span class="p">;</span>
+</span><span class='line'>      <span class="k">if</span> <span class="p">(</span><span class="nx">j</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="o">||</span> <span class="nx">j</span> <span class="o">&gt;=</span> <span class="mi">32</span><span class="p">)</span> <span class="k">continue</span><span class="p">;</span>
+</span><span class='line'>      <span class="k">this</span><span class="p">.</span><span class="nx">around</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span><span class="nx">x</span><span class="o">:</span> <span class="nx">i</span><span class="p">,</span> <span class="nx">y</span><span class="o">:</span> <span class="nx">j</span><span class="p">});</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">};</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="kd">function</span> <span class="nx">Canvas</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">this</span><span class="p">.</span><span class="nx">canvas</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;canvas&#39;</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">this</span><span class="p">.</span><span class="nx">context</span> <span class="o">=</span> <span class="nx">canvas</span><span class="p">.</span><span class="nx">getContext</span><span class="p">(</span><span class="s1">&#39;2d&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">Canvas</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">drawGrid</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">color</span><span class="p">,</span> <span class="nx">stepx</span><span class="p">,</span> <span class="nx">stepy</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">canvas</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">canvas</span><span class="p">;</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">ctx</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">context</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="nx">ctx</span><span class="p">.</span><span class="nx">clearRect</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">canvas</span><span class="p">.</span><span class="nx">width</span><span class="p">,</span> <span class="nx">canvas</span><span class="p">.</span><span class="nx">height</span><span class="p">);</span>
+</span><span class='line'>  <span class="nx">ctx</span><span class="p">.</span><span class="nx">save</span><span class="p">();</span>
+</span><span class='line'>  <span class="nx">ctx</span><span class="p">.</span><span class="nx">strokeStyle</span> <span class="o">=</span> <span class="nx">color</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">ctx</span><span class="p">.</span><span class="nx">lineWidth</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="nx">stepx</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">ctx</span><span class="p">.</span><span class="nx">canvas</span><span class="p">.</span><span class="nx">width</span><span class="p">;</span> <span class="nx">i</span> <span class="o">+=</span> <span class="nx">stepx</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">ctx</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span>
+</span><span class='line'>    <span class="nx">ctx</span><span class="p">.</span><span class="nx">moveTo</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span><span class='line'>    <span class="nx">ctx</span><span class="p">.</span><span class="nx">lineTo</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span> <span class="nx">ctx</span><span class="p">.</span><span class="nx">canvas</span><span class="p">.</span><span class="nx">height</span><span class="p">);</span>
+</span><span class='line'>    <span class="nx">ctx</span><span class="p">.</span><span class="nx">stroke</span><span class="p">();</span>
+</span><span class='line'>    <span class="nx">ctx</span><span class="p">.</span><span class="nx">closePath</span><span class="p">();</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="nx">stepy</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">ctx</span><span class="p">.</span><span class="nx">canvas</span><span class="p">.</span><span class="nx">height</span><span class="p">;</span> <span class="nx">i</span> <span class="o">+=</span> <span class="nx">stepy</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">ctx</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span>
+</span><span class='line'>    <span class="nx">ctx</span><span class="p">.</span><span class="nx">moveTo</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nx">i</span><span class="p">);</span>
+</span><span class='line'>    <span class="nx">ctx</span><span class="p">.</span><span class="nx">lineTo</span><span class="p">(</span><span class="nx">ctx</span><span class="p">.</span><span class="nx">canvas</span><span class="p">.</span><span class="nx">width</span><span class="p">,</span> <span class="nx">i</span><span class="p">);</span>
+</span><span class='line'>    <span class="nx">ctx</span><span class="p">.</span><span class="nx">stroke</span><span class="p">();</span>
+</span><span class='line'>    <span class="nx">ctx</span><span class="p">.</span><span class="nx">closePath</span><span class="p">();</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="nx">ctx</span><span class="p">.</span><span class="nx">restore</span><span class="p">();</span>
+</span><span class='line'><span class="p">};</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">Canvas</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">drawStone</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">stone</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">ctx</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">context</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">20</span> <span class="o">*</span> <span class="nx">stone</span><span class="p">.</span><span class="nx">x</span> <span class="o">+</span> <span class="mi">10</span><span class="p">;</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">y</span> <span class="o">=</span> <span class="mi">20</span> <span class="o">*</span> <span class="nx">stone</span><span class="p">.</span><span class="nx">y</span> <span class="o">+</span> <span class="mi">10</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="nx">ctx</span><span class="p">.</span><span class="nx">fillStyle</span> <span class="o">=</span> <span class="s1">&#39;orange&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">ctx</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span>
+</span><span class='line'>  <span class="nx">ctx</span><span class="p">.</span><span class="nx">arc</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span> <span class="kc">false</span><span class="p">);</span>
+</span><span class='line'>  <span class="nx">ctx</span><span class="p">.</span><span class="nx">closePath</span><span class="p">();</span>
+</span><span class='line'>  <span class="nx">ctx</span><span class="p">.</span><span class="nx">fill</span><span class="p">();</span>
+</span><span class='line'><span class="p">};</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="k">new</span> <span class="nx">Game</span><span class="p">();</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h5>TIPS:</h5>
+
+<p>在Google搜索 <code>Conway's Game of Life</code> ,会看到Google的一个实现。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[使用双端队列模拟动态数组的部分功能]]></title>
+    <link href="http://mirreal.github.io/blog/2014/07/02/double-queue/"/>
+    <updated>2014-07-02T15:45:05+08:00</updated>
+    <id>http://mirreal.github.io/blog/2014/07/02/double-queue</id>
+    <content type="html"><![CDATA[<p>C语言作为一门古老的语言，在系统级，高性能的领域依然独领风骚，但有些时候，使用起来总是没那么顺手。</p>
+
+<p>比如数组。这里使用双端队列简单的实现了一些类似动态数组的功能。</p>
+
+<p>模拟stack， queue实现push， pop， shift， unshift操作，以及两个遍历方法，for_each()和map()，其中for_each接受一个函数，函数包括一个item参数，map方法与其类似，但是返回一个数组。</p>
+
+<!-- more -->
+
+
+<h4>Double Queue定义：</h4>
+
+<pre><code>typedef int data;
+typedef struct node* node;
+typedef struct double_queue* dqueue;
+struct node {
+  data item;
+  node prev, next;
+};
+struct double_queue {
+  int count;
+  node head, tail;
+};
+</code></pre>
+
+<h4>Push</h4>
+
+<pre><code>void dq_push(dqueue dq, data item) {
+  node t = malloc(sizeof *t);
+  t-&gt;item = item;
+  t-&gt;prev = dq-&gt;tail;
+  t-&gt;next = NULL;
+  if (dq-&gt;count) {
+    dq-&gt;tail-&gt;next = t;
+  } else {
+    dq-&gt;head = t;
+  }
+  dq-&gt;tail= t;
+  dq-&gt;count++;
+}
+</code></pre>
+
+<h4>pop</h4>
+
+<pre><code>data dq_pop(dqueue dq) {
+  data item = dq-&gt;tail-&gt;item;
+  dq-&gt;tail-&gt;prev-&gt;next = NULL;
+  dq-&gt;tail = dq-&gt;tail-&gt;prev;
+  dq-&gt;count--;
+  return item;
+}
+</code></pre>
+
+<h4>shift</h4>
+
+<pre><code>data dq_shift(dqueue dq) {
+  data item = dq-&gt;head-&gt;item;
+  dq-&gt;head-&gt;next-&gt;prev = NULL;
+  dq-&gt;head = dq-&gt;head-&gt;next;
+  dq-&gt;count--;
+  return item;
+}
+</code></pre>
+
+<h4>unshift</h4>
+
+<pre><code>void dq_unshift(dqueue dq, data item) {
+  node t = malloc(sizeof *t);
+  t-&gt;item = item;
+  t-&gt;prev = NULL;
+  t-&gt;next = dq-&gt;head;
+  if (dq-&gt;count) {
+    dq-&gt;head-&gt;prev = t;
+  } else {
+    dq-&gt;tail = t;
+  }
+  dq-&gt;head = t;
+  dq-&gt;count++;
+}
+</code></pre>
+
+<h4>遍历操作：</h4>
+
+<h5>for_each</h5>
+
+<pre><code>void dq_for_each(dqueue dq, void f(data)) {
+  node t = malloc(sizeof *t);
+  for (t = dq-&gt;head; t != NULL; t = t-&gt;next) {
+    f(t-&gt;item);
+  }
+}
+</code></pre>
+
+<h5>map</h5>
+
+<pre><code>int* dq_map(dqueue dq, data f(data)) {
+  int *a = malloc(dq-&gt;count * sizeof(int)), i;
+  node t = malloc(sizeof *t);
+  for (t = dq-&gt;head, i = 0; t != NULL; t = t-&gt;next, i++) {
+    a[i] = f(t-&gt;item);
+  }
+  return a;
+}
+</code></pre>
+
+<h4>完整源代码及测试用例：</h4>
+
+<figure class='code'><figcaption><span>double_queue.c</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+<span class='line-number'>86</span>
+<span class='line-number'>87</span>
+<span class='line-number'>88</span>
+<span class='line-number'>89</span>
+<span class='line-number'>90</span>
+<span class='line-number'>91</span>
+<span class='line-number'>92</span>
+<span class='line-number'>93</span>
+<span class='line-number'>94</span>
+<span class='line-number'>95</span>
+<span class='line-number'>96</span>
+<span class='line-number'>97</span>
+<span class='line-number'>98</span>
+<span class='line-number'>99</span>
+<span class='line-number'>100</span>
+<span class='line-number'>101</span>
+<span class='line-number'>102</span>
+<span class='line-number'>103</span>
+<span class='line-number'>104</span>
+<span class='line-number'>105</span>
+<span class='line-number'>106</span>
+<span class='line-number'>107</span>
+<span class='line-number'>108</span>
+<span class='line-number'>109</span>
+<span class='line-number'>110</span>
+<span class='line-number'>111</span>
+<span class='line-number'>112</span>
+<span class='line-number'>113</span>
+<span class='line-number'>114</span>
+<span class='line-number'>115</span>
+<span class='line-number'>116</span>
+<span class='line-number'>117</span>
+<span class='line-number'>118</span>
+<span class='line-number'>119</span>
+<span class='line-number'>120</span>
+<span class='line-number'>121</span>
+<span class='line-number'>122</span>
+<span class='line-number'>123</span>
+</pre></td><td class='code'><pre><code class='c'><span class='line'><span class="cp">#include &lt;stdio.h&gt;</span>
+</span><span class='line'><span class="cp">#include &lt;stdlib.h&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">typedef</span> <span class="kt">int</span> <span class="n">data</span><span class="p">;</span>
+</span><span class='line'><span class="k">typedef</span> <span class="k">struct</span> <span class="n">node</span><span class="o">*</span> <span class="n">node</span><span class="p">;</span>
+</span><span class='line'><span class="k">typedef</span> <span class="k">struct</span> <span class="n">double_queue</span><span class="o">*</span> <span class="n">dqueue</span><span class="p">;</span>
+</span><span class='line'><span class="k">struct</span> <span class="n">node</span> <span class="p">{</span>
+</span><span class='line'>  <span class="n">data</span> <span class="n">item</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">node</span> <span class="n">prev</span><span class="p">,</span> <span class="n">next</span><span class="p">;</span>
+</span><span class='line'><span class="p">};</span>
+</span><span class='line'><span class="k">struct</span> <span class="n">double_queue</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">count</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">node</span> <span class="n">head</span><span class="p">,</span> <span class="n">tail</span><span class="p">;</span>
+</span><span class='line'><span class="p">};</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">void</span> <span class="nf">dq_init</span><span class="p">(</span><span class="n">dqueue</span> <span class="n">dq</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="n">dq</span><span class="o">-&gt;</span><span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">dq</span><span class="o">-&gt;</span><span class="n">head</span> <span class="o">=</span> <span class="n">dq</span><span class="o">-&gt;</span><span class="n">tail</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">int</span> <span class="nf">dq_empty</span><span class="p">(</span><span class="n">dqueue</span> <span class="n">dq</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">return</span> <span class="n">dq</span><span class="o">-&gt;</span><span class="n">count</span> <span class="o">==</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">//add item from head</span>
+</span><span class='line'><span class="kt">void</span> <span class="nf">dq_unshift</span><span class="p">(</span><span class="n">dqueue</span> <span class="n">dq</span><span class="p">,</span> <span class="n">data</span> <span class="n">item</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="n">node</span> <span class="n">t</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span><span class="k">sizeof</span> <span class="o">*</span><span class="n">t</span><span class="p">);</span>
+</span><span class='line'>  <span class="n">t</span><span class="o">-&gt;</span><span class="n">item</span> <span class="o">=</span> <span class="n">item</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">t</span><span class="o">-&gt;</span><span class="n">prev</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">t</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">dq</span><span class="o">-&gt;</span><span class="n">head</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="n">dq</span><span class="o">-&gt;</span><span class="n">count</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="n">dq</span><span class="o">-&gt;</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">prev</span> <span class="o">=</span> <span class="n">t</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span><span class='line'>  <span class="n">dq</span><span class="o">-&gt;</span><span class="n">tail</span> <span class="o">=</span> <span class="n">t</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="n">dq</span><span class="o">-&gt;</span><span class="n">head</span> <span class="o">=</span> <span class="n">t</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">dq</span><span class="o">-&gt;</span><span class="n">count</span><span class="o">++</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">//add item from tail</span>
+</span><span class='line'><span class="kt">void</span> <span class="nf">dq_push</span><span class="p">(</span><span class="n">dqueue</span> <span class="n">dq</span><span class="p">,</span> <span class="n">data</span> <span class="n">item</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="n">node</span> <span class="n">t</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span><span class="k">sizeof</span> <span class="o">*</span><span class="n">t</span><span class="p">);</span>
+</span><span class='line'>  <span class="n">t</span><span class="o">-&gt;</span><span class="n">item</span> <span class="o">=</span> <span class="n">item</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">t</span><span class="o">-&gt;</span><span class="n">prev</span> <span class="o">=</span> <span class="n">dq</span><span class="o">-&gt;</span><span class="n">tail</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">t</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="n">dq</span><span class="o">-&gt;</span><span class="n">count</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="n">dq</span><span class="o">-&gt;</span><span class="n">tail</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">t</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span><span class='line'>  <span class="n">dq</span><span class="o">-&gt;</span><span class="n">head</span> <span class="o">=</span> <span class="n">t</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="n">dq</span><span class="o">-&gt;</span><span class="n">tail</span><span class="o">=</span> <span class="n">t</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">dq</span><span class="o">-&gt;</span><span class="n">count</span><span class="o">++</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">//delete first item</span>
+</span><span class='line'><span class="n">data</span> <span class="nf">dq_shift</span><span class="p">(</span><span class="n">dqueue</span> <span class="n">dq</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="n">data</span> <span class="n">item</span> <span class="o">=</span> <span class="n">dq</span><span class="o">-&gt;</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">item</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">dq</span><span class="o">-&gt;</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="o">-&gt;</span><span class="n">prev</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">dq</span><span class="o">-&gt;</span><span class="n">head</span> <span class="o">=</span> <span class="n">dq</span><span class="o">-&gt;</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">dq</span><span class="o">-&gt;</span><span class="n">count</span><span class="o">--</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">return</span> <span class="n">item</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">//delete last item</span>
+</span><span class='line'><span class="n">data</span> <span class="nf">dq_pop</span><span class="p">(</span><span class="n">dqueue</span> <span class="n">dq</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="n">data</span> <span class="n">item</span> <span class="o">=</span> <span class="n">dq</span><span class="o">-&gt;</span><span class="n">tail</span><span class="o">-&gt;</span><span class="n">item</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">dq</span><span class="o">-&gt;</span><span class="n">tail</span><span class="o">-&gt;</span><span class="n">prev</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">dq</span><span class="o">-&gt;</span><span class="n">tail</span> <span class="o">=</span> <span class="n">dq</span><span class="o">-&gt;</span><span class="n">tail</span><span class="o">-&gt;</span><span class="n">prev</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">dq</span><span class="o">-&gt;</span><span class="n">count</span><span class="o">--</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">return</span> <span class="n">item</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">void</span> <span class="nf">dq_for_each</span><span class="p">(</span><span class="n">dqueue</span> <span class="n">dq</span><span class="p">,</span> <span class="kt">void</span> <span class="n">f</span><span class="p">(</span><span class="n">data</span><span class="p">))</span> <span class="p">{</span>
+</span><span class='line'>  <span class="n">node</span> <span class="n">t</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span><span class="k">sizeof</span> <span class="o">*</span><span class="n">t</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="n">t</span> <span class="o">=</span> <span class="n">dq</span><span class="o">-&gt;</span><span class="n">head</span><span class="p">;</span> <span class="n">t</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">;</span> <span class="n">t</span> <span class="o">=</span> <span class="n">t</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="n">f</span><span class="p">(</span><span class="n">t</span><span class="o">-&gt;</span><span class="n">item</span><span class="p">);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">int</span><span class="o">*</span> <span class="nf">dq_map</span><span class="p">(</span><span class="n">dqueue</span> <span class="n">dq</span><span class="p">,</span> <span class="n">data</span> <span class="n">f</span><span class="p">(</span><span class="n">data</span><span class="p">))</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="o">*</span><span class="n">a</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span><span class="n">dq</span><span class="o">-&gt;</span><span class="n">count</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">)),</span> <span class="n">i</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">node</span> <span class="n">t</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span><span class="k">sizeof</span> <span class="o">*</span><span class="n">t</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="n">t</span> <span class="o">=</span> <span class="n">dq</span><span class="o">-&gt;</span><span class="n">head</span><span class="p">,</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">t</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">;</span> <span class="n">t</span> <span class="o">=</span> <span class="n">t</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">,</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">t</span><span class="o">-&gt;</span><span class="n">item</span><span class="p">);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">return</span> <span class="n">a</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">void</span> <span class="nf">f</span><span class="p">(</span><span class="n">data</span> <span class="n">item</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d &quot;</span><span class="p">,</span> <span class="n">item</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">data</span> <span class="nf">f2</span><span class="p">(</span><span class="n">data</span> <span class="n">item</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">return</span> <span class="mi">10</span><span class="o">*</span><span class="n">item</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">void</span> <span class="nf">array_for_each</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">[])</span> <span class="p">{</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">dqueue</span> <span class="n">dq</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span><span class="k">sizeof</span> <span class="o">*</span><span class="n">dq</span><span class="p">);</span>
+</span><span class='line'>  <span class="n">dq_init</span><span class="p">(</span><span class="n">dq</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="n">dq_push</span><span class="p">(</span><span class="n">dq</span><span class="p">,</span> <span class="mi">3</span><span class="o">*</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;count: %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">dq</span><span class="o">-&gt;</span><span class="n">count</span><span class="p">);</span>
+</span><span class='line'>  <span class="n">dq_for_each</span><span class="p">(</span><span class="n">dq</span><span class="p">,</span> <span class="n">f</span><span class="p">);</span>
+</span><span class='line'>  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="o">*</span><span class="n">a</span> <span class="o">=</span> <span class="n">dq_map</span><span class="p">(</span><span class="n">dq</span><span class="p">,</span> <span class="n">f2</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">dq</span><span class="o">-&gt;</span><span class="n">count</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d &quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+</span><span class='line'>  <span class="n">data</span> <span class="n">tail</span> <span class="o">=</span> <span class="n">dq_pop</span><span class="p">(</span><span class="n">dq</span><span class="p">);</span>
+</span><span class='line'>  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;delete tail: %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">tail</span><span class="p">);</span>
+</span><span class='line'>  <span class="n">data</span> <span class="n">head</span> <span class="o">=</span> <span class="n">dq_shift</span><span class="p">(</span><span class="n">dq</span><span class="p">);</span>
+</span><span class='line'>  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;delete head: %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">head</span><span class="p">);</span>
+</span><span class='line'>  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;count: %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">dq</span><span class="o">-&gt;</span><span class="n">count</span><span class="p">);</span>
+</span><span class='line'>  <span class="n">dq_for_each</span><span class="p">(</span><span class="n">dq</span><span class="p">,</span> <span class="n">f</span><span class="p">);</span>
+</span><span class='line'>  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[三种变长编码方法的C实现]]></title>
+    <link href="http://mirreal.github.io/blog/2014/02/14/infromation-code/"/>
+    <updated>2014-02-14T10:27:39+08:00</updated>
+    <id>http://mirreal.github.io/blog/2014/02/14/infromation-code</id>
+    <content type="html"><![CDATA[<p>信息编码是数据压缩的的基础理论。常用的变长编码法有三种：香农（Shannon）编码，费诺（Fano）编码，霍夫曼（Huffman）编码。</p>
+
+<p>通常情况下，霍夫曼编码法的编码效率最优。</p>
+
+<h2>1.香农编码法</h2>
+
+<p>香农编码法是一种很基础的编码方法，效率很低。</p>
+
+<p>方法如下：</p>
+
+<ol>
+<li>将M个信源按其概率递减顺序排列</li>
+<li>计算各个消息的计算码字长度：<code>-log q(Xm)</code>向上取整</li>
+<li>计算地 m 个消息的累加概率并转换成二进制</li>
+<li>取小数点后第 m 个消息码字长度位即为该消息码字</li>
+</ol>
+
+
+<p>香农编码法的C语言实现：</p>
+
+<!-- more -->
+
+
+
+
+<figure class='code'><figcaption><span>shannon.c</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+</pre></td><td class='code'><pre><code class='c'><span class='line'><span class="c1">//编译指令：gcc shannon.c -lm</span>
+</span><span class='line'>
+</span><span class='line'><span class="cp">#include &lt;stdio.h&gt;</span>
+</span><span class='line'><span class="cp">#include &lt;stdlib.h&gt;</span>
+</span><span class='line'><span class="cp">#include &lt;math.h&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">n</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;请输入信源符号个数：&quot;</span><span class="p">);</span>
+</span><span class='line'>  <span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">n</span><span class="p">);</span>
+</span><span class='line'>  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;请输入各符号的概率：&quot;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="kt">double</span> <span class="n">x</span><span class="p">[</span><span class="n">n</span><span class="p">];</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;x[%d]= &quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">);</span>
+</span><span class='line'>    <span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%lf&quot;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">//选择排序（降序）</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="kt">double</span> <span class="n">v</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">for</span> <span class="p">(</span><span class="n">j</span> <span class="o">=</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="n">j</span><span class="p">];</span> <span class="n">v</span> <span class="o">&gt;</span> <span class="n">x</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">&amp;&amp;</span> <span class="n">j</span> <span class="o">&gt;=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">j</span><span class="o">--</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>      <span class="n">x</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">];</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="n">x</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">//计算码长：1-log2(p(xi))向上取整</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">k</span><span class="p">[</span><span class="n">n</span><span class="p">];</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">k</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="n">log</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">/</span> <span class="n">log</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">if</span> <span class="p">(</span><span class="n">k</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="p">(</span><span class="o">-</span><span class="n">log</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">/</span> <span class="n">log</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span> <span class="n">k</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-=</span> <span class="mi">1</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">//累加概率</span>
+</span><span class='line'>  <span class="kt">double</span> <span class="n">pa</span><span class="p">[</span><span class="n">n</span><span class="p">];</span>
+</span><span class='line'>  <span class="n">pa</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">pa</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">pa</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">];</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">//将累加概率转换为二进制</span>
+</span><span class='line'>  <span class="kt">char</span> <span class="n">code</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="n">n</span><span class="p">];</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="kt">double</span> <span class="n">t</span> <span class="o">=</span> <span class="n">pa</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+</span><span class='line'>    <span class="k">for</span> <span class="p">(</span><span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">k</span><span class="p">[</span><span class="n">i</span><span class="p">];</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>      <span class="kt">double</span> <span class="n">temp</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">t</span><span class="p">;</span>
+</span><span class='line'>      <span class="k">if</span> <span class="p">(</span><span class="n">temp</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>        <span class="n">code</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;1&#39;</span><span class="p">;</span>
+</span><span class='line'>        <span class="n">t</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">t</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+</span><span class='line'>      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span><span class='line'>        <span class="n">code</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;0&#39;</span><span class="p">;</span>
+</span><span class='line'>        <span class="n">t</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">t</span><span class="p">;</span>
+</span><span class='line'>      <span class="p">}</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">//输出结果</span>
+</span><span class='line'>  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;%16s %12s %16s %4s %4c%s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;信源&quot;</span><span class="p">,</span> <span class="s">&quot;概率p(x)&quot;</span><span class="p">,</span> <span class="s">&quot;累加概率&quot;</span><span class="p">,</span> <span class="s">&quot;码长&quot;</span><span class="p">,</span> <span class="sc">&#39; &#39;</span><span class="p">,</span> <span class="s">&quot;码字code&quot;</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;%12d %12lf %12lf %4d %4c&quot;</span><span class="p">,</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">pa</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">k</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="sc">&#39; &#39;</span><span class="p">);</span>
+</span><span class='line'>    <span class="k">for</span> <span class="p">(</span><span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">k</span><span class="p">[</span><span class="n">i</span><span class="p">];</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>      <span class="n">printf</span><span class="p">(</span><span class="s">&quot;%c&quot;</span><span class="p">,</span> <span class="n">code</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]);</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>2.费诺编码法</h2>
+
+<p>这个编码方法准确说应该叫做Shannon-Fano编码法。这项技术是香农于1948年，在他介绍信息理论的文章“通信数学理论”中被提出的，归功于费诺，是由于他在不久以后以技术报告发布了它。</p>
+
+<p>方法如下：</p>
+
+<ol>
+<li>将M个信源按其概率递减顺序排列</li>
+<li>对消息集按概率大小分解成两个子集，使两子集概率之和尽可能相等</li>
+<li>将第一个子集编码为“0，第二个编码为”1“</li>
+<li>对子集进行递归操作，知道子集仅含一个消息</li>
+<li>将逐次分解过程中的码元排列起来即为各消息码字</li>
+</ol>
+
+
+<p>香农-费诺编码法的C语言实现：</p>
+
+<figure class='code'><figcaption><span>fano.c</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+</pre></td><td class='code'><pre><code class='c'><span class='line'><span class="cp">#include &lt;stdio.h&gt;</span>
+</span><span class='line'><span class="cp">#include &lt;stdlib.h&gt;</span>
+</span><span class='line'><span class="cp">#include &lt;string.h&gt;</span>
+</span><span class='line'><span class="cp">#include &lt;math.h&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">int</span> <span class="n">n</span><span class="p">;</span>
+</span><span class='line'><span class="kt">double</span><span class="o">*</span> <span class="n">x</span><span class="p">;</span>
+</span><span class='line'><span class="kt">char</span> <span class="o">**</span><span class="n">code</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">void</span> <span class="nf">fano</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="n">b</span><span class="o">-</span><span class="n">a</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
+</span><span class='line'>  <span class="kt">double</span> <span class="n">sum</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="n">a</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">b</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">sum</span> <span class="o">+=</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="kt">double</span> <span class="n">s</span><span class="p">[</span><span class="n">n</span><span class="p">],</span> <span class="n">pa</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="n">a</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">b</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">pa</span> <span class="o">+=</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+</span><span class='line'>    <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">fabs</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pa</span> <span class="o">-</span> <span class="n">sum</span><span class="p">);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">min</span> <span class="o">=</span> <span class="n">a</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="n">a</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">b</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">if</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">s</span><span class="p">[</span><span class="n">min</span><span class="p">])</span> <span class="n">min</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="n">a</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">b</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">&lt;=</span> <span class="n">min</span><span class="p">)</span> <span class="n">strcat</span><span class="p">(</span><span class="n">code</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="s">&quot;0&quot;</span><span class="p">);</span>
+</span><span class='line'>    <span class="k">else</span> <span class="n">strcat</span><span class="p">(</span><span class="n">code</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="s">&quot;1&quot;</span><span class="p">);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="n">fano</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">min</span><span class="p">);</span>
+</span><span class='line'>  <span class="n">fano</span><span class="p">(</span><span class="n">min</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">b</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">n</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;请输入信源符号个数：&quot;</span><span class="p">);</span>
+</span><span class='line'>  <span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">n</span><span class="p">);</span>
+</span><span class='line'>  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;请输入各符号的概率：&quot;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">x</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span><span class="n">n</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">double</span><span class="p">));</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;x[%d]= &quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">);</span>
+</span><span class='line'>    <span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%lf&quot;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="kt">double</span> <span class="n">v</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">for</span> <span class="p">(</span><span class="n">j</span> <span class="o">=</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="n">j</span><span class="p">];</span> <span class="n">v</span> <span class="o">&gt;</span> <span class="n">x</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">&amp;&amp;</span> <span class="n">j</span> <span class="o">&gt;=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">j</span><span class="o">--</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>      <span class="n">x</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">];</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="n">x</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span><span class="p">;</span>
+</span><span class='line'>    <span class="c1">//printf(&quot;x[%d]= %lf&quot;, i, x[i]);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">code</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span><span class="n">n</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span><span class="p">));;</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">code</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span><span class="n">n</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">char</span><span class="p">));</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="n">fano</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+</span><span class='line'>  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;%16s %12s %4c%s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;信源&quot;</span><span class="p">,</span> <span class="s">&quot;概率p(x)&quot;</span><span class="p">,</span> <span class="sc">&#39; &#39;</span><span class="p">,</span> <span class="s">&quot;码字code&quot;</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;%12d %12lf %4c %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="sc">&#39; &#39;</span><span class="p">,</span> <span class="n">code</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>3.霍夫曼编码法</h2>
+
+<p>香农当然知道Shannon-Fano编码法不是最优的，果然没太久，费诺的学生霍夫曼就找到一种更优的编码方法。</p>
+
+<p>有过算法课程上霍夫曼树的经验，霍夫曼编码法就比较容易理解。每次选取最小的节点构造霍夫曼树，各消息的码字即为从根节点到该消息节点的码元组合。</p>
+
+<p>霍夫曼编码法的C语言实现：</p>
+
+<figure class='code'><figcaption><span>huffman.c</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+<span class='line-number'>86</span>
+<span class='line-number'>87</span>
+<span class='line-number'>88</span>
+<span class='line-number'>89</span>
+<span class='line-number'>90</span>
+<span class='line-number'>91</span>
+<span class='line-number'>92</span>
+<span class='line-number'>93</span>
+<span class='line-number'>94</span>
+<span class='line-number'>95</span>
+<span class='line-number'>96</span>
+<span class='line-number'>97</span>
+<span class='line-number'>98</span>
+<span class='line-number'>99</span>
+<span class='line-number'>100</span>
+<span class='line-number'>101</span>
+<span class='line-number'>102</span>
+<span class='line-number'>103</span>
+<span class='line-number'>104</span>
+<span class='line-number'>105</span>
+<span class='line-number'>106</span>
+<span class='line-number'>107</span>
+<span class='line-number'>108</span>
+<span class='line-number'>109</span>
+<span class='line-number'>110</span>
+<span class='line-number'>111</span>
+<span class='line-number'>112</span>
+<span class='line-number'>113</span>
+<span class='line-number'>114</span>
+<span class='line-number'>115</span>
+<span class='line-number'>116</span>
+<span class='line-number'>117</span>
+<span class='line-number'>118</span>
+<span class='line-number'>119</span>
+</pre></td><td class='code'><pre><code class='c'><span class='line'><span class="cp">#include &lt;stdio.h&gt;</span>
+</span><span class='line'><span class="cp">#include &lt;stdlib.h&gt;</span>
+</span><span class='line'><span class="cp">#include &lt;string.h&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="cp">#define MAX_VALUE 1</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">typedef</span> <span class="kt">char</span><span class="o">**</span> <span class="n">huffman_code</span><span class="p">;</span>
+</span><span class='line'><span class="k">typedef</span> <span class="k">struct</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kt">double</span> <span class="n">weight</span><span class="p">;</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">parent</span><span class="p">,</span> <span class="n">lchild</span><span class="p">,</span> <span class="n">rchild</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span> <span class="n">HTNode</span><span class="p">,</span> <span class="o">*</span><span class="n">huffman_tree</span><span class="p">;</span>
+</span><span class='line'><span class="k">typedef</span> <span class="k">struct</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">s1</span><span class="p">;</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">s2</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span> <span class="n">min_code</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">huffman_code</span> <span class="nf">Huffman_coding</span><span class="p">(</span><span class="n">huffman_tree</span> <span class="n">HT</span><span class="p">,</span> <span class="n">huffman_code</span> <span class="n">HC</span><span class="p">,</span> <span class="kt">double</span> <span class="o">*</span><span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">n</span><span class="p">);</span>
+</span><span class='line'><span class="n">min_code</span> <span class="nf">select_min</span><span class="p">(</span><span class="n">huffman_tree</span> <span class="n">HT</span><span class="p">,</span> <span class="kt">int</span> <span class="n">n</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>  <span class="n">huffman_tree</span> <span class="n">HT</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">huffman_code</span> <span class="n">HC</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">i</span><span class="p">,</span> <span class="n">n</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;请输入信源符号个数：&quot;</span><span class="p">);</span>
+</span><span class='line'>  <span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">n</span><span class="p">);</span>
+</span><span class='line'>  <span class="kt">double</span> <span class="o">*</span><span class="n">x</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">((</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">double</span><span class="p">));</span>
+</span><span class='line'>  <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;请输入各符号的概率：&quot;</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;X[%d]= &quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">);</span>
+</span><span class='line'>    <span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%lf&quot;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">HC</span> <span class="o">=</span> <span class="n">Huffman_coding</span><span class="p">(</span><span class="n">HT</span><span class="p">,</span> <span class="n">HC</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">n</span><span class="p">);</span>
+</span><span class='line'>  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">huffman_code:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+</span><span class='line'>  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Number Weight Code</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="n">printf</span><span class="p">(</span><span class="s">&quot;%-6d %-6lf %-4s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">HC</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">huffman_code</span> <span class="nf">Huffman_coding</span><span class="p">(</span><span class="n">huffman_tree</span> <span class="n">HT</span><span class="p">,</span> <span class="n">huffman_code</span> <span class="n">HC</span><span class="p">,</span> <span class="kt">double</span> <span class="o">*</span><span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">i</span><span class="p">,</span> <span class="n">s1</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">s2</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>  <span class="kt">char</span> <span class="o">*</span><span class="n">code</span><span class="p">;</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">f</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">m</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">huffman_tree</span> <span class="n">p</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">min_code</span> <span class="n">min</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">m</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">HT</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">((</span><span class="n">m</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">HTNode</span><span class="p">));</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="n">p</span> <span class="o">=</span> <span class="n">HT</span><span class="p">,</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">,</span> <span class="n">p</span><span class="o">++</span><span class="p">,</span> <span class="n">x</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">p</span><span class="o">-&gt;</span><span class="n">weight</span> <span class="o">=</span> <span class="o">*</span><span class="n">x</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">p</span><span class="o">-&gt;</span><span class="n">parent</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">p</span><span class="o">-&gt;</span><span class="n">lchild</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">p</span><span class="o">-&gt;</span><span class="n">rchild</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">m</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">,</span> <span class="n">p</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">p</span><span class="o">-&gt;</span><span class="n">weight</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">p</span><span class="o">-&gt;</span><span class="n">parent</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">p</span><span class="o">-&gt;</span><span class="n">lchild</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">p</span><span class="o">-&gt;</span><span class="n">rchild</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">m</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">min</span> <span class="o">=</span> <span class="n">select_min</span><span class="p">(</span><span class="n">HT</span><span class="p">,</span> <span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+</span><span class='line'>    <span class="n">s1</span> <span class="o">=</span> <span class="n">min</span><span class="p">.</span><span class="n">s1</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">s2</span> <span class="o">=</span> <span class="n">min</span><span class="p">.</span><span class="n">s2</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">HT</span><span class="p">[</span><span class="n">s1</span><span class="p">].</span><span class="n">parent</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">HT</span><span class="p">[</span><span class="n">s2</span><span class="p">].</span><span class="n">parent</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">HT</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">lchild</span> <span class="o">=</span> <span class="n">s1</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">HT</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">rchild</span> <span class="o">=</span> <span class="n">s2</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">HT</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">weight</span> <span class="o">=</span> <span class="n">HT</span><span class="p">[</span><span class="n">s1</span><span class="p">].</span><span class="n">weight</span> <span class="o">+</span> <span class="n">HT</span><span class="p">[</span><span class="n">s2</span><span class="p">].</span><span class="n">weight</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;HT List:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+</span><span class='line'>  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;%8s %8s %8s %8s %8s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;Number&quot;</span><span class="p">,</span> <span class="s">&quot;weight&quot;</span><span class="p">,</span> <span class="s">&quot;parent&quot;</span><span class="p">,</span> <span class="s">&quot;lchild&quot;</span><span class="p">,</span> <span class="s">&quot;rchild&quot;</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">m</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;%8d %8lf %8d %8d %8d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span>
+</span><span class='line'>      <span class="n">i</span><span class="p">,</span> <span class="n">HT</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">weight</span><span class="p">,</span> <span class="n">HT</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">parent</span><span class="p">,</span> <span class="n">HT</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">lchild</span><span class="p">,</span> <span class="n">HT</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">rchild</span><span class="p">);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="n">HC</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">((</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="p">));</span>
+</span><span class='line'>  <span class="n">code</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span><span class="n">n</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="p">));</span>
+</span><span class='line'>  <span class="n">code</span><span class="p">[</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;\0&#39;</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">start</span> <span class="o">=</span> <span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">for</span> <span class="p">(</span><span class="n">c</span> <span class="o">=</span> <span class="n">i</span><span class="p">,</span> <span class="n">f</span> <span class="o">=</span> <span class="n">HT</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">parent</span><span class="p">;</span> <span class="n">f</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">c</span> <span class="o">=</span> <span class="n">f</span><span class="p">,</span> <span class="n">f</span> <span class="o">=</span> <span class="n">HT</span><span class="p">[</span><span class="n">f</span><span class="p">].</span><span class="n">parent</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>      <span class="k">if</span> <span class="p">(</span><span class="n">HT</span><span class="p">[</span><span class="n">f</span><span class="p">].</span><span class="n">lchild</span> <span class="o">==</span> <span class="n">c</span><span class="p">)</span> <span class="n">code</span><span class="p">[</span><span class="o">--</span><span class="n">start</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;0&#39;</span><span class="p">;</span>
+</span><span class='line'>      <span class="k">else</span> <span class="n">code</span><span class="p">[</span><span class="o">--</span><span class="n">start</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;1&#39;</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="n">HC</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">((</span><span class="n">n</span><span class="o">-</span><span class="n">start</span><span class="p">)</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="p">));</span>
+</span><span class='line'>    <span class="n">strcpy</span><span class="p">(</span><span class="n">HC</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="o">&amp;</span><span class="n">code</span><span class="p">[</span><span class="n">start</span><span class="p">]);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="n">free</span><span class="p">(</span><span class="n">code</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">return</span> <span class="n">HC</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">min_code</span> <span class="nf">select_min</span><span class="p">(</span><span class="n">huffman_tree</span> <span class="n">HT</span><span class="p">,</span> <span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="n">min_code</span> <span class="n">code</span><span class="p">;</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">s1</span><span class="p">,</span> <span class="n">s2</span><span class="p">;</span>
+</span><span class='line'>  <span class="kt">double</span> <span class="n">m1</span><span class="p">,</span> <span class="n">m2</span><span class="p">;</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">s1</span> <span class="o">=</span> <span class="n">s2</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">m1</span> <span class="o">=</span> <span class="n">m2</span> <span class="o">=</span> <span class="n">MAX_VALUE</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">if</span> <span class="p">(</span><span class="n">HT</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">parent</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>      <span class="k">if</span> <span class="p">(</span><span class="n">HT</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">weight</span> <span class="o">&lt;</span> <span class="n">m1</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>        <span class="n">m2</span> <span class="o">=</span> <span class="n">m1</span><span class="p">;</span>
+</span><span class='line'>        <span class="n">s2</span> <span class="o">=</span> <span class="n">s1</span><span class="p">;</span>
+</span><span class='line'>        <span class="n">m1</span> <span class="o">=</span> <span class="n">HT</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">weight</span><span class="p">;</span>
+</span><span class='line'>        <span class="n">s1</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+</span><span class='line'>      <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">HT</span><span class="p">[</span><span class="n">i</span><span class="p">].</span> <span class="n">weight</span> <span class="o">&lt;</span> <span class="n">m2</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>        <span class="n">m2</span> <span class="o">=</span> <span class="n">HT</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">weight</span><span class="p">;</span>
+</span><span class='line'>        <span class="n">s2</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+</span><span class='line'>      <span class="p">}</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">code</span><span class="p">.</span><span class="n">s1</span> <span class="o">=</span> <span class="n">s1</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">code</span><span class="p">.</span><span class="n">s2</span> <span class="o">=</span> <span class="n">s2</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">return</span> <span class="n">code</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
+  
+</feed>
