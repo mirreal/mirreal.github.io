@@ -56,6 +56,16 @@ footer: true
 
 -->
 
+[新浪微博](http://weibo.com/taocid)
+
+[豆瓣](http://www.douban.com/people/zgkmranyu)
+
+[Github](https://github.com/mirreal)
+
+[SegmentFault](https://segmentfault.com/blog/exileduyi)
+
+> 这里是分割线 ---
+
 我是谁？
 
 谁是我？
