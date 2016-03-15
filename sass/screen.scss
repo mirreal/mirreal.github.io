@@ -170,21 +170,30 @@ article {
 
   h1 { font-size: 24px; }
   h2 {
-    font-size: 16px;
+    font-size: 20px;
     margin-top: 25px;
     margin-bottom: 5px;
     letter-spacing: 1px;
   }
   h3 {
-    font-size: 14px;
+    font-size: 18px;
     margin-top: 25px;
     margin-bottom: 5px;
   }
 
   h4 {
     color: $solar-red;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: normal;
+  }
+
+  h5 {
+    color: $solar-red;
     font-size: 14px;
-    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 5px;
     font-weight: normal;
   }
 

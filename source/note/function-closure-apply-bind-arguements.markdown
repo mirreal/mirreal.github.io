@@ -8,7 +8,7 @@ footer: true
 ---
 
 
-##Closure
+## Closure
 
 ```javascript
 function createFunctions() {
@@ -35,7 +35,7 @@ print:
     28
     28
 
-##call(), apply(), bind()
+## call(), apply(), bind()
 
 ```javascript
 var table = {
@@ -64,7 +64,7 @@ console.log(table2);
 
 copy table.entry to table2
 
-###object arguments
+### object arguments
 
 ```javascript
 function sum(a, b) {

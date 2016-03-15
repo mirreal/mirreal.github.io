@@ -3,7 +3,7 @@ layout: post
 title: "康威生命游戏的简单实现"
 date: 2014-08-21 19:26:12 +0800
 comments: true
-categories: 
+categories:
 ---
 
 生命游戏，数学家John Conway发明的一个游戏，又称康威生命演化，生命棋，细胞自动机。
@@ -54,7 +54,7 @@ Game.prototype.init = function() {
   this.getAroundStones();
 
   this.eventHandler();
-  
+
   this.loop = setInterval(function() {
     self.update();
     self.draw();
@@ -82,7 +82,7 @@ Game.prototype.eventHandler = function() {
       self.loop = setInterval(function() {
         self.update();
         self.draw();
-      }, 800);
+      }, 120);
       canvas.style.display = 'inline';
       snapshotImageElement.style.display = 'none';
       snapshotButton.innerHTML = 'Snapshot';
@@ -196,7 +196,7 @@ Canvas.prototype.drawGrid = function(color, stepx, stepy) {
     ctx.stroke();
     ctx.closePath();
   }
-  
+
   for (var i = stepy + 0.5; i < ctx.canvas.height; i += stepy) {
     ctx.beginPath();
     ctx.moveTo(0, i);
