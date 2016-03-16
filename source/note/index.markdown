@@ -10,6 +10,16 @@ footer: true
 
 学习历程中的一些记录。有时候也懒的很，懒得读书学习，还有时候根本是懒得记录。
 
+---
+
+#### 一段旅程
+
+- [2016-03-16]({{ root_url }}/note/2016-03-16.html) Reduce()
+- [2016-03-15]({{ root_url }}/note/2016-03-15.html) Code editor for browser
+
+---
+
+#### 很久之前的事
 
 - [Josephus Problem]({{ root_url }}/note/josephus-problem.html) - 7,8,2014
 - [IO & Insertion Sort with Linked List]({{ root_url }}/note/io-list-insertion-sort.html) - 7,9,2014

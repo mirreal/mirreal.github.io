@@ -41,8 +41,8 @@ header {
 ::selection { background: $magenta; text-shadow: none; }
 
 #main {
- 
-  
+
+
   /* equal to footer height */
   color: $green;
   font-size: 14px;
@@ -172,20 +172,20 @@ article {
   h2 {
     font-size: 20px;
     margin-top: 25px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     letter-spacing: 1px;
   }
   h3 {
     font-size: 18px;
     margin-top: 25px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
 
   h4 {
     color: $solar-red;
     font-size: 16px;
     margin-top: 15px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-weight: normal;
   }
 
@@ -193,7 +193,7 @@ article {
     color: $solar-red;
     font-size: 14px;
     margin-top: 15px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-weight: normal;
   }
 
@@ -245,9 +245,9 @@ article {
 @media only screen and (max-width: 740px) {
   #container {
     width:500px;
-    padding: 20px 15px; 
+    padding: 20px 15px;
   }
-}                                                                                                     
+}
 @media only screen and (max-width: 570px) {
   #container {
     width:300px;
@@ -279,7 +279,7 @@ footer{
    padding-left: 25px;
    text-align:center;
    width:100%;
-   height:60px;  
+   height:60px;
    color:#859900;
    position:absolute;
    bottom:0;
@@ -288,7 +288,7 @@ footer{
 }
 footer>p>span>a{
   text-decoration:none;
-  color:$blue !important; 
+  color:$blue !important;
 }
 footer>p>span>a::visited{
   text-decoration:none;
