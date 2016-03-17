@@ -14,6 +14,7 @@ footer: true
 
 #### 一段旅程
 
+- [2016-03-17]({{ root_url }}/note/2016-03-17.html) web缓存
 - [2016-03-16]({{ root_url }}/note/2016-03-16.html) Reduce()
 - [2016-03-15]({{ root_url }}/note/2016-03-15.html) Code editor for browser
 

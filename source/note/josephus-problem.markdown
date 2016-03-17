@@ -7,11 +7,11 @@ sharing: true
 footer: true
 ---
 
-####July 8th, 2014
+#### July 8th, 2014
 
-##linked list
+## linked list
 
-###C
+### C
 
 ```c
 struct node {
@@ -24,7 +24,8 @@ head->item = 1;
 head->next = head;
 ```
 
-C full-edition
+#### C full-edition
+
 ```c josephus_problem.c
 #include <stdio.h>
 #include <stdlib.h>
@@ -58,7 +59,8 @@ int main(int argc, char *argv[]) {
 ```
 
 
-###Javascript
+### Javascript
+
 construct function
 
 ```javascript
@@ -71,7 +73,7 @@ var head = new Node(1);
 head.next = head;
 ```
 
-###Python
+### Python
 
 ```python
 class Node():
@@ -84,7 +86,7 @@ head = Node(1)
 head.next = head
 ```
 
-###Java
+### Java
 
 ```java
 class Node {

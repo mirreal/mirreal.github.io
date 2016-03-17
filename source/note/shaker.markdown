@@ -7,9 +7,9 @@ sharing: true
 footer: true
 ---
 
-#July 23rd, 2014, Wedsday
+#### July 23rd, 2014, Wedsday
 
-##Shaker
+## Shaker
 
 ```javascript
 function shaker(a) {
@@ -42,6 +42,6 @@ function compexch(a, i, j) {
 }
 ```
 
-##函数的传值
+## 函数的传值
 
 所有参数都是按值传递，简单类型传的是简单类型的副本，引用类型传递引用类型的副本。在函数改变其形参的引用，原本的值不会改变。

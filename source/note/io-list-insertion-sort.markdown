@@ -8,7 +8,7 @@ footer: true
 ---
 
 
-####July 9th, 2014
+#### July 9th, 2014
 
 ##io
 
@@ -21,16 +21,17 @@ int getchar() -- getc(stdin)
 file version
 
 ```c
-  int putc(int c, FILE *stream)
-  int getc(FILE *stream)
+int putc(int c, FILE *stream)
+int getc(FILE *stream)
 ```
 
 EOF -- end-of-file
 
-    #define EOF (-1)
+```c
+#define EOF (-1)
+```
 
-
-##List Insertion sort
+## List Insertion sort
 
 ```c list_insertion_sort.c
 #include <stdio.h>

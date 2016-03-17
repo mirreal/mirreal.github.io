@@ -7,9 +7,9 @@ sharing: true
 footer: true
 ---
 
-#July 22nd, 2014, Tuesday
+#### July 22nd, 2014, Tuesday
 
-###SOME WORDS
+### SOME WORDS
 
 编码的世界里总是会遇到一些想象不到的Bug，当没有触发某个条件，它依然运转良好，甚至会认为完美至极，可是有一天达到某个值，于是大厦崩塌了。
 
@@ -18,13 +18,15 @@ footer: true
 
 有时候稀里糊涂地东改西改，问题竟然像是解决了，我们也这样认为的时候，就是大错将至的时刻。
 
-###Insertion sorting
+### Insertion sorting
 
-    while (j >= l+1 && v < a[j-1])
+```js
+while (j >= l+1 && v < a[j-1])
+```
 
-##SORTING in JS
+## SORTING in JS
 
-###Test
+### Test
 
 ```javascript
 var N = 16000;
@@ -34,7 +36,7 @@ for (var i = 0; i < N; i++) {
 }
 ```
 
-###Bubble -- 800ms
+### Bubble -- 800ms
 
 ```javascript
 function bubble(a) {
@@ -51,7 +53,7 @@ function bubble(a) {
 }
 ```
 
-###Selection  -- 500ms
+### Selection  -- 500ms
 
 ```javascript
 function selection(a) {
@@ -68,7 +70,7 @@ function selection(a) {
 }
 ```
 
-###Insertion
+### Insertion
 
 -- 600ms
 
@@ -101,7 +103,7 @@ function insertion(a) {
 }
 ```
 
-###Shell  -- 10ms
+### Shell  -- 10ms
 
 ```javascript
 function shell(a) {
@@ -119,4 +121,4 @@ function shell(a) {
 }
 ```
 
-####小小的改动就可能就有很大的效率提升
+#### 小小的改动就可能就有很大的效率提升

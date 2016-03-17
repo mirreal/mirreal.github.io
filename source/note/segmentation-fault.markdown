@@ -7,28 +7,32 @@ sharing: true
 footer: true
 ---
 
-####July 11th, 2014, Friday
+#### July 11th, 2014, Friday
 
-##1.Segmentation Fault
+## 1.Segmentation Fault
 
 example 1:
-  
-    char *c;
-    strcpy(c, "cd");
 
+```c
+char *c;
+strcpy(c, "cd");
+```
 mend:
 
-    char *c = malloc(8 * sizeof(char));
-    strcpy(c, "cd");
-
+```c
+char *c = malloc(8 * sizeof(char));
+strcpy(c, "cd");
+```
 or
 
-    char c[8];
-    strcpy(c, "cd");
+```c
+char c[8];
+strcpy(c, "cd");
+```
 
-##2.string method
+## 2.string method
 
-###strlen, strcmp, strncmp, strcpy
+### strlen, strcmp, strncmp, strcpy
 
 ```c string.h
 int exile_strlen(const char *s) {
@@ -67,7 +71,7 @@ void exile_strcpy(char *dest, const char *src) {
 
 ```
 
-###find some word in a file
+### find some word in a file
 
 ```c string_find.c
 #include <stdio.h>
@@ -77,7 +81,7 @@ void exile_strcpy(char *dest, const char *src) {
 
 int main(int argc, char *argv[]) {
   if (argc != 3) {
-    printf("%-8s%s\n%s\n%s\n", 
+    printf("%-8s%s\n%s\n%s\n",
       "Usage: ", "need two arguements",
       "1.string -- the word you want to find",
       "2.file -- the file you find the word in");
@@ -107,7 +111,7 @@ int main(int argc, char *argv[]) {
 
   printf("\nuse strncmp: ");
   for (i = 0; i < exile_strlen(a); i++)
-    if (exile_strncmp(&a[i], p, exile_strlen(p)) == 0) 
+    if (exile_strncmp(&a[i], p, exile_strlen(p)) == 0)
       printf("%d " ,i);
 
   printf("\nfind %d \"%s\" in file %s\n", count, argv[1], argv[2]);

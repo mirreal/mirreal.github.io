@@ -7,9 +7,9 @@ sharing: true
 footer: true
 ---
 
-#July 25th, 2014, Friday
+#### July 25th, 2014, Friday
 
-##quicksort improved(20%-25%)
+## quicksort improved(20%-25%)
 
 ```c
 void quicksort(Item a[], int l, int r) {
@@ -25,7 +25,7 @@ void quicksort(Item a[], int l, int r) {
 }
 ```
 
-###Js
+### Js
 
 ```javascript qsort.js
 var sort = require('./sort.js');
@@ -100,7 +100,7 @@ console.log('Time: ' + time + 'ms');
 sort.check(a, 0, N-1);
 ```
 
-###sort.js
+### sort.js
 
 ```javascript sort.js
 exports.check = function(a, l, r) {

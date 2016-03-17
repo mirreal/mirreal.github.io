@@ -7,11 +7,11 @@ sharing: true
 footer: true
 ---
 
-#July 26th, 2014, Saturday
+#### July 26th, 2014, Saturday
 
-##quicksort three partition
+## quicksort three partition
 
-###C
+### C
 
 ```c
 void qsort_3part(Item a[], int l, int r) {
@@ -44,7 +44,7 @@ void qsort_3part(Item a[], int l, int r) {
 }
 ```
 
-###JS
+### JS
 
 ```javascript
 function qsort_3part(a, l, r) {
@@ -77,7 +77,7 @@ function qsort_3part(a, l, r) {
 }
 ```
 
-##Select
+## Select
 
 ```c
 void select_kth(Item a[], int l, int r, int k) {
@@ -88,7 +88,7 @@ void select_kth(Item a[], int l, int r, int k) {
 }
 ```
 
-####no recursion version
+#### no recursion version
 
 ```c
 void select_norec(Item a[], int l, int r, int k) {
@@ -101,7 +101,7 @@ void select_norec(Item a[], int l, int r, int k) {
 }
 ```
 
-####check function
+#### check function
 
 ```c
 void check_select(Item a[], int l, int r, int k) {

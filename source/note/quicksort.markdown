@@ -7,11 +7,11 @@ sharing: true
 footer: true
 ---
 
-#July 24th, 2014, Thrusday
+#### July 24th, 2014, Thrusday
 
-##Quicksort
+## Quicksort
 
-###C
+### C
 
 ```c
 int partition(Item a[], int l, int r) {
@@ -36,7 +36,7 @@ void quicksort(Item a[], int l, int r) {
 }
 ```
 
-###Js
+### Js
 
 ```javascript
 function quicksort(a, l, r) {
@@ -65,7 +65,7 @@ function partition(a, l, r) {
 }
 ```
 
-####sort check
+#### sort check
 
 ```javascript
 exports.check = function(a, l, r) {

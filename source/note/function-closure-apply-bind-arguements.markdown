@@ -25,8 +25,10 @@ createFunctions().map(function (item) {
   console.log(item());
 });
 ```
+
 print:
 
+```
     28
     28
     28
@@ -34,6 +36,7 @@ print:
     28
     28
     28
+```
 
 ## call(), apply(), bind()
 

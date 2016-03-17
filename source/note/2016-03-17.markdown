@@ -1,0 +1,12 @@
+---
+layout: page
+title: "2016-03-17"
+date: 2016-03-17 19:27
+comments: true
+sharing: true
+footer: true
+---
+
+【阅读】
+
+[浅谈web缓存](http://www.alloyteam.com/2016/03/discussion-on-web-caching/)
