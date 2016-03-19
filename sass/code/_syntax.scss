@@ -1,8 +1,13 @@
 pre { margin: 0.8em 0;}
 code {
-  font-size: 1em;
   word-wrap: break-word;
   word-break: break-all;
+
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #111;
+  border-radius: 3px;
 }
 
 .code {padding-left: 10px;}
@@ -13,6 +18,13 @@ code {
   line-height: 1.35em;
   font-weight: normal;
   margin: 10px 0 10px 0;
+  background-color: #111;
+
+  code {
+    padding: 0;
+    font-size: 1em;
+    color: #839496;
+  }
 
   .line-numbers {
     text-align: right;
@@ -121,4 +133,3 @@ code {
     div { .gd, .gd .x, .gi, .gi .x { display: block; }}
   }
 // }
-

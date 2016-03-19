@@ -3,7 +3,7 @@ layout: post
 title: "使用双端队列模拟动态数组的部分功能"
 date: 2014-07-02 15:45:05 +0800
 comments: true
-categories: 
+categories:
 ---
 
 
@@ -11,101 +11,114 @@ C语言作为一门古老的语言，在系统级，高性能的领域依然独�
 
 比如数组。这里使用双端队列简单的实现了一些类似动态数组的功能。
 
-模拟stack， queue实现push， pop， shift， unshift操作，以及两个遍历方法，for_each()和map()，其中for_each接受一个函数，函数包括一个item参数，map方法与其类似，但是返回一个数组。
+模拟 stack， queue 实现 push， pop， shift， unshift 操作，以及两个遍历方法，for_each() 和 map()，其中 for_each 接受一个函数，函数包括一个 item 参数，map 方法与其类似，但是返回一个数组。
 
 <!-- more -->
 
-####Double Queue定义：
+#### Double Queue 定义：
 
-	typedef int data;
-	typedef struct node* node;
-	typedef struct double_queue* dqueue;
-	struct node {
-	  data item;
-	  node prev, next;
-	};
-	struct double_queue {
-	  int count;
-	  node head, tail;
-	};
+```c
+typedef int data;
+typedef struct node* node;
+typedef struct double_queue* dqueue;
+struct node {
+  data item;
+  node prev, next;
+};
+struct double_queue {
+  int count;
+  node head, tail;
+};
+```
 
-####Push
+#### Push
 
-	void dq_push(dqueue dq, data item) {
-	  node t = malloc(sizeof *t);
-	  t->item = item;
-	  t->prev = dq->tail;
-	  t->next = NULL;
-	  if (dq->count) {
-	    dq->tail->next = t;
-	  } else {
-	    dq->head = t;
-	  }
-	  dq->tail= t;
-	  dq->count++;
-	}
+```c
+void dq_push(dqueue dq, data item) {
+  node t = malloc(sizeof *t);
+  t->item = item;
+  t->prev = dq->tail;
+  t->next = NULL;
+  if (dq->count) {
+    dq->tail->next = t;
+  } else {
+    dq->head = t;
+  }
+  dq->tail= t;
+  dq->count++;
+}
+```
 
-####pop
+#### pop
 
-	data dq_pop(dqueue dq) {
-	  data item = dq->tail->item;
-	  dq->tail->prev->next = NULL;
-	  dq->tail = dq->tail->prev;
-	  dq->count--;
-	  return item;
-	}
+```c
+data dq_pop(dqueue dq) {
+  data item = dq->tail->item;
+  dq->tail->prev->next = NULL;
+  dq->tail = dq->tail->prev;
+  dq->count--;
+  return item;
+}
+```
 
-####shift
+#### shift
 
-	data dq_shift(dqueue dq) {
-	  data item = dq->head->item;
-	  dq->head->next->prev = NULL;
-	  dq->head = dq->head->next;
-	  dq->count--;
-	  return item;
-	}
+```c
+data dq_shift(dqueue dq) {
+  data item = dq->head->item;
+  dq->head->next->prev = NULL;
+  dq->head = dq->head->next;
+  dq->count--;
+  return item;
+}
+```
+
+#### unshift
+
+```c
+void dq_unshift(dqueue dq, data item) {
+  node t = malloc(sizeof *t);
+  t->item = item;
+  t->prev = NULL;
+  t->next = dq->head;
+  if (dq->count) {
+    dq->head->prev = t;
+  } else {
+    dq->tail = t;
+  }
+  dq->head = t;
+  dq->count++;
+}
+```
+
+#### 遍历操作：
+
+##### for_each
+
+```c
+void dq_for_each(dqueue dq, void f(data)) {
+  node t = malloc(sizeof *t);
+  for (t = dq->head; t != NULL; t = t->next) {
+    f(t->item);
+  }
+}
+```
+
+##### map
+
+```c
+int* dq_map(dqueue dq, data f(data)) {
+  int *a = malloc(dq->count * sizeof(int)), i;
+  node t = malloc(sizeof *t);
+  for (t = dq->head, i = 0; t != NULL; t = t->next, i++) {
+    a[i] = f(t->item);
+  }
+  return a;
+}
+```
 
 
-####unshift
-
-	void dq_unshift(dqueue dq, data item) {
-	  node t = malloc(sizeof *t);
-	  t->item = item;
-	  t->prev = NULL;
-	  t->next = dq->head;
-	  if (dq->count) {
-	    dq->head->prev = t;
-	  } else {
-	    dq->tail = t;
-	  }
-	  dq->head = t;
-	  dq->count++;
-	}
-
-####遍历操作：
-
-#####for_each
-
-	void dq_for_each(dqueue dq, void f(data)) {
-	  node t = malloc(sizeof *t);
-	  for (t = dq->head; t != NULL; t = t->next) {
-	    f(t->item);
-	  }
-	}
-
-#####map
-	
-	int* dq_map(dqueue dq, data f(data)) {
-	  int *a = malloc(dq->count * sizeof(int)), i;
-	  node t = malloc(sizeof *t);
-	  for (t = dq->head, i = 0; t != NULL; t = t->next, i++) {
-	    a[i] = f(t->item);
-	  }
-	  return a;
-	}
-
-
-####完整源代码及测试用例：
+#### 完整源代码及测试用例：
 
 
 ```c double_queue.c

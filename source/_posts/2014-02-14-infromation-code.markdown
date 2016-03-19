@@ -3,7 +3,7 @@ layout: post
 title: "三种变长编码方法的C实现"
 date: 2014-02-14 10:27:39 +0800
 comments: true
-categories: 
+categories:
 ---
 
 
@@ -11,7 +11,7 @@ categories:
 
 通常情况下，霍夫曼编码法的编码效率最优。
 
-##1.香农编码法
+## 1.香农编码法
 
 香农编码法是一种很基础的编码方法，效率很低。
 
@@ -28,7 +28,7 @@ categories:
 <!-- more -->
 
 ```c shannon.c
-//编译指令：gcc shannon.c -lm
+// 编译指令：gcc shannon.c -lm
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -36,7 +36,7 @@ categories:
 
 int main() {
   int i, j, n;
-  
+
   printf("请输入信源符号个数：");
   scanf("%d", &n);
   printf("请输入各符号的概率：");
@@ -47,7 +47,7 @@ int main() {
     scanf("%lf", &x[i]);
   }
 
-//选择排序（降序）
+// 选择排序（降序）
   for (i = 0; i < n-1; i++) {
     double v;
     for (j = i+1, v = x[j]; v > x[j-1] && j >= 1; j--) {
@@ -56,21 +56,21 @@ int main() {
     x[j] = v;
   }
 
-//计算码长：1-log2(p(xi))向上取整
+// 计算码长：1-log2(p(xi))向上取整
   int k[n];
   for (i = 0; i < n; i++) {
     k[i] = -log(x[i]) / log(2) + 1;
     if (k[i] == (-log(x[i]) / log(2) + 1)) k[i] -= 1;
   }
 
-//累加概率
+// 累加概率
   double pa[n];
   pa[0] = 0.0;
   for (i = 1; i < n; i++) {
     pa[i] = pa[i-1] + x[i-1];
   }
 
-//将累加概率转换为二进制
+// 将累加概率转换为二进制
   char code[n][n];
   for (i = 0; i < n; i++) {
     double t = pa[i];
@@ -86,7 +86,7 @@ int main() {
     }
   }
 
-//输出结果
+// 输出结果
   printf("%16s %12s %16s %4s %4c%s\n", "信源", "概率p(x)", "累加概率", "码长", ' ', "码字code");
   for (i = 0; i < n; i++) {
     printf("%12d %12lf %12lf %4d %4c", i+1, x[i], pa[i], k[i], ' ');
@@ -100,9 +100,9 @@ int main() {
 ```
 
 
-##2.费诺编码法
+## 2.费诺编码法
 
-这个编码方法准确说应该叫做Shannon-Fano编码法。这项技术是香农于1948年，在他介绍信息理论的文章“通信数学理论”中被提出的，归功于费诺，是由于他在不久以后以技术报告发布了它。
+这个编码方法准确说应该叫做 Shannon-Fano 编码法。这项技术是香农于1948年，在他介绍信息理论的文章“通信数学理论”中被提出的，归功于费诺，是由于他在不久以后以技术报告发布了它。
 
 方法如下：
 
@@ -182,9 +182,9 @@ int main() {
 }
 ```
 
-##3.霍夫曼编码法
+## 3.霍夫曼编码法
 
-香农当然知道Shannon-Fano编码法不是最优的，果然没太久，费诺的学生霍夫曼就找到一种更优的编码方法。
+香农当然知道 Shannon-Fano 编码法不是最优的，果然没太久，费诺的学生霍夫曼就找到一种更优的编码方法。
 
 有过算法课程上霍夫曼树的经验，霍夫曼编码法就比较容易理解。每次选取最小的节点构造霍夫曼树，各消息的码字即为从根节点到该消息节点的码元组合。
 
@@ -223,7 +223,7 @@ int main() {
     printf("X[%d]= ", i);
     scanf("%lf", &x[i]);
   }
-  
+
   HC = Huffman_coding(HT, HC, x, n);
   printf("\nhuffman_code:\n");
   printf("Number Weight Code\n");
@@ -239,7 +239,7 @@ huffman_code Huffman_coding(huffman_tree HT, huffman_code HC, double *x, int n) 
   if (n <= 1) return;
   m = 2*n - 1;
   HT = malloc((m+1) * sizeof(HTNode));
-  
+
   for (p = HT, i = 0; i <= n; i++, p++, x++) {
     p->weight = *x;
     p->parent = 0;
@@ -262,7 +262,7 @@ huffman_code Huffman_coding(huffman_tree HT, huffman_code HC, double *x, int n) 
     HT[i].rchild = s2;
     HT[i].weight = HT[s1].weight + HT[s2].weight;
   }
-  
+
   printf("HT List:\n");
   printf("%8s %8s %8s %8s %8s\n", "Number", "weight", "parent", "lchild", "rchild");
   for (i = 1; i <= m; i++) {
@@ -305,7 +305,7 @@ min_code select_min(huffman_tree HT, int n) {
       }
     }
   }
-  
+
   code.s1 = s1;
   code.s2 = s2;
   return code;

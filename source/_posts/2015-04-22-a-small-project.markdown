@@ -3,7 +3,7 @@ layout: post
 title: "一个小项目之后"
 date: 2015-04-19 23:11:18 +0800
 comments: true
-categories: 
+categories:
 ---
 
 没想到这么快就有了自己负责的一个小项目。

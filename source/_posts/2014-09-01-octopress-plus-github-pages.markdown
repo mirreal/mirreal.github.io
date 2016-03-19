@@ -17,7 +17,7 @@ Enviroment: Ubuntu 12.00
 #### Install RVM
 
 ```sh
-	curl -L https://get.rvm.io | bash -s stable --ruby
+curl -L https://get.rvm.io | bash -s stable --ruby
 ```
 
 <!-- more -->
@@ -25,7 +25,7 @@ Enviroment: Ubuntu 12.00
 Then run:
 
 ```sh
-	source ~/.rvm/scripts/rvm
+source ~/.rvm/scripts/rvm
 ```
 
 to start RVM
@@ -33,9 +33,9 @@ to start RVM
 #### Install Ruby 1.9.3
 
 ```sh
-	rvm install 1.9.3
-	rvm use 1.9.3
-	rvm rubygems latest
+rvm install 1.9.3
+rvm use 1.9.3
+rvm rubygems latest
 ```
 
 ### 2.Deploying to Github Pages
@@ -47,12 +47,12 @@ Create a new Github repository and name the repository with the format `username
 Just an empty repository is okay.
 
 ```sh
-	rake setup_github_pages
+rake setup_github_pages
 ```
 
 Next run:
 
 ```
-	rake generate
-	rake deploy
+rake generate
+rake deploy
 ```
