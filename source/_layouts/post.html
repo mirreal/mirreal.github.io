@@ -4,7 +4,7 @@
   <div id="container">
     <nav role="navigation" >{% include go_home.html %}</nav>
     {% include article.html %}
-      <p class="meta">
+    <p class="meta">
       {% if page.previous.url %}
         <a class="basic-alignment left nav" href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">&laquo; {{page.previous.title}}</a>
       {% endif %}
@@ -15,4 +15,3 @@
   </div>
 </body>
 </html>
-

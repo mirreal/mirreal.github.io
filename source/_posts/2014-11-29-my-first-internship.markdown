@@ -4,7 +4,6 @@ title: "第一次实习生体验"
 date: 2014-11-29 23:21:08 +0800
 comments: true
 categories: 实习
-
 ---
 
 实习，也是第一份工作。

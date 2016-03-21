@@ -3,9 +3,8 @@ layout: post
 title: "实现不定尺寸图片居中的几种方式"
 date: 2015-01-23 21:26:48 +0800
 comments: true
-categories: CSS
+categories:
 ---
-
 
 这是在实习工作中遇到的一个需求，实现未知尺寸的图片在一固定宽高的容器中水平和垂直居中。
 
@@ -24,7 +23,7 @@ categories: CSS
 
 <!-- more -->
 
-HTML大概是这样的：
+HTML 大概是这样的：
 
 ```html
   <div class="box">
@@ -60,7 +59,7 @@ CSS：
 
 ### 方式二：使用表格布局
 
-还是这段HTML：
+还是这段 HTML：
 
 ```html
 <div class="box1">
@@ -96,10 +95,11 @@ HTML就直接写了：
 CSS：
 
 ```css
+
 .box2 {
   width: 200px;
   height: 200px;
-  background: url(img/0.jpg);
+  background-image: url(img/0.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -108,6 +108,5 @@ CSS：
 直接使用 `background-position: center;` 实现居中，如图片尺寸小于 200px 就 OK 了。但是对于大图片，会被截掉，所以还需加上 `background-size: contain;` ，可是对于小图片又有问题，因为加上这个属性会对图片缩放，小图也不例外。而在我们的需求里，对小图要求按照其原有大小显示。
 
 貌似这种方式使用纯 CSS 行不通。
-
 
 ...
