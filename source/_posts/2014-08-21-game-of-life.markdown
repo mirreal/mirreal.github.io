@@ -226,6 +226,6 @@ new Game();
 ```
 
 
-##### TIPS:
+#### TIPS:
 
 在Google搜索 `Conway's Game of Life` ,会看到Google的一个实现。

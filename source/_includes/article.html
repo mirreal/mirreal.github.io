@@ -2,13 +2,21 @@
 
 {% if index %}
   <div class="article-read-more">
-    <p class="meta">
+    <p class="date-info">
       {% include post/date.html %}{{ time }}
       <a rel="full-article" href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
     </p>
   </div>
 {% else %}
-  <h1 class="article-title">{{ page.title | titlecase }}</h1>
+  <div class="header-line">
+    <h1 class="article-title">{{ page.title | titlecase }}</h1>
+    <p class="meta">
+      {% include post/author.html %}
+      {% include post/date.html %}{{ time }}{% if updated %} {{ updated }}{% endif %}
+      {% include post/categories.html %}
+    </p>
+  </div>
+
   <div class="article-content">{{ content }}</div>
   {% if site.disqus_short_name and page.comments != false %}
     <section>
@@ -18,4 +26,3 @@
   {% endif %}
 {% endif %}
 </article>
-

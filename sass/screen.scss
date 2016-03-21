@@ -30,21 +30,12 @@ body {
 blockquote {
   margin: 1em 20px;
   padding-left: 12px;
-  color: #268bd2;
+  color: #188B98;
   font-size: 1em;
   border-left: 2px solid #555;
 }
 table {
   // width: 100%;
-}
-
-
-
-header {
-  h1 {
-    color: #B58900;
-    margin-left: 180px;
-  }
 }
 
 ::-moz-selection { background: $magenta; text-shadow: none; }
@@ -136,6 +127,14 @@ header {
   }
 }
 
+
+header {
+  h1 {
+    color: #B58900;
+    margin-left: 180px;
+  }
+}
+
 header {
   a {
 
@@ -164,6 +163,15 @@ article {
   color: $base0;
   line-height: 20px;
   font-size: 15px;
+
+  .header-line {
+    h1 {
+      margin-bottom: 6px;
+    }
+  }
+  .meta {
+    color: #188B98;
+  }
 
   p {
     margin-top: 0px;
@@ -284,8 +292,9 @@ article {
   }
 }
 
-/****Footer****/
-footer{
+
+/* copyright */
+.copyright {
    padding-left: 25px;
    text-align:center;
    width:100%;
@@ -296,11 +305,11 @@ footer{
    left:0;
 
 }
-footer>p>span>a{
+.copyright>p>span>a{
   text-decoration:none;
   color:$blue !important;
 }
-footer>p>span>a::visited{
+.copyright>p>span>a::visited{
   text-decoration:none;
   color:$blue;
 }
