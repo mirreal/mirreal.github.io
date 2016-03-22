@@ -14,6 +14,7 @@ footer: true
 
 #### 一段旅程
 
+- [2016-03-22]({{ root_url }}/note/2016-03-22.html) 对象字面量、位运算、自增运算符
 - [2016-03-21]({{ root_url }}/note/2016-03-21.html) 一个 octopress 的 Bug
 - [2016-03-17]({{ root_url }}/note/2016-03-17.html) web缓存
 - [2016-03-16]({{ root_url }}/note/2016-03-16.html) Reduce()

@@ -1,0 +1,84 @@
+---
+layout: page
+title: "2016-03-22"
+date: 2016-03-22 09:42
+comments: true
+sharing: true
+footer: true
+---
+
+## 【聚沙】
+
+### 对象字面量
+
+问题：
+
+```js
+{ a: 9 }.a // Uncaught SyntaxError: Unexpected token .
+```
+解决：
+
+```js
+( { a: 1 }.a ) // 方式1
+( { a: 1 } ).a // 方式2
+```
+
+
+原因：[MDN 对象字面值(Object literals)](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Grammar_and_types#对象字面值(Object_literals))
+
+> 对象字面值是封闭在花括号对({})中的一个对象的零个或多个"属性名-值"对的（元素）列表。你不能在一条语句的开头就使用对象字面值，这将导致错误或非你所预想的行为，因为此时左花括号（{）会被认为是一个语句块的起始符号。
+
+### 位运算
+
+位运算会自动将数字转换成整数
+
+实现一个类似 `parseInt()` 的函数：
+
+```js
+function convertInt(num) {
+  // return num >> 0;
+  // return num << 0;
+  // return num | 0;
+  // return num ^ 0;
+  return ~~ num;
+}
+```
+
+### Prefix Increment Operator(++)的问题
+
+关于前自增运算符的一个有意思的问题：
+
+```js
+++'52'.split('')[0] // 返回的是？
+```
+
+这道题来自 Another JavaScript quiz 第8题，主要是优先级问题，应该返回6，看完答案应该没什么难理解的。但是，题目的某个注意点:
+
+```js
+++'5'
+// Uncaught ReferenceError: Invalid left-hand side expression in prefix operation
+```
+
+却非常有意思。所以问题是为什么 `++'5'` 报错而 `++'52'.split('')[0]` 可以正确执行
+
+阅读 [http://es5.github.io/#x11.4.4](http://es5.github.io/#x11.4.4)，可以看到 Prefix Increment Operator 操作的第5步 `PutValue(expr, newValue)` 要求 `expr` 是引用。
+
+而在这里，
+
+* `'5'`是值，不是引用，所以报错。
+* `'52'.split('')[0]` 返回的是 `['5','2'][0]`，对象的属性访问返回的是引用，所以可以正确执行。
+
+正确方式：
+
+```js
+var x = '5';
+++x  // 6
+
+++'5'[0] // 6
+```
+
+## 【阅读】
+
+[浅谈API安全设计](http://www.jianshu.com/p/d7c52d113a68)
+
+[JavaScript问题集锦](https://github.com/creeperyang/blog/issues/2)

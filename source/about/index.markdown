@@ -56,6 +56,8 @@ footer: true
 
 -->
 
+---
+
 [新浪微博](http://weibo.com/taocid)
 
 [豆瓣](http://www.douban.com/people/zgkmranyu)
@@ -63,6 +65,8 @@ footer: true
 [Github](https://github.com/mirreal)
 
 [SegmentFault](https://segmentfault.com/blog/exileduyi)
+
+---
 
 > 这里是分割线 ---
 
