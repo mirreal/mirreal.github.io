@@ -1,0 +1,123 @@
+---
+layout: page
+title: "collection"
+date: 2016-02-23 23:14
+comments: true
+sharing: true
+footer: true
+---
+
+## 阅读资源合集
+
+### 集合
+
+infoQ http://www.infoq.com/ [中文站点](http://www.infoq.com/cn/)
+
+CSDN http://www.csdn.net/
+
+开源中国 http://www.oschina.net/
+
+伯乐在线 http://www.jobbole.com/
+
+博客园 http://www.cnblogs.com/
+
+segmentFault https://segmentfault.com/
+
+代码说 http://h2ex.com/
+
+掘金翻译计划 http://gold.xitu.io/
+
+码农网 http://www.codeceo.com/
+
+SDK.cn https://www.sdk.cn/
+
+
+
+简书 http://www.jianshu.com/
+
+
+
+### 站点
+
+Medium https://medium.com/
+
+TechCrunch http://techcrunch.com/
+
+Javacsript Weekly http://javascriptweekly.com/
+
+
+
+Hacker news https://news.ycombinator.com/
+
+
+少数派 http://sspai.com/
+
+
+
+### 开发者独立站点
+
+张克军
+
+司徒正美
+
+
+
+尤雨溪 http://evanyou.me/
+
+Phodal 黄峰达 [https://www.phodal.com/](https://www.phodal.com/)
+
+郭海旭 [http://hectorguo.com/](http://hectorguo.com/)
+
+鬼道 [http://luics.com/](http://luics.com/)
+
+阎王（李靖） 小胡子哥  [http://www.barretlee.com/](http://www.barretlee.com/)
+
+Una Kravets http://una.im/#💁
+
+陳上進 [https://vinta.ws/](https://vinta.ws/)
+
+张旭鑫 http://www.zhangxinxu.com/
+
+玉伯 https://github.com/lifesinger/blog/issues
+
+姜逸坤 http://yikun.github.io/
+
+阮一峰 http://www.ruanyifeng.com/home.html
+
+羡辙 http://zhangwenli.com/
+
+Forsigner http://forsigner.com/
+
+Sean Sun http://pinggod.com/
+
+Coderzh http://blog.coderzh.com/about/
+
+颜海镜 http://yanhaijing.com/
+
+
+
+
+
+### 团队博客
+
+阿里妈妈 MUX http://mux.alimama.com/
+
+
+### 前端
+
+CSS Trick https://css-tricks.com/
+
+
+### 设计
+
+灵感格子 http://theinspirationgrid.com/
+
+站酷 http://www.zcool.com.cn/
+
+
+
+### 代码片段
+
+codePen http://codepen.io/
+
+JsFiddle http://jsfiddle.net/

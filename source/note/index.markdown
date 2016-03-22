@@ -12,6 +12,16 @@ footer: true
 
 ---
 
+#### Collection
+
+> 这里的东西也许会一直更新
+
+##### [阅读资源]({{ root_url }}/note/collection.html)
+
+
+
+---
+
 #### 一段旅程
 
 #### 2016
@@ -30,12 +40,29 @@ footer: true
 - [2016-03-05]({{ root_url }}/note/2016-03-05.html) MAC 截屏
 - [2016-03-04]({{ root_url }}/note/2016-03-04.html) Hisory API、刷新页面
 - [2016-03-03]({{ root_url }}/note/2016-03-03.html) sublime text 安装 package control
-- [2016-02-23]({{ root_url }}/note/2016-02-23.html) 阅读资源
+- [2016-03-01]({{ root_url }}/note/2016-03-01.html)
+- [2016-02-29]({{ root_url }}/note/2016-02-29.html)
+- [2016-02-26]({{ root_url }}/note/2016-02-26.html) 设置 Origin、js quiz
+- [2016-02-25]({{ root_url }}/note/2016-02-25.html) setTimeout
+- [2016-02-24]({{ root_url }}/note/2016-02-24.html) npm scripts
+- [2016-02-23]({{ root_url }}/note/2016-02-23.html)
 - [2016-02-21]({{ root_url }}/note/2016-02-21.html) 移动开发调试
+- [2016-02-19]({{ root_url }}/note/2016-02-19.html) Twitter’s Heart
+- [2016-01-25]({{ root_url }}/note/2016-01-25.html) insertAdjacentHTML
+- [2016-01-18]({{ root_url }}/note/2016-01-18.html) 删除 tag
+- [2016-01-05]({{ root_url }}/note/2016-01-05.html) 获取元素高度、scrollIntoViewIfNeeded、halt()
 
 
 #### 2015
 
+- [2015-12-31]({{ root_url }}/note/2015-12-31.html) 两次 URL 编码
+- [2015-12-27]({{ root_url }}/note/2015-12-27.html) webstorm
+- [2015-12-24]({{ root_url }}/note/2015-12-24.html) sublime
+- [2015-12-10]({{ root_url }}/note/2015-12-10.html) flexbox 兼容
+- [2015-12-09]({{ root_url }}/note/2015-12-09.html) 文件上传
+- [2015-12-08]({{ root_url }}/note/2015-12-08.html) z-index
+- [2015-12-07]({{ root_url }}/note/2015-12-07.html) uuid
+- [2015-12-04]({{ root_url }}/note/2015-12-04.html) 版本比较、placeholder color
 - [2015-11-20]({{ root_url }}/note/2015-11-20.html) 未完成的 WebAssembly
 - [2015-10-27]({{ root_url }}/note/2015-10-27.html) 即将来临的几点
 - [2015-07-23]({{ root_url }}/note/2015-07-23.html) Shell 光标快捷

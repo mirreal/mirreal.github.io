@@ -7,7 +7,7 @@ sharing: true
 footer: true
 ---
 
-## 【阅读】
+## 阅读
 
 Jean-Jacques Dubray是一名资深工程师，他最近引入了一个新的模式：状态-行为-模型（State-Action-Model，SAM）。SAM是一个函数式反应型的编程模式，它致力于简化数据Model和View之间的交互。它究竟有何优点值得作者弃用MVC呢？
 
