@@ -14,11 +14,25 @@ footer: true
 
 #### 一段旅程
 
-- [2016-03-22]({{ root_url }}/note/2016-03-22.html) 对象字面量、位运算、自增运算符
+#### 2016
+
+- [2016-03-22]({{ root_url }}/note/2016-03-22.html) 对象字面量、位运算、自增运算符、数组展平
 - [2016-03-21]({{ root_url }}/note/2016-03-21.html) 一个 octopress 的 Bug
-- [2016-03-17]({{ root_url }}/note/2016-03-17.html) web缓存
+- [2016-03-17]({{ root_url }}/note/2016-03-17.html) web 缓存
 - [2016-03-16]({{ root_url }}/note/2016-03-16.html) Reduce()
 - [2016-03-15]({{ root_url }}/note/2016-03-15.html) Code editor for browser
+- [2016-03-07]({{ root_url }}/note/2016-03-07.html) Homebrew、zsh、shell 快捷键
+- [2016-03-05]({{ root_url }}/note/2016-03-05.html) MAC 截屏
+- [2016-02-23]({{ root_url }}/note/2016-02-23.html) 阅读资源
+- [2016-02-21]({{ root_url }}/note/2016-02-21.html) 移动开发调试
+
+
+#### 2015
+
+- [2015-11-20]({{ root_url }}/note/2015-11-20.html) 未完成的 WebAssembly
+- [2015-10-27]({{ root_url }}/note/2015-10-27.html) 即将来临的几点
+- [2015-07-23]({{ root_url }}/note/2015-07-23.html) Shell 光标快捷
+
 
 ---
 

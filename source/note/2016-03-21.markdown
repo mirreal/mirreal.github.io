@@ -7,7 +7,7 @@ sharing: true
 footer: true
 ---
 
-#### 【阅读】
+## 【阅读】
 
 如何用Python写一个贪吃蛇AI
 http://www.hawstein.com/posts/snake-ai.html
@@ -15,11 +15,11 @@ http://www.hawstein.com/posts/snake-ai.html
 三步将 React Native 项目运行在 Web 浏览器上面
 http://taobaofed.org/blog/2016/03/11/react-web-intro/
 
-#### 【英文】
+## 【英文】
 
 schema ['skimə] 模式
 
-#### 【追踪一个 BUG 】
+## 【追踪一个 BUG 】
 
 Octopress
 

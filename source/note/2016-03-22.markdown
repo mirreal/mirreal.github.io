@@ -77,6 +77,65 @@ var x = '5';
 ++'5'[0] // 6
 ```
 
+### 数组展平
+
+```js
+function flatten(arr) {
+  if ( !isArray(arr) ) {
+    return arr;
+  }
+
+  return [].concat.apply([], arr.map(function(item) {
+    return flatten(item);
+  }));
+
+
+}
+
+function isArray(arr) {
+  return toString.call(arr).slice(8, -1) === 'Array';
+}
+```
+
+调用方式：
+
+```js
+flatten( [3, 4, [9, 5], [2, 1, 7], 4, 8] )
+
+// [3, 4, 9, 5, 2, 1, 7, 4, 8]
+```
+
+### 获取闭包对象
+
+[一道题](https://segmentfault.com/q/1010000002916478)
+
+```js
+var obj = (function() {
+  var person = {
+    name: 'vincent',
+    age: 24
+  };
+
+  return {
+    run: function(key) {
+      return person[key];
+    }
+  };
+
+})();
+
+
+Object.defineProperty(Object.prototype, 'get', {
+  get: function() {
+    return this;
+  }
+});
+
+console.log( obj.run('age') )
+console.log( obj.run('get') )
+```
+
+
 ## 【阅读】
 
 [浅谈API安全设计](http://www.jianshu.com/p/d7c52d113a68)
