@@ -113,7 +113,7 @@ cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 #### 主题
 
 ```sh
-ZSH_THEME="dst"`
+ZSH_THEME="dst"
 ```
 
 [ZSH 主题大全](http://zshthem.es/all/)
@@ -123,3 +123,37 @@ ZSH_THEME="dst"`
 ```sh
 plugins=(git textmate ruby autojump osx mvn gradle)
 ```
+
+
+## 文档
+
+HTTP2 FAQ https://http2.github.io/faq/
+
+## 阅读
+
+经过无数经验教训后我给独立程序员的建议
+http://www.jianshu.com/p/152e84a045a9
+
+How to Level up as a Developer
+https://medium.freecodecamp.com/how-to-level-up-as-a-developer-87344584777c#.2rvt7h740
+
+http://36kr.com/p/5044048.html
+
+解密微博红包：架构、防刷、监控和资源调度
+http://www.infoq.com/cn/articles/2016-hongbao-weibo
+
+Introducing the WebVR 1.0 API Proposal
+https://hacks.mozilla.org/2016/03/introducing-the-webvr-1-0-api-proposal/
+
+用 JavaScript 对抗 DDOS 攻击 (下)
+http://www.cnblogs.com/index-html/p/js-network-firewall-2.html
+
+记录一个threejs项目
+http://www.cnblogs.com/pursues/archive/2016/02/29/5226807.html
+
+## 站点
+
+关于数学计算 http://www.euclideanspace.com/maths/index.htm
+http://www.natural-science.or.jp/article/laboratory/cat467/
+一份three文档 http://learningthreejs.com/
+一个源码注释 https://github.com/omni360/three.js.sourcecode

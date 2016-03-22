@@ -21,8 +21,15 @@ footer: true
 - [2016-03-17]({{ root_url }}/note/2016-03-17.html) web 缓存
 - [2016-03-16]({{ root_url }}/note/2016-03-16.html) Reduce()
 - [2016-03-15]({{ root_url }}/note/2016-03-15.html) Code editor for browser
+- [2016-03-13]({{ root_url }}/note/2016-03-13.html) git config、git 删除分支
+- [2016-03-11]({{ root_url }}/note/2016-03-11.html)
+- [2016-03-10]({{ root_url }}/note/2016-03-10.html)
+- [2016-03-08]({{ root_url }}/note/2016-03-08.html)
 - [2016-03-07]({{ root_url }}/note/2016-03-07.html) Homebrew、zsh、shell 快捷键
+- [2016-03-06]({{ root_url }}/note/2016-03-06.html) git https 记住密码
 - [2016-03-05]({{ root_url }}/note/2016-03-05.html) MAC 截屏
+- [2016-03-04]({{ root_url }}/note/2016-03-04.html) Hisory API、刷新页面
+- [2016-03-03]({{ root_url }}/note/2016-03-03.html) sublime text 安装 package control
 - [2016-02-23]({{ root_url }}/note/2016-02-23.html) 阅读资源
 - [2016-02-21]({{ root_url }}/note/2016-02-21.html) 移动开发调试
 
