@@ -63,6 +63,7 @@ footer: true
 - [2015-12-08]({{ root_url }}/note/2015-12-08.html) z-index
 - [2015-12-07]({{ root_url }}/note/2015-12-07.html) uuid
 - [2015-12-04]({{ root_url }}/note/2015-12-04.html) 版本比较、placeholder color
+- [2015-11-30]({{ root_url }}/note/2015-11-30.html) 同源策略
 - [2015-11-20]({{ root_url }}/note/2015-11-20.html) 未完成的 WebAssembly
 - [2015-10-27]({{ root_url }}/note/2015-10-27.html) 即将来临的几点
 - [2015-07-23]({{ root_url }}/note/2015-07-23.html) Shell 光标快捷

@@ -22,3 +22,28 @@ Jean-Jacques Dubray是一名资深工程师，他最近引入了一个新的模�
 HTTP/2改变了Web开发者优化网站的方式。在HTTP/1.1中，为了压缩5%的页面加载速度，人们会通过类似雪碧图、内联代码、细分域名、合并代码等方式，来想方设法地优化TCP连接和HTTP请求，但在HTTP/2中的最佳实践可能正好与之相反，不过，幸运的是一些最佳实践依然有效。
 
 [Web开发者的HTTP/2性能优化指南](https://github.com/xitu/gold-miner/blob/master/TODO/http2-for-web-developers.md) https://github.com/xitu/gold-miner/blob/master/TODO/http2-for-web-developers.md
+
+## issues
+
+##### 单词断行
+
+* `word-break` 指定怎样在单词内断行
+
+* `word-wrap` 否允许单词中断换行
+
+参考：[word wrap 解惑](http://ued.taobao.org/blog/2010/10/research-of-word-wrap/)
+
+
+##### 刷新页面的几种方式
+
+```javascript
+history.go(0)
+location.reload()
+
+location.replace(location)
+location.assign(location)
+location = location
+// 这几个地方作为参数的 location 可以换成 location.href
+```
+
+`location.replace()` 方法打开的 `Url` 不会加入历史堆栈

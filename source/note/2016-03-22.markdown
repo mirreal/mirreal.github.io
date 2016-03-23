@@ -225,6 +225,7 @@ foo === foo;                 // true
 [JavaScript问题集锦](https://github.com/creeperyang/blog/issues/2)
 
 [一种面试思路](http://www.jackpu.com/-pian-fei-chang-bu-cuo-de-qian-duan-mian-shi-wen-zhang/)
+[Interviewing a front-end developer](http://blog.sourcing.io/interview-questions)
 
 ## 站点
 

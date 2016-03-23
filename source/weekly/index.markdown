@@ -7,12 +7,21 @@ sharing: true
 footer: true
 ---
 
+> I love Saturday
+
 周报，也许是一些总结，也许只是一些推荐，也许什么都没有
+
+有的事我也没想清楚，做点什么安慰自己显得不是那么空虚
 
 ---
 
 - [2016-03-26]({{ root_url }}/weekly/2016-03-26.html)
-- [2016-03-19]({{ root_url }}/weekly/2016-03-19.html)
-- [2016-03-12]({{ root_url }}/weekly/2016-03-12.html)
-- [2016-03-05]({{ root_url }}/weekly/2016-03-05.html)
-- [2016-02-27]({{ root_url }}/weekly/2016-02-27.html)
+- [2016-03-19]({{ root_url }}/weekly/2016-03-19.html) C 指针
+- [2016-03-12]({{ root_url }}/weekly/2016-03-12.html) box-shadow、WebVR
+- [2016-03-05]({{ root_url }}/weekly/2016-03-05.html) 单词断行、刷新页面
+- [2016-02-27]({{ root_url }}/weekly/2016-02-27.html) feColorMatrix
+- [2016-01-30]({{ root_url }}/weekly/2016-01-30.html) git revert、it reset
+- [2016-01-02]({{ root_url }}/weekly/2016-01-02.html) appendQuery
+- [2015-12-12]({{ root_url }}/weekly/2015-12-12.html) z-index
+- [2015-11-21]({{ root_url }}/weekly/2015-11-21.html) 隐藏字符
+- [2015-11-14]({{ root_url }}/weekly/2015-11-14.html) decodeURIComponent、scrollTop

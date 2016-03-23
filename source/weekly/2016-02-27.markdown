@@ -20,3 +20,13 @@ Instagram上各种漂亮的滤镜不是什么神秘的事，使用 SVG 的 feCol
 百花齐放的环境允许任何人都可以选择最适合自己的方式，对此也有人回应到：1. 我为什么使用grunt； 2. 我为何放弃grunt转投gulp； 3. 我为何放弃gulp与grunt，转投npm scripts； 4. 我为何放弃前端
 
 [我为何放弃Gulp与Grunt，转投npm scripts](http://www.infoq.com/cn/news/2016/02/gulp-grunt-npm-scripts-part2)
+
+## issues
+
+* 怎么用SVG的 `feColorMatrix` （色彩矩阵过滤器）做出各种漂亮的滤镜效果 [Finessing `feColorMatrix`](http://alistapart.com/article/finessing-fecolormatrix)
+
+* [我为何放弃Gulp与Grunt，转投npm scripts](http://www.infoq.com/cn/news/2016/02/gulp-grunt-npm-scripts-part2) 对此，也有人回应 1. 我为什么使用grunt； 2. 我为何放弃grunt转投gulp； 3. 我为何放弃gulp与grunt，转投npm scripts； 4. 我为何放弃前端
+
+* 系统地看一遍CSS布局 [http://zh.learnlayout.com/](http://zh.learnlayout.com/)
+
+* 之前一直想当然的认为 `setTimeout` 和 `setInterval` 返回的是一个普通对象，原来是一个Number类型的Id
