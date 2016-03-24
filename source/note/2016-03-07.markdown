@@ -155,5 +155,7 @@ http://www.cnblogs.com/pursues/archive/2016/02/29/5226807.html
 
 关于数学计算 http://www.euclideanspace.com/maths/index.htm
 http://www.natural-science.or.jp/article/laboratory/cat467/
+
 一份three文档 http://learningthreejs.com/
+
 一个源码注释 https://github.com/omni360/three.js.sourcecode

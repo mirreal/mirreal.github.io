@@ -17,6 +17,7 @@ footer: true
 > 这里的东西也许会一直更新
 
 ##### [阅读资源]({{ root_url }}/note/collection.html)
+##### [front-end-developer-interview-questions]({{ root_url }}/note/front-end-developer-interview-questions.html)
 
 
 
@@ -26,16 +27,19 @@ footer: true
 
 #### 2016
 
+- [2016-03-24]({{ root_url }}/note/2016-03-24.html) JSONP、will-change、letter-spacing
+- [2016-03-23]({{ root_url }}/note/2016-03-23.html) three.js、zoom 和 scale
 - [2016-03-22]({{ root_url }}/note/2016-03-22.html) 对象字面量、位运算、自增运算符、数组展平
 - [2016-03-21]({{ root_url }}/note/2016-03-21.html) 一个 octopress 的 Bug
 - [2016-03-17]({{ root_url }}/note/2016-03-17.html) web 缓存
 - [2016-03-16]({{ root_url }}/note/2016-03-16.html) Reduce()
 - [2016-03-15]({{ root_url }}/note/2016-03-15.html) Code editor for browser
-- [2016-03-13]({{ root_url }}/note/2016-03-13.html) git config、git 删除分支
+- [2016-03-14]({{ root_url }}/note/2016-03-14.html) git config、git 删除分支
+- [2016-03-13]({{ root_url }}/note/2016-03-13.html) Wherever I May Roam
 - [2016-03-11]({{ root_url }}/note/2016-03-11.html)
 - [2016-03-10]({{ root_url }}/note/2016-03-10.html)
 - [2016-03-08]({{ root_url }}/note/2016-03-08.html)
-- [2016-03-07]({{ root_url }}/note/2016-03-07.html) Homebrew、zsh、shell 快捷键
+- [2016-03-07]({{ root_url }}/note/2016-03-07.html) Homebrew、zsh、shell 快捷键、three.js
 - [2016-03-06]({{ root_url }}/note/2016-03-06.html) git https 记住密码
 - [2016-03-05]({{ root_url }}/note/2016-03-05.html) MAC 截屏
 - [2016-03-04]({{ root_url }}/note/2016-03-04.html) Hisory API、刷新页面
