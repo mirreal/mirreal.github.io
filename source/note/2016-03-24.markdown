@@ -40,3 +40,9 @@ letter-spacing: .3px;
 
 letter-spacing: inherit;
 ```
+
+## 阅读
+
+[setTimout( , 0)](https://github.com/oadaM92/oadaM92-blog/tree/master/blogs/2016-03-21-setTimout(0))
+
+[如何在 Git 中使用撤消操作](https://egoistian.com/2015/10/04/how-to-undo-with-git/)

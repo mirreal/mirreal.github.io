@@ -52,7 +52,7 @@ CSS：
 }
 ```
 
-将容器的位置设为 `relative` ，图片的位置设为 `absolute` ，然后将其 `top`， `right`， `bottom`， `left` 都设置成0，虽然图片尺寸未知，但是对于一张具体的图片而言是有固定宽高的，所以并不能使它四个方位间距都为0，因此 `margin: auto;` 会让它居中。如果仅对于宽高都小于200px的图片，这样就足够了，但是对于大图片就不适用，所以再加上 `max-width: 200px;max-height: 200px;` ，这样图片就可以自适应缩放。
+将容器的位置设为 `relative` ，图片的位置设为 `absolute` ，然后将其 `top`， `right`， `bottom`， `left` 都设置成0，虽然图片尺寸未知，但是对于一张具体的图片而言是有固定宽高的，所以并不能使它四个方位间距都为0，因此 `margin: auto;` 会让它居中。如果仅对于宽高都小于200px的图片，这样就足够了，但是对于大图片就不适用，所以再加上 `max-width: 200px; max-height: 200px;` ，这样图片就可以自适应缩放。
 
 
 查看演示：[demo1](http://mirreal.github.io/demo/image-center/1.html)
@@ -73,6 +73,7 @@ CSS这样写：
 .box1 {
   width: 200px;
   height: 200px;
+  min-width: 200px;
   display: table-cell;
   vertical-align: middle;
   text-align: center;
@@ -83,6 +84,8 @@ CSS这样写：
   vertical-align: middle;
 }
 ```
+
+查看演示：[demo2](http://mirreal.github.io/demo/image-center/2.html)
 
 ### 方式三：使用背景图片
 
@@ -104,6 +107,8 @@ CSS：
   background-position: center;
 }
 ```
+
+一个演示：[demo3](http://mirreal.github.io/demo/image-center/3.html)
 
 直接使用 `background-position: center;` 实现居中，如图片尺寸小于 200px 就 OK 了。但是对于大图片，会被截掉，所以还需加上 `background-size: contain;` ，可是对于小图片又有问题，因为加上这个属性会对图片缩放，小图也不例外。而在我们的需求里，对小图要求按照其原有大小显示。
 

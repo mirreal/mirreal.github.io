@@ -27,6 +27,7 @@ footer: true
 
 #### 2016
 
+- [2016-03-25]({{ root_url }}/note/2016-03-25.html) resize、close button
 - [2016-03-24]({{ root_url }}/note/2016-03-24.html) JSONP、will-change、letter-spacing
 - [2016-03-23]({{ root_url }}/note/2016-03-23.html) three.js、zoom 和 scale
 - [2016-03-22]({{ root_url }}/note/2016-03-22.html) 对象字面量、位运算、自增运算符、数组展平
