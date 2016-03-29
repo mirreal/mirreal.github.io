@@ -18,3 +18,7 @@ textarea 使用这个属性之后就可以去掉右下角讨厌的缩放
 ### close button with css
 
 http://codepen.io/ndeniche/pen/ljbDL
+
+## 阅读
+
+[由NPM引发的关于left-pad的那些事儿](http://blog.h5jun.com/post/left-pad.html)

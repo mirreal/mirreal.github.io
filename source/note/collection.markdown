@@ -32,6 +32,9 @@ segmentFault https://segmentfault.com/
 SDK.cn https://www.sdk.cn/
 
 
+乌云知识库 http://drops.wooyun.org/
+
+
 
 简书 http://www.jianshu.com/
 
@@ -94,6 +97,12 @@ Coderzh http://blog.coderzh.com/about/
 
 颜海镜 http://yanhaijing.com/
 
+朱英达 https://www.zhuyingda.com/
+
+Jerry Qu https://imququ.com/
+
+AlgorithmDog http://www.gotoli.us/
+
 
 
 
@@ -101,6 +110,10 @@ Coderzh http://blog.coderzh.com/about/
 ### 团队博客
 
 阿里妈妈 MUX http://mux.alimama.com/
+
+奇舞团 http://75team.com/
+
+百度EFE http://efe.baidu.com/
 
 
 ### 前端

@@ -16,6 +16,7 @@ footer: true
 
 > 这里的东西也许会一直更新
 
+##### [demo]({{ root_url }}/note/demo_index.html)
 ##### [阅读资源]({{ root_url }}/note/collection.html)
 ##### [front-end-developer-interview-questions]({{ root_url }}/note/front-end-developer-interview-questions.html)
 
@@ -27,6 +28,10 @@ footer: true
 
 #### 2016
 
+
+- [2016-03-29]({{ root_url }}/note/2016-03-29.html) css arrow、stopPropagation
+- [2016-03-28]({{ root_url }}/note/2016-03-28.html) get 漏洞
+- [2016-03-26]({{ root_url }}/note/2016-03-26.html) left-pad
 - [2016-03-25]({{ root_url }}/note/2016-03-25.html) resize、close button
 - [2016-03-24]({{ root_url }}/note/2016-03-24.html) JSONP、will-change、letter-spacing
 - [2016-03-23]({{ root_url }}/note/2016-03-23.html) three.js、zoom 和 scale
