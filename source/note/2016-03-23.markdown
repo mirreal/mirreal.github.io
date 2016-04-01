@@ -7,6 +7,11 @@ sharing: true
 footer: true
 ---
 
+## 阅读
+
+[一个前端的自我修养](http://taobaofed.org/blog/2016/03/23/the-growth-of-front-end/)
+
+
 ## three.js 笔记
 
 ### 一堆名词

@@ -15,6 +15,7 @@ footer: true
 
 ---
 
+- [2016-04-02]({{ root_url }}/weekly/2016-04-02.html) 
 - [2016-03-26]({{ root_url }}/weekly/2016-03-26.html) 贪吃蛇AI、函数柯里化、react native
 - [2016-03-19]({{ root_url }}/weekly/2016-03-19.html) C 指针
 - [2016-03-12]({{ root_url }}/weekly/2016-03-12.html) box-shadow、WebVR

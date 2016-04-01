@@ -25,7 +25,7 @@ segmentFault https://segmentfault.com/
 
 代码说 http://h2ex.com/
 
-掘金翻译计划 http://gold.xitu.io/
+稀土掘金 http://gold.xitu.io/
 
 码农网 http://www.codeceo.com/
 
@@ -33,6 +33,8 @@ SDK.cn https://www.sdk.cn/
 
 
 乌云知识库 http://drops.wooyun.org/
+
+36大数据 http://www.36dsj.com/
 
 
 
@@ -56,6 +58,29 @@ Hacker news https://news.ycombinator.com/
 少数派 http://sspai.com/
 
 
+### 周刊
+
+#### ATA
+
+探子来报
+
+#### 中文
+
+编程狂人 http://www.tuicool.com/mags/
+
+FEX 技术周刊 http://fex.baidu.com/articles/
+
+奇舞周刊 http://old.75team.com/weekly/
+
+码农周刊 http://weekly.manong.io/
+
+#### 英文
+
+frontenddevweekly http://frontenddevweekly.com/
+
+javascriptweekly http://javascriptweekly.com/
+
+
 
 ### 开发者独立站点
 
@@ -73,7 +98,7 @@ Phodal 黄峰达 [https://www.phodal.com/](https://www.phodal.com/)
 
 鬼道 [http://luics.com/](http://luics.com/)
 
-阎王（李靖） 小胡子哥  [http://www.barretlee.com/](http://www.barretlee.com/)
+李靖（阎王） 小胡子哥  [http://www.barretlee.com/](http://www.barretlee.com/)
 
 Una Kravets http://una.im/#💁
 
@@ -82,6 +107,8 @@ Una Kravets http://una.im/#💁
 张旭鑫 http://www.zhangxinxu.com/
 
 玉伯 https://github.com/lifesinger/blog/issues
+
+李晶（拔赤） http://jayli.github.io/
 
 姜逸坤 http://yikun.github.io/
 
@@ -103,6 +130,13 @@ Jerry Qu https://imququ.com/
 
 AlgorithmDog http://www.gotoli.us/
 
+周毅刚 http://miketech.it/
+
+matrix67 http://www.matrix67.com/
+
+吴生鑫 http://www.wushxin.top/
+
+欧雷 https://ourai.ws/
 
 
 
@@ -114,6 +148,8 @@ AlgorithmDog http://www.gotoli.us/
 奇舞团 http://75team.com/
 
 百度EFE http://efe.baidu.com/
+
+TW洞见 http://insights.thoughtworkers.org/
 
 
 ### 前端

@@ -16,6 +16,7 @@ footer: true
 
 > 这里的东西也许会一直更新
 
+##### [Wherever I May Roam]({{ root_url }}/note/subject.html)
 ##### [demo]({{ root_url }}/note/demo_index.html)
 ##### [阅读资源]({{ root_url }}/note/collection.html)
 ##### [front-end-developer-interview-questions]({{ root_url }}/note/front-end-developer-interview-questions.html)
@@ -29,6 +30,9 @@ footer: true
 #### 2016
 
 
+- [2016-04-01]({{ root_url }}/note/2016-04-01.html)
+- [2016-03-31]({{ root_url }}/note/2016-03-31.html) 去除 html 标签
+- [2016-03-30]({{ root_url }}/note/2016-03-30.html) 设计模式
 - [2016-03-29]({{ root_url }}/note/2016-03-29.html) css arrow、stopPropagation
 - [2016-03-28]({{ root_url }}/note/2016-03-28.html) get 漏洞
 - [2016-03-26]({{ root_url }}/note/2016-03-26.html) left-pad
@@ -40,8 +44,8 @@ footer: true
 - [2016-03-17]({{ root_url }}/note/2016-03-17.html) web 缓存
 - [2016-03-16]({{ root_url }}/note/2016-03-16.html) Reduce()
 - [2016-03-15]({{ root_url }}/note/2016-03-15.html) Code editor for browser
-- [2016-03-14]({{ root_url }}/note/2016-03-14.html) git config、git 删除分支
-- [2016-03-13]({{ root_url }}/note/2016-03-13.html) Wherever I May Roam
+- [2016-03-14]({{ root_url }}/note/2016-03-14.html) Wherever I May Roam
+- [2016-03-13]({{ root_url }}/note/2016-03-13.html) git config、git 删除分支
 - [2016-03-11]({{ root_url }}/note/2016-03-11.html)
 - [2016-03-10]({{ root_url }}/note/2016-03-10.html)
 - [2016-03-08]({{ root_url }}/note/2016-03-08.html)
