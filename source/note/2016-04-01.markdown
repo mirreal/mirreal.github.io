@@ -9,8 +9,6 @@ footer: true
 
 ## 阅读
 
-###
-
 [How do Promises Work](https://github.com/xitu/gold-miner/blob/master/TODO/how-do-promises-work.md)
 
 ## 愚人节

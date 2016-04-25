@@ -29,8 +29,23 @@ footer: true
 
 #### 2016
 
-
-- [2016-04-01]({{ root_url }}/note/2016-04-01.html)
+- [2016-04-20]({{ root_url }}/note/2016-04-20.html) 
+- [2016-04-19]({{ root_url }}/note/2016-04-19.html)
+- [2016-04-18]({{ root_url }}/note/2016-04-18.html)
+- [2016-04-17]({{ root_url }}/note/2016-04-17.html)
+- [2016-04-16]({{ root_url }}/note/2016-04-16.html) decodeuricomponent
+- [2016-04-15]({{ root_url }}/note/2016-04-15.html)
+- [2016-04-14]({{ root_url }}/note/2016-04-14.html)
+- [2016-04-13]({{ root_url }}/note/2016-04-13.html)
+- [2016-04-12]({{ root_url }}/note/2016-04-12.html)
+- [2016-04-11]({{ root_url }}/note/2016-04-11.html)
+- [2016-04-09]({{ root_url }}/note/2016-04-09.html) A-Frame
+- [2016-04-08]({{ root_url }}/note/2016-04-08.html) Promise
+- [2016-04-07]({{ root_url }}/note/2016-04-07.html) github 教程、Virtual DOM
+- [2016-04-06]({{ root_url }}/note/2016-04-06.html) 王垠、CPS
+- [2016-04-05]({{ root_url }}/note/2016-04-05.html) 去除 JavaScript 代码的怪味、Sketch pages
+- [2016-04-04]({{ root_url }}/note/2016-04-04.html) ajax new approach web applications
+- [2016-04-01]({{ root_url }}/note/2016-04-01.html) 脚手架工具、How do Promises Work、GuruDigger
 - [2016-03-31]({{ root_url }}/note/2016-03-31.html) 去除 html 标签
 - [2016-03-30]({{ root_url }}/note/2016-03-30.html) 设计模式
 - [2016-03-29]({{ root_url }}/note/2016-03-29.html) css arrow、stopPropagation

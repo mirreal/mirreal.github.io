@@ -58,6 +58,12 @@ Hacker news https://news.ycombinator.com/
 少数派 http://sspai.com/
 
 
+腊八粥 http://www.labazhou.net/
+
+
+念 http://nian.so/
+
+
 ### 周刊
 
 #### ATA
@@ -73,6 +79,8 @@ FEX 技术周刊 http://fex.baidu.com/articles/
 奇舞周刊 http://old.75team.com/weekly/
 
 码农周刊 http://weekly.manong.io/
+
+TECHBRIDGE WEEKLY 技術週刊 http://weekly.techbridge.cc/
 
 #### 英文
 
@@ -100,7 +108,11 @@ Phodal 黄峰达 [https://www.phodal.com/](https://www.phodal.com/)
 
 李靖（阎王） 小胡子哥  [http://www.barretlee.com/](http://www.barretlee.com/)
 
+2ality http://www.2ality.com/
+
 Una Kravets http://una.im/#💁
+
+CWRICHARDKIM http://cwrichardkim.com/
 
 陳上進 [https://vinta.ws/](https://vinta.ws/)
 
@@ -138,7 +150,45 @@ matrix67 http://www.matrix67.com/
 
 欧雷 https://ourai.ws/
 
+Siva Gao http://sivagao.com/
 
+Jason Yu（于航） https://www.yhspy.com/
+
+Alon Zhang http://jinlong.github.io/
+
+王垠 http://www.yinwang.org/
+
+biedalian http://bg.biedalian.com/
+
+litten http://litten.github.io/
+
+嗷嗷（刘杰）http://www.aoao.org.cn/
+
+moonzwu http://moonzwu.github.io/
+
+云风 http://blog.codingnow.com/
+
+文翼 http://wenzhixin.net.cn/
+
+陈泽彬 http://kirochen.com/
+
+sprabbit http://blog.sprabbit.com/
+
+Laker Huang(黄绮) http://laker.me/
+
+汐辰 http://alankell.github.io/
+
+技术小黑屋 http://droidyue.com/
+
+亚里士朱德 http://yalishizhude.github.io/
+
+刘未鹏 http://mindhacks.cn/
+
+### Blog
+
+http://tjholowaychuk.com/
+
+http://matt.might.net/
 
 
 ### 团队博客
@@ -149,10 +199,16 @@ matrix67 http://www.matrix67.com/
 
 百度EFE http://efe.baidu.com/
 
+腾讯AlloyTeam http://www.alloyteam.com/
+
+美团前端团队 http://fe.meituan.com/
+
 TW洞见 http://insights.thoughtworkers.org/
 
 
 ### 前端
+
+前端乱炖 http://www.html-js.com/
 
 CSS Trick https://css-tricks.com/
 
@@ -162,6 +218,10 @@ CSS Trick https://css-tricks.com/
 灵感格子 http://theinspirationgrid.com/
 
 站酷 http://www.zcool.com.cn/
+
+### 工具
+
+process on 在线作图工具
 
 
 
