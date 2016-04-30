@@ -12,10 +12,11 @@ footer: true
 ### Javascript eventEmitter
 
 
+
 ### 一大堆兼容性问题
 
 * Promise
-* jQuery 2.0 不支持 IE8
+* jQuery 2.X 不支持 IE8
 
 
 ### 307 内部跳转
@@ -23,7 +24,7 @@ footer: true
 http 转成 https
 
 
-###
+### createRandomArray
 
 ```js
 function createRandomArray(num) {

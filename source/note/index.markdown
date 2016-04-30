@@ -19,6 +19,7 @@ footer: true
 ##### [Wherever I May Roam]({{ root_url }}/note/subject.html)
 ##### [demo]({{ root_url }}/note/demo_index.html)
 ##### [阅读资源]({{ root_url }}/note/collection.html)
+##### [document]({{ root_url }}/note/doc.html)
 ##### [front-end-developer-interview-questions]({{ root_url }}/note/front-end-developer-interview-questions.html)
 
 
@@ -29,16 +30,22 @@ footer: true
 
 #### 2016
 
-- [2016-04-20]({{ root_url }}/note/2016-04-20.html) 
-- [2016-04-19]({{ root_url }}/note/2016-04-19.html)
+- [2016-04-29]({{ root_url }}/note/2016-04-29.html)
+- [2016-04-28]({{ root_url }}/note/2016-04-28.html)
+- [2016-04-27]({{ root_url }}/note/2016-04-27.html)
+- [2016-04-26]({{ root_url }}/note/2016-04-26.html) 兼容【续】、node_modules
+- [2016-04-25]({{ root_url }}/note/2016-04-25.html) 兼容 ie8、npm save
+- [2016-04-22]({{ root_url }}/note/2016-04-22.html) 307、createRandomArray
+- [2016-04-20]({{ root_url }}/note/2016-04-20.html) Web Speech Api
+- [2016-04-19]({{ root_url }}/note/2016-04-19.html) 一段代码
 - [2016-04-18]({{ root_url }}/note/2016-04-18.html)
-- [2016-04-17]({{ root_url }}/note/2016-04-17.html)
-- [2016-04-16]({{ root_url }}/note/2016-04-16.html) decodeuricomponent
+- [2016-04-17]({{ root_url }}/note/2016-04-17.html) postMessage、昆虫趋光性
+- [2016-04-16]({{ root_url }}/note/2016-04-16.html) decodeuricomponent uri malformed、delete
 - [2016-04-15]({{ root_url }}/note/2016-04-15.html)
-- [2016-04-14]({{ root_url }}/note/2016-04-14.html)
-- [2016-04-13]({{ root_url }}/note/2016-04-13.html)
-- [2016-04-12]({{ root_url }}/note/2016-04-12.html)
-- [2016-04-11]({{ root_url }}/note/2016-04-11.html)
+- [2016-04-14]({{ root_url }}/note/2016-04-14.html) 平滑回到顶部
+- [2016-04-13]({{ root_url }}/note/2016-04-13.html) Java class
+- [2016-04-12]({{ root_url }}/note/2016-04-12.html) 缓存失效和命名问题、跨域解决方案
+- [2016-04-11]({{ root_url }}/note/2016-04-11.html) 文件上传
 - [2016-04-09]({{ root_url }}/note/2016-04-09.html) A-Frame
 - [2016-04-08]({{ root_url }}/note/2016-04-08.html) Promise
 - [2016-04-07]({{ root_url }}/note/2016-04-07.html) github 教程、Virtual DOM

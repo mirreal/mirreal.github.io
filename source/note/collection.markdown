@@ -184,6 +184,8 @@ Laker Huang(黄绮) http://laker.me/
 
 刘未鹏 http://mindhacks.cn/
 
+淡忘~浅思 http://www.ido321.com/
+
 ### Blog
 
 http://tjholowaychuk.com/

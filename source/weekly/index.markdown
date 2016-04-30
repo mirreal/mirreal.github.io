@@ -15,7 +15,8 @@ footer: true
 
 ---
 
-- [2016-04-17]({{ root_url }}/weekly/2016-04-17.html) postMessage
+- [2016-04-30]({{ root_url }}/weekly/2016-04-30.html)
+- [2016-04-23]({{ root_url }}/weekly/2016-04-23.html)
 - [2016-04-16]({{ root_url }}/weekly/2016-04-16.html) delete
 - [2016-04-09]({{ root_url }}/weekly/2016-04-09.html) 猿小报
 - [2016-04-02]({{ root_url }}/weekly/2016-04-02.html)
