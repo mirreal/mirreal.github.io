@@ -18,3 +18,8 @@ Preferences > Languages & Frameworks > JavaScript
 ```
 
 配置 ECMAScript 版本即可
+
+
+### vue
+
+http://jiongks.name/blog/just-vue/

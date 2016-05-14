@@ -27,6 +27,8 @@ segmentFault https://segmentfault.com/
 
 稀土掘金 http://gold.xitu.io/
 
+凹凸实验室 http://aotu.io/
+
 码农网 http://www.codeceo.com/
 
 SDK.cn https://www.sdk.cn/
@@ -186,6 +188,16 @@ Laker Huang(黄绮) http://laker.me/
 
 淡忘~浅思 http://www.ido321.com/
 
+Paul Miller http://paulmillr.com/
+
+Ivo Wetzel（BonsaiDen） https://blog.grandcentrix.net/
+
+Tzu-ping Chung（鍾子屏） https://uranusjr.com/
+
+十年踪迹（月影） https://www.h5jun.com/
+
+赵劼（老赵） http://blog.zhaojie.me/
+
 ### Blog
 
 http://tjholowaychuk.com/
@@ -224,6 +236,10 @@ CSS Trick https://css-tricks.com/
 ### 工具
 
 process on 在线作图工具
+
+
+
+Discover your character http://www.amp-what.com/
 
 
 

@@ -1,0 +1,93 @@
+---
+layout: page
+title: "2016-05-10"
+date: 2016-05-10 09:58
+comments: true
+sharing: true
+footer: true
+---
+
+
+## 阅读
+
+[ES7 Decorator 装饰者模式](http://taobaofed.org/blog/2015/11/16/es7-decorator/)
+
+[【译】V8 团队眼中的 ES6、ES7及未来](https://www.h5jun.com/post/v8-es6-es7-and-beyond.html)
+
+## 聚沙
+
+### co koa
+
+从 Generator 开始
+
+生成器是迭代器。所有的生成器都有内建.next()和[Symbol.iterator]()方法的实现。
+
+要实现一个 `range` 函数，达到如下效果
+
+```js
+// 依次打印出：
+// 这里是 #0 楼
+// 这里是 #1 楼
+// 这里是 #2 楼
+for (var value of range(0, 3)) {
+  console.log(`这里是 #${value} 楼`);
+}
+```
+使用 generator
+
+```js
+function* range(start, stop) {
+  for (var i = start; i < stop; i++)
+    yield i;
+}
+```
+
+
+普通 `yield` 表达式只生成一个值，而 `yield*` 表达式可以通过迭代器进行迭代生成所有的值。
+
+生成器的 `.next()` 方法接受一个可选参数，参数稍后会作为 `yield` 表达式的返回值出现在生成器中
+
+```js
+function* f() {
+  for (let i = 0; true; i++) {
+    let reset = yield i;
+    console.log(reset);
+    if (reset) i = -1;
+  }
+}
+
+var g = f();
+
+g.next() // { value: 0, done: false }
+g.next() // { value: 1, done: false }
+g.next(true) // { value: 0, done: false }
+```
+
+https://blog.leancloud.cn/3910/
+
+
+### gulp-connect
+
+```js
+gulp.task('connect', function() {
+  connect.server({
+    root: 'app',
+    port: 9999,
+    livereload: true
+  });
+});
+
+gulp.task('html', function () {
+  gulp.src('./app/*.html')
+    .pipe(connect.reload());
+});
+
+gulp.task('watch', function () {
+  gulp.watch(['./app/*.html'], ['html']);
+});
+
+gulp.task('default', ['connect', 'watch']);
+```
+
+
+[MORE](http://blog.mirreal.net/note/2016-05-10.html)

@@ -15,6 +15,7 @@ footer: true
 
 ---
 
+- [2016-05-07]({{ root_url }}/weekly/2016-05-07.html)
 - [2016-04-30]({{ root_url }}/weekly/2016-04-30.html)
 - [2016-04-23]({{ root_url }}/weekly/2016-04-23.html)
 - [2016-04-16]({{ root_url }}/weekly/2016-04-16.html) delete

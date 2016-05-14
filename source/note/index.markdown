@@ -30,6 +30,20 @@ footer: true
 
 #### 2016
 
+
+- [2016-05-13]({{ root_url }}/note/2016-05-13.html) 
+- [2016-05-12]({{ root_url }}/note/2016-05-12.html)
+- [2016-05-11]({{ root_url }}/note/2016-05-11.html)
+- [2016-05-10]({{ root_url }}/note/2016-05-10.html)
+- [2016-05-09]({{ root_url }}/note/2016-05-09.html)
+- [2016-05-07]({{ root_url }}/note/2016-05-07.html)
+- [2016-05-06]({{ root_url }}/note/2016-05-06.html) 定义文档兼容性、字符
+- [2016-05-05]({{ root_url }}/note/2016-05-05.html) console
+- [2016-05-04]({{ root_url }}/note/2016-05-04.html) 条件注释、git 文件名大小写不敏感、chrome 滚动条
+- [2016-05-03]({{ root_url }}/note/2016-05-03.html) size or content、postMessage、setTImeout
+- [2016-05-02]({{ root_url }}/note/2016-05-02.html) events、Node ES6
+- [2016-05-01]({{ root_url }}/note/2016-05-01.html) 条件编译
+- [2016-04-30]({{ root_url }}/note/2016-04-30.html)
 - [2016-04-29]({{ root_url }}/note/2016-04-29.html)
 - [2016-04-28]({{ root_url }}/note/2016-04-28.html)
 - [2016-04-27]({{ root_url }}/note/2016-04-27.html)
