@@ -20,7 +20,7 @@ footer: true
 
 从 Generator 开始
 
-生成器是迭代器。所有的生成器都有内建.next()和[Symbol.iterator]()方法的实现。
+生成器是迭代器。所有的生成器都有内建 `.next()` 和 `[Symbol.iterator]()` 方法的实现。
 
 要实现一个 `range` 函数，达到如下效果
 
@@ -44,6 +44,84 @@ function* range(start, stop) {
 
 
 普通 `yield` 表达式只生成一个值，而 `yield*` 表达式可以通过迭代器进行迭代生成所有的值。
+
+假设我们写一个简单的生成器函数联结两个可迭代对象：
+
+```js
+function* concat(iter1, iter2) {
+  for (var value of iter1) {
+    yield value;
+  }
+  for (var value of iter2) {
+    yield value;
+  }
+}
+```
+es6 支持这样的简写方式：
+
+```js
+function* concat(iter1, iter2) {
+  yield* iter1;
+  yield* iter2;
+}
+```
+
+再看一个具体的例子：
+
+```js
+function* foo() {
+  yield 'a';
+  yield 'b';
+}
+
+function* bar() {
+  yield 'x';
+  foo();
+  yield 'y';
+}
+
+for (let v of bar()){
+  console.log(v);
+}
+```
+
+上面代码中，foo和bar都是Generator函数，在bar里面调用foo，是不会有效果的。
+
+这个就需要用到yield*语句，用来在一个Generator函数里面执行另一个Generator函数。
+
+```js
+function* bar() {
+  yield 'x';
+  yield* foo();
+  yield 'y';
+}
+
+// 等同于
+function* bar() {
+  yield 'x';
+  yield 'a';
+  yield 'b';
+  yield 'y';
+}
+
+// 等同于
+function* bar() {
+  yield 'x';
+  for (let v of foo()) {
+    yield v;
+  }
+  yield 'y';
+}
+
+for (let v of bar()){
+  console.log(v);
+}
+// "x"
+// "a"
+// "b"
+// "y"
+```
+
 
 生成器的 `.next()` 方法接受一个可选参数，参数稍后会作为 `yield` 表达式的返回值出现在生成器中
 

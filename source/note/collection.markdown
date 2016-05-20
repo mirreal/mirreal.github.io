@@ -57,6 +57,9 @@ Javacsript Weekly http://javascriptweekly.com/
 Hacker news https://news.ycombinator.com/
 
 
+前端观察 https://www.qianduan.net/
+
+
 少数派 http://sspai.com/
 
 
@@ -197,6 +200,8 @@ Tzu-ping Chung（鍾子屏） https://uranusjr.com/
 十年踪迹（月影） https://www.h5jun.com/
 
 赵劼（老赵） http://blog.zhaojie.me/
+
+Code Ahoy http://codeahoy.com/
 
 ### Blog
 

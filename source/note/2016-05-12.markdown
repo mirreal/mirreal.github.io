@@ -37,7 +37,7 @@ http://imweb.io/topic/5616652d5d6f37745e8f496f
 
 ### 游离的 DOM
 
-游离的 dom 元素是不用使用那些 api 的
+游离的 dom 元素是不能用使用那些 api 的
 
 
 ### 实现一个 Deferred 对象
@@ -98,7 +98,7 @@ Array.prototype.slice.call(arrayLike, 0);
 // 更简洁的写法
 [].slice.call(arrayLike, 0);
 
-// ES6 的写法 
+// ES6 的写法
 Array.from(arrayLike);
 ```
 
