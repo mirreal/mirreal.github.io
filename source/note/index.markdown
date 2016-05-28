@@ -30,6 +30,13 @@ footer: true
 
 #### 2016
 
+
+- [2016-05-27]({{ root_url }}/note/2016-05-27.html)
+- [2016-05-26]({{ root_url }}/note/2016-05-26.html)
+- [2016-05-25]({{ root_url }}/note/2016-05-25.html)
+- [2016-05-24]({{ root_url }}/note/2016-05-24.html)
+- [2016-05-23]({{ root_url }}/note/2016-05-23.html)
+- [2016-05-22]({{ root_url }}/note/2016-05-22.html)
 - [2016-05-20]({{ root_url }}/note/2016-05-20.html)
 - [2016-05-19]({{ root_url }}/note/2016-05-19.html)
 - [2016-05-18]({{ root_url }}/note/2016-05-18.html) 定时器
@@ -84,7 +91,7 @@ footer: true
 - [2016-03-21]({{ root_url }}/note/2016-03-21.html) 一个 octopress 的 Bug
 - [2016-03-17]({{ root_url }}/note/2016-03-17.html) web 缓存
 - [2016-03-16]({{ root_url }}/note/2016-03-16.html) Reduce()
-- [2016-03-15]({{ root_url }}/note/2016-03-15.html) Code editor for browser
+- [2016-03-15]({{ root_url }}/note/2016-03-15.html) Code editor for browser 代码编辑器
 - [2016-03-14]({{ root_url }}/note/2016-03-14.html) Wherever I May Roam
 - [2016-03-13]({{ root_url }}/note/2016-03-13.html) git config、git 删除分支
 - [2016-03-11]({{ root_url }}/note/2016-03-11.html)
