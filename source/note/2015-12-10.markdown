@@ -22,3 +22,12 @@ footer: true
   flex-direction: row;  
 }
 ```
+
+子元素这样写：
+
+```css
+{
+  -webkit-box-flex: 1;
+  flex: 1;
+}
+```

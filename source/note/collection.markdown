@@ -205,6 +205,10 @@ Code Ahoy http://codeahoy.com/
 
 WEB前端开发(愚人码头) http://www.css88.com/
 
+极限前端(ouven) http://jixianqianduan.com/
+
+咀嚼之味 http://jerryzou.com/
+
 ### Blog
 
 http://tjholowaychuk.com/

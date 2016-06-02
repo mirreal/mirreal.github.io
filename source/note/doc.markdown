@@ -13,3 +13,5 @@ footer: true
 
 
 [Dottoro Web Reference](http://help.dottoro.com/) cross-browser web pages on all platforms
+
+[七天学会NodeJS](https://nqdeng.github.io/7-days-nodejs)
