@@ -50,6 +50,8 @@ Medium https://medium.com/
 
 TechCrunch http://techcrunch.com/
 
+SitePoint https://www.sitepoint.com/
+
 Javacsript Weekly http://javascriptweekly.com/
 
 

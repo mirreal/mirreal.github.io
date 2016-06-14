@@ -1,0 +1,54 @@
+---
+layout: page
+title: "2016-06-14"
+date: 2016-06-14 09:39
+comments: true
+sharing: true
+footer: true
+---
+
+是否在纠结是不是要加逗号
+
+[最后一个参数后面也允许加逗号了](http://www.cnblogs.com/ziyunfei/p/5543304.html)
+
+
+## 聚沙
+
+### KOA
+
+http://book.apebook.org/minghe/koa-action/index.html
+
+http://javascript.ruanyifeng.com/nodejs/koa.html
+
+http://koajs.com/
+
+Koa 应用是一个包含中间件 generator 方法数组的对象。当请求到来时, 这些方法会以 stack-like 的顺序执行, 从这个角度来看，Koa 和其他中间件系统（比如 Ruby Rack 或者 Connect/Express ）非常相似.
+
+比如内容协商（content-negotation）、缓存控制（cache freshness）、反向代理（proxy support）重定向等常见功能都由中间件来实现. 将类似常见任务分离给中间件实现, Koa 实现了异常精简的代码.
+
+#### Hello world
+
+```js
+var koa = require('koa');
+var app = koa();
+
+app.use(function *(){
+  this.body = 'Hello World';
+});
+
+app.listen(3000);
+```
+
+app.use 方法用于向 middleware 数组添加 Generator 函数。
+
+### 克隆指定分支
+
+```sh
+git clone -b <branch> <remote_repo>
+```
+
+example
+
+```sh
+git clone -b demo git@gitlab.alibaba-inc.com:fgt/full-stack.git
+```

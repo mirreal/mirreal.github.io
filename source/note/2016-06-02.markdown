@@ -51,3 +51,7 @@ https://developer.mozilla.org/zh-CN/docs/Web/CSS/:-moz-placeholder
 ## 乱弹
 
 * 就好像每次抱着“我要好好来一发”的态度开始啪啪啪的时候，总是123提裤子，因为你太专注了，不如背背乘法口诀表分散一下注意力。
+
+
+
+[MORE](http://blog.mirreal.net/note/2016-06-02.html)
