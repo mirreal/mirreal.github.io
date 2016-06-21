@@ -11,6 +11,8 @@ footer: true
 
 [使用 Three.js 的 3D 制作动画场景：飞行者](https://zhuanlan.zhihu.com/p/21341483)
 
+http://tympanus.net/codrops/2016/04/26/the-aviator-animating-basic-3d-scene-threejs/
+
 [深入解读JavaScript面向对象编程实践](http://wwsun.github.io/posts/javascript-oo-summary.html)
 
 
