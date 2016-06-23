@@ -32,6 +32,8 @@ footer: true
 
 
 
+- [2016-06-23]({{ root_url }}/note/2016-06-23.html)
+- [2016-06-22]({{ root_url }}/note/2016-06-22.html)
 - [2016-06-21]({{ root_url }}/note/2016-06-21.html)
 - [2016-06-20]({{ root_url }}/note/2016-06-20.html)
 - [2016-06-17]({{ root_url }}/note/2016-06-17.html)

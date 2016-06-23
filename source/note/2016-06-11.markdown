@@ -46,7 +46,7 @@ display 属性依照词义真正隐藏元素。将 display 属性设为 none 确
 
 不过请注意，通过 DOM 依然可以访问到这个元素。因此你可以通过 DOM 来操作它，就像操作其他的元素。
 
-```
+```css
 .hide {
    display: none;
 }
