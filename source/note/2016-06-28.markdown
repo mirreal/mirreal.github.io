@@ -1,0 +1,21 @@
+---
+layout: page
+title: "2016-06-28"
+date: 2016-06-28 08:07
+comments: true
+sharing: true
+footer: true
+---
+
+## 阅读
+
+[如何给变量取个简短且无歧义的名字](http://yemengying.com/2016/06/25/cleanCode4naming/)
+
+
+## 聚沙
+
+### Chrome devTools Time/Latency
+
+> Time is total duration, from the start of the request to the receipt of the final byte in the response. Latency is the time to load the first byte in the response.
+
+Time是从请求开始到接收到最后一个字节的总时长，Latency是从请求开始到接收到第一个字节的时间；

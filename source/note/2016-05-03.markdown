@@ -23,10 +23,10 @@ footer: true
 
 "Size" is the number of bytes on the wire, and "content" is the actual size of the resource. A number of things can make them different, including:
 
-Being served from cache (small or 0 "size")
-Response headers, including cookies (larger "size" than "content")
-Redirects or authentication requests
-gzip compression (smaller "size" than "content", usually)
+* Being served from cache (small or 0 "size")
+* Response headers, including cookies (larger "size" than "content")
+* Redirects or authentication requests
+* gzip compression (smaller "size" than "content", usually)
 
 相关：http://stackoverflow.com/questions/8072921/chrome-dev-tools-size-vs-content
 

@@ -9,7 +9,7 @@ footer: true
 
 ## 阅读
 
-
+[自文档化的JavaScript代码的开发方法](http://jixianqianduan.com/article-translation/2016/06/22/ways-to-write-self-documenting-js.html)
 
 ## 聚沙
 
@@ -92,3 +92,5 @@ switched to db my_mongodb
 ```sh
 mongorestore -d my_mongodb my_mongodb_dump/*
 ```
+
+[MORE](http://blog.mirreal.net/note/2016-06-23.html)
