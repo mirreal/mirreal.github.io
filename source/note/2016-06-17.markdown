@@ -53,7 +53,7 @@ template
 </div>
 ```
 
-对象 key/value 处理主要针对复杂的 clas s混合，其形如：
+对象 key/value 处理主要针对复杂的 class 混合，其形如：
 
 ```js
 function Ctr($scope) {
