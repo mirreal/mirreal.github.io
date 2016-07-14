@@ -35,3 +35,5 @@ Host object Implementation-dependent
 Function    "function"
 Object      "object"
 ```
+
+[MORE](http://blog.mirreal.net/note/2016-07-08.html)

@@ -31,6 +31,8 @@ PJAX
 
 delete
 
+类型转换和 == 比较
+
 获取 search 的几种方式
 
 科学上网

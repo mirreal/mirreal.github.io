@@ -89,6 +89,8 @@ FEX 技术周刊 http://fex.baidu.com/articles/
 
 TECHBRIDGE WEEKLY 技術週刊 http://weekly.techbridge.cc/
 
+技匠社 http://jijiangshe.com/
+
 #### 英文
 
 frontenddevweekly http://frontenddevweekly.com/
