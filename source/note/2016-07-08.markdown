@@ -9,7 +9,7 @@ footer: true
 
 ## 阅读
 
-JavaScript SDK Design Guide
+JavaScript SDK Design Guide @天默
 
 http://js8.in/2016/06/29/javascript%20sdk(jssdk)%E8%AE%BE%E8%AE%A1%E6%8C%87%E5%8D%97/
 
