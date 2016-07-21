@@ -6,3 +6,32 @@ comments: true
 sharing: true
 footer: true
 ---
+
+## 阅读
+
+[程序中减少使用if语句的方法](http://www.iteye.com/news/31641)
+
+http://code.joejag.com/2016/anti-if-the-missing-patterns.html
+
+[什么样的人适合做程序员](http://blog.jobbole.com/103588/)
+
+[2016年JavaScript开发者需要了解的技能](http://www.zcfy.cc/article/619)
+
+https://www.codementor.io/learn-programming/javascript-trends-skills-developers-should-learn
+
+[懒加载图片？不要依赖 JavaScript](http://www.jianshu.com/p/d6eecb826668)
+
+
+## 聚沙
+
+
+### jshint comments
+
+```js
+// 这里的代码将会被 JSHint 分析。
+/* jshint ignore:start */
+// 这里的代码将会被 JSHint 忽略。
+/* jshint ignore:end */
+```
+
+http://jshint.com/docs/
