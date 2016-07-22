@@ -15,6 +15,19 @@ http://typographyhandbook.com/
 
 [Data Guard运维中的实战经验和技巧](http://dbaplus.cn/news-21-518-1.html)
 
+
+[Swift 3中的新特性](http://www.cocoachina.com/swift/20160713/17028.html)
+
+https://www.raywenderlich.com/135655/whats-new-swift-3
+
+[CSS的clip-path](http://www.w3cplus.com/css3/introducing-css-clip-path-property.html)
+
+[通过 React 来提高 Angular 的性能](https://aleen42.gitbooks.io/personalwiki/content/translation/improve_angular_performance_with_react/improve_angular_performance_with_react.html)
+
+[学习如何构建自动化、跨浏览器的JavaScript单元测试](http://www.jianshu.com/p/d079b9c61450)
+
+https://philipwalton.com/articles/learning-how-to-set-up-automated-cross-browser-javascript-unit-testing
+
 ## 聚沙
 
 ### 6 rules
