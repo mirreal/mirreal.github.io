@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Patrick Ran]]></title>
+        <description><![CDATA[Patrick Ran]]></description>
+        <link>https://mirreal.net</link>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Sat, 13 Apr 2024 14:56:43 GMT</lastBuildDate>
+        <atom:link href="https://mirreal.net/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[JS/React 开发者的 Atom 终极配置]]></title>
+            <link>/posts/my-atom-editor-setup-for-js-react</link>
+            <guid isPermaLink="true">/posts/my-atom-editor-setup-for-js-react</guid>
+            <category><![CDATA[editor]]></category>
+            <category><![CDATA[JavaScript]]></category>
+            <pubDate>Sun, 28 May 2017 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Base64 简要笔记及其他]]></title>
+            <link>/posts/base64-note</link>
+            <guid isPermaLink="true">/posts/base64-note</guid>
+            <category><![CDATA[JavaScript]]></category>
+            <pubDate>Thu, 06 Nov 2014 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[康威生命游戏的简单实现]]></title>
+            <link>/posts/game-of-life</link>
+            <guid isPermaLink="true">/posts/game-of-life</guid>
+            <category><![CDATA[JavaScript]]></category>
+            <pubDate>Thu, 21 Aug 2014 10:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[在工作中学习]]></title>
+            <link>/posts/learning-at-work</link>
+            <guid isPermaLink="true">/posts/learning-at-work</guid>
+            <category><![CDATA[career]]></category>
+            <pubDate>Sat, 02 Sep 2017 00:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>
