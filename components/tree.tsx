@@ -1,10 +1,18 @@
 import { useEffect, useRef } from 'react';
 
-function createTree(canvasElem: HTMLCanvasElement | null) {
+function createTree(canvasElem: HTMLCanvasElement | null, width: number, height: number) {
   if (!canvasElem) return;
 
   const ctx = canvasElem.getContext('2d');
-  drawTree(ctx, 320, 470, 60, -Math.PI / 2, 12, 12);
+
+  const startX = width / 2;
+  const startY = height * 0.98;
+  const branchLength = width / 10;
+  const branchWidth = width / 52;
+  const angle = -Math.PI / 2;
+  const depth = 12;
+
+  drawTree(ctx, startX, startY, branchLength, angle, depth, branchWidth);
 
   function drawTree(ctx, startX, startY, length, angle, depth, branchWidth) {
     if (depth == 0) return;
@@ -40,20 +48,45 @@ function createTree(canvasElem: HTMLCanvasElement | null) {
   }
 }
 
+function getCanvasSize() {
+  const { innerWidth, innerHeight } = window;
+
+  let height = 480;
+  let width = 640;
+
+  if (innerHeight > innerWidth * 1.3) {
+    width = height * innerWidth / innerHeight;
+    if (width < 320) width = 320;
+
+    height = width;
+  }
+
+  return {
+    width,
+    height
+  }
+}
+
+function createCanvas(elem) {
+  const canvasElem = document.createElement('canvas');
+
+  const { width, height } = getCanvasSize();
+  canvasElem.width = width;
+  canvasElem.height = height;
+
+  createTree(canvasElem, width, height);
+
+  elem.appendChild(canvasElem);
+}
+
 export function Tree() {
-  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const canvasRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    createTree(canvasRef.current);
+    createCanvas(canvasRef.current);
   }, []);
 
   return (
-    <div>
-      <canvas
-        ref={canvasRef}
-        width="640"
-        height="480"
-      />
-    </div>
+    <div ref={canvasRef} />
   )
 }
